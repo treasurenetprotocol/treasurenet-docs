@@ -1,0 +1,254 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.关于Treasurenet": {
+    "message": "About Treasurenet",
+    "description": "The label for category 关于Treasurenet in sidebar docs"
+  },
+  "sidebar.docs.category.关于Treasurenet.link.generated-index.title": {
+    "message": "About Treasurenet",
+    "description": "The generated-index page title for category 关于Treasurenet in sidebar docs"
+  },
+  "sidebar.docs.category.核心概念": {
+    "message": "Core Concepts",
+    "description": "The label for category 核心概念 in sidebar docs"
+  },
+  "sidebar.docs.category.核心概念.link.generated-index.title": {
+    "message": "Core Concepts",
+    "description": "The generated-index page title for category 核心概念 in sidebar docs"
+  },
+  "sidebar.docs.category.Producers": {
+    "message": "Producers",
+    "description": "The label for category Producers in sidebar docs"
+  },
+  "sidebar.docs.category.Producers.link.generated-index.title": {
+    "message": "Producers",
+    "description": "The generated-index page title for category Producers in sidebar docs"
+  },
+  "sidebar.docs.category.去中心化RWA审计": {
+    "message": "Decentralized RWA Audit",
+    "description": "The label for category 去中心化RWA审计 in sidebar docs"
+  },
+  "sidebar.docs.category.去中心化RWA审计.link.generated-index.title": {
+    "message": "Decentralized RWA Audit",
+    "description": "The generated-index page title for category 去中心化RWA审计 in sidebar docs"
+  },
+  "sidebar.docs.category.隐私保护": {
+    "message": "Privacy Protection",
+    "description": "The label for category 隐私保护 in sidebar docs"
+  },
+  "sidebar.docs.category.隐私保护.link.generated-index.title": {
+    "message": "Privacy Protection",
+    "description": "The generated-index page title for category 隐私保护 in sidebar docs"
+  },
+  "sidebar.docs.category.质押和额外质押": {
+    "message": "Stake & Bonus Stake",
+    "description": "The label for category 质押和额外质押 in sidebar docs"
+  },
+  "sidebar.docs.category.质押和额外质押.link.generated-index.title": {
+    "message": "Stake & Bonus Stake",
+    "description": "The generated-index page title for category 质押和额外质押 in sidebar docs"
+  },
+  "sidebar.docs.category.代币经济": {
+    "message": "Tokenomics",
+    "description": "The label for category 代币经济 in sidebar docs"
+  },
+  "sidebar.docs.category.代币经济.link.generated-index.title": {
+    "message": "Tokenomics",
+    "description": "The generated-index page title for category 代币经济 in sidebar docs"
+  },
+  "sidebar.docs.category.代币经济.link.generated-index.description": {
+    "message": "The total supply of $UNIT tokens is finite, but the exact limit will vary depending on the future production of rare assets. This is because Treasurenet block rewards reduce over time. Producers work together to create RWAs to prevent $UNIT block rewards from decaying quickly. Whereas BTC reduces by 50% per period, $UNIT rewards reduce at a rate based on $TAT minted, hence asset produced. ",
+    "description": "The generated-index page description for category 代币经济 in sidebar docs"
+  },
+  "sidebar.docs.category.开发中的Dapp": {
+    "message": "dApps Under Development",
+    "description": "The label for category 开发中的Dapp in sidebar docs"
+  },
+  "sidebar.docs.category.开发中的Dapp.link.generated-index.title": {
+    "message": "dApps Under Development",
+    "description": "The generated-index page title for category 开发中的Dapp in sidebar docs"
+  },
+  "sidebar.docs.category.常见概念": {
+    "message": "Fundamentals",
+    "description": "The label for category 常见概念 in sidebar docs"
+  },
+  "sidebar.docs.category.常见概念.link.generated-index.title": {
+    "message": "Fundamentals",
+    "description": "The generated-index page title for category 常见概念 in sidebar docs"
+  },
+  "sidebar.docs.category.钱包": {
+    "message": "Digital Wallets",
+    "description": "The label for category 钱包 in sidebar docs"
+  },
+  "sidebar.docs.category.USTN金融平台": {
+    "message": "USTN Finance Platform",
+    "description": "The label for category USTN金融平台 in sidebar docs"
+  },
+  "sidebar.docs.category.USTN金融平台.link.generated-index.title": {
+    "message": "USTN Finance Platform",
+    "description": "The generated-index page title for category USTN金融平台 in sidebar docs"
+  },
+  "sidebar.docs.category.去中心化治理": {
+    "message": "Governance",
+    "description": "The label for category 去中心化治理 in sidebar docs"
+  },
+  "sidebar.docs.category.去中心化治理.link.generated-index.title": {
+    "message": "Governance",
+    "description": "The generated-index page title for category 去中心化治理 in sidebar docs"
+  },
+  "sidebar.docs.category.产生资产": {
+    "message": "Assets Production",
+    "description": "The label for category 产生资产 in sidebar docs"
+  },
+  "sidebar.docs.category.产生资产.link.generated-index.title": {
+    "message": "Assets Production",
+    "description": "The generated-index page title for category 产生资产 in sidebar docs"
+  },
+  "sidebar.docs.category.铸造TAT": {
+    "message": "TAT Mint by Asset-Class",
+    "description": "The label for category 铸造TAT in sidebar docs"
+  },
+  "sidebar.docs.category.铸造TAT.link.generated-index.title": {
+    "message": "TAT Mint by Asset-Class",
+    "description": "The generated-index page title for category 铸造TAT in sidebar docs"
+  },
+  "sidebar.docs.category.铸造TAT.link.generated-index.description": {
+    "message": "Notice: Documentation is in progress. Further asset connections under development. Requirements may be adjusted via DAO Governance proposals.",
+    "description": "The generated-index page description for category 铸造TAT in sidebar docs"
+  },
+  "sidebar.docs.category.链接现实世界": {
+    "message": "Pilot real-world connection",
+    "description": "The label for category 链接现实世界 in sidebar docs"
+  },
+  "sidebar.docs.category.链接现实世界.link.generated-index.title": {
+    "message": "Pilot real-world connection",
+    "description": "The generated-index page title for category 链接现实世界 in sidebar docs"
+  },
+  "sidebar.docs.category.链接现实世界.link.generated-index.description": {
+    "message": "This is applicable for all quantifiable real-world assets to be connected, where $TAT records their respective market value of verifiable asset production.",
+    "description": "The generated-index page description for category 链接现实世界 in sidebar docs"
+  },
+  "sidebar.docs.category.Producer 指南": {
+    "message": "Pilot Producer Guide",
+    "description": "The label for category Producer 指南 in sidebar docs"
+  },
+  "sidebar.docs.category.Producer 指南.link.generated-index.title": {
+    "message": "Pilot Producer Guide",
+    "description": "The generated-index page title for category Producer 指南 in sidebar docs"
+  },
+  "sidebar.docs.category.新资产加入": {
+    "message": "New Asset Workflow Registration",
+    "description": "The label for category 新资产加入 in sidebar docs"
+  },
+  "sidebar.docs.category.新资产加入.link.generated-index.title": {
+    "message": "New Asset Workflow Registration",
+    "description": "The generated-index page title for category 新资产加入 in sidebar docs"
+  },
+  "sidebar.docs.category.新资产加入.link.generated-index.description": {
+    "message": "Treasurenet welcomes rare assets to join the network and generate corresponding TAT. Please contact Treasurenet Foundation through any communication channels.",
+    "description": "The generated-index page description for category 新资产加入 in sidebar docs"
+  },
+  "sidebar.docs.category.For Delegaters": {
+    "message": "For Delegaters",
+    "description": "The label for category For Delegaters in sidebar docs"
+  },
+  "sidebar.docs.category.For Delegaters.link.generated-index.title": {
+    "message": "For Delegaters",
+    "description": "The generated-index page title for category For Delegaters in sidebar docs"
+  },
+  "sidebar.docs.category.操作指南": {
+    "message": "Operation Guide",
+    "description": "The label for category 操作指南 in sidebar docs"
+  },
+  "sidebar.docs.category.For Validators": {
+    "message": "For Validators",
+    "description": "The label for category For Validators in sidebar docs"
+  },
+  "sidebar.docs.category.For Validators.link.generated-index.title": {
+    "message": "For Validators",
+    "description": "The generated-index page title for category For Validators in sidebar docs"
+  },
+  "sidebar.docs.category.基本概念": {
+    "message": "Basic Concepts",
+    "description": "The label for category 基本概念 in sidebar docs"
+  },
+  "sidebar.docs.category.快速开始": {
+    "message": "Quick Start",
+    "description": "The label for category 快速开始 in sidebar docs"
+  },
+  "sidebar.docs.category.配置和启动": {
+    "message": "Setup & Configuration",
+    "description": "The label for category 配置和启动 in sidebar docs"
+  },
+  "sidebar.docs.category.For Dapp Devs": {
+    "message": "For Dapp Devs",
+    "description": "The label for category For Dapp Devs in sidebar docs"
+  },
+  "sidebar.docs.category.For Dapp Devs.link.generated-index.title": {
+    "message": "For Dapp Devs",
+    "description": "The generated-index page title for category For Dapp Devs in sidebar docs"
+  },
+  "sidebar.docs.category.本地环境": {
+    "message": "Localnet",
+    "description": "The label for category 本地环境 in sidebar docs"
+  },
+  "sidebar.docs.category.Testnet": {
+    "message": "Testnet",
+    "description": "The label for category Testnet in sidebar docs"
+  },
+  "sidebar.docs.category.Treasurenet EVM 工具集": {
+    "message": "Treasurenet EVM Tooling",
+    "description": "The label for category Treasurenet EVM 工具集 in sidebar docs"
+  },
+  "sidebar.docs.category.工具库": {
+    "message": "Client Libraries",
+    "description": "The label for category 工具库 in sidebar docs"
+  },
+  "sidebar.docs.category.Ethereum JSON-RPC": {
+    "message": "Ethereum JSON-RPC",
+    "description": "The label for category Ethereum JSON-RPC in sidebar docs"
+  },
+  "sidebar.docs.category.For Protocol Devs": {
+    "message": "For Protocol Devs",
+    "description": "The label for category For Protocol Devs in sidebar docs"
+  },
+  "sidebar.docs.category.For Protocol Devs.link.generated-index.title": {
+    "message": "For Protocol Devs",
+    "description": "The generated-index page title for category For Protocol Devs in sidebar docs"
+  },
+  "sidebar.docs.category.模块": {
+    "message": "Modules",
+    "description": "The label for category 模块 in sidebar docs"
+  },
+  "sidebar.docs.category.Genesis File": {
+    "message": "Genesis File",
+    "description": "The label for category Genesis File in sidebar docs"
+  },
+  "sidebar.docs.category.区块浏览器": {
+    "message": "Block Explorers",
+    "description": "The label for category 区块浏览器 in sidebar docs"
+  },
+  "sidebar.docs.link.Cosmos gRPC & REST": {
+    "message": "Cosmos gRPC & REST",
+    "description": "The label for link Cosmos gRPC & REST in sidebar docs, linking to https://www.google.com"
+  },
+  "sidebar.api.category.官方合约": {
+    "message": "Official Contracts",
+    "description": "The label for category 官方合约 in sidebar api"
+  },
+  "sidebar.api.category.Ethereum JSON-RPC Methods": {
+    "message": "Ethereum JSON-RPC Methods",
+    "description": "The label for category Ethereum JSON-RPC Methods in sidebar api"
+  },
+  "sidebar.api.category.工具集": {
+    "message": "Tools",
+    "description": "The label for category 工具集 in sidebar api"
+  },
+  "sidebar.api.link.Cosmos gRPC & REST": {
+    "message": "Cosmos gRPC & REST",
+    "description": "The label for link Cosmos gRPC & REST in sidebar api, linking to https://www.google.com"
+  }
+}

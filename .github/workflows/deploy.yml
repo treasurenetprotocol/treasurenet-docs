@@ -1,0 +1,26 @@
+name: Docusaurus Deploy
+
+on:
+  push:
+    branches:
+      - feature/1.0.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Server
+        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          user: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_KEY }}
+
+          connect_timeout: 180s
+
+          scp: |
+            ./* => /data/docs/
+          last_ssh: |
+            cd /data/docs/
+            npm run build
