@@ -151,11 +151,11 @@
     "message": "Treasurenet welcomes rare assets to join the network and generate corresponding TAT. Please contact Treasurenet Foundation through any communication channels.",
     "description": "The generated-index page description for category 新资产加入 in sidebar docs"
   },
-  "sidebar.docs.category.For Delegaters": {
+  "sidebar.docs.category.质押委托": {
     "message": "For Delegaters",
     "description": "The label for category For Delegaters in sidebar docs"
   },
-  "sidebar.docs.category.For Delegaters.link.generated-index.title": {
+  "sidebar.docs.category.质押委托.link.generated-index.title": {
     "message": "For Delegaters",
     "description": "The generated-index page title for category For Delegaters in sidebar docs"
   },
@@ -163,11 +163,11 @@
     "message": "Operation Guide",
     "description": "The label for category 操作指南 in sidebar docs"
   },
-  "sidebar.docs.category.For Validators": {
+  "sidebar.docs.category.验证节点": {
     "message": "For Validators",
     "description": "The label for category For Validators in sidebar docs"
   },
-  "sidebar.docs.category.For Validators.link.generated-index.title": {
+  "sidebar.docs.category.验证节点.link.generated-index.title": {
     "message": "For Validators",
     "description": "The generated-index page title for category For Validators in sidebar docs"
   },
@@ -183,11 +183,11 @@
     "message": "Setup & Configuration",
     "description": "The label for category 配置和启动 in sidebar docs"
   },
-  "sidebar.docs.category.For Dapp Devs": {
+  "sidebar.docs.category.去中心化应用开发": {
     "message": "For Dapp Devs",
     "description": "The label for category For Dapp Devs in sidebar docs"
   },
-  "sidebar.docs.category.For Dapp Devs.link.generated-index.title": {
+  "sidebar.docs.category.去中心化应用开发.link.generated-index.title": {
     "message": "For Dapp Devs",
     "description": "The generated-index page title for category For Dapp Devs in sidebar docs"
   },
@@ -211,11 +211,11 @@
     "message": "Ethereum JSON-RPC",
     "description": "The label for category Ethereum JSON-RPC in sidebar docs"
   },
-  "sidebar.docs.category.For Protocol Devs": {
+  "sidebar.docs.category.协议开发": {
     "message": "For Protocol Devs",
     "description": "The label for category For Protocol Devs in sidebar docs"
   },
-  "sidebar.docs.category.For Protocol Devs.link.generated-index.title": {
+  "sidebar.docs.category.协议开发.link.generated-index.title": {
     "message": "For Protocol Devs",
     "description": "The generated-index page title for category For Protocol Devs in sidebar docs"
   },

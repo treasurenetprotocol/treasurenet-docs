@@ -227,10 +227,10 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'For Delegaters',
+            label: '质押委托',
             link: {
                 type: 'generated-index',
-                title: 'For Delegaters',
+                title: '质押委托',
             },
             items: [
                 'staking/introduction',
@@ -248,7 +248,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'For Validators',
+            label: '验证节点',
             link: {
                 type: 'generated-index',
                 title: 'For Validators',
@@ -289,10 +289,10 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'For Dapp Devs',
+            label: '去中心化应用开发',
             link: {
                 type: 'generated-index',
-                title: 'For Dapp Devs',
+                title: '去中心化应用开发',
             },
             items: [
                 'developers/quick-connect',
@@ -357,10 +357,10 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'For Protocol Devs',
+            label: '协议开发',
             link: {
                 type: 'generated-index',
-                title: 'For Protocol Devs',
+                title: '协议开发',
             },
             items: [
                 'protocolDevelopers/overview',
