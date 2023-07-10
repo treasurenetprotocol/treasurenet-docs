@@ -2,200 +2,199 @@
 sidebar_position: 1
 ---
 
-# 操作指南
+# Operation Guide
 
-## USTN 金融
+## USTN Finance
 
-### 兑换
+### Exchange
 
-#### 兑换 (Unit → USTN)
+#### Exchange (Unit → USTN)
 
-输入想要兑换成 USTN 的 Unit 数量，点击'Submit'提交。输入的数字要大于 0 且小于等于账户余额和兑换上限，否则无法成功提交。
+Enter the amount of Unit you wish to convert to USTN and click 'Submit'. The input number must be greater than 0 and less than or equal to the account balance and conversion limit, otherwise, it cannot be successfully submitted.
 
-- 规则说明：
+- Rule Explanation:
 
-  1. 用户提供 Unit 兑换出 USTN，根据 Unit 数量、Unit 单价、USTN 单价计算可兑换的 USTN 数目；
+  1. Users provide Unit to exchange for USTN, and the number of USTN that can be exchanged is calculated based on the number of Units, the price of Unit, and the price of USTN;
 
-  2. 判断可兑换 USTN 数目是否大于市场所需 USTN 上限：
+  2. Determine whether the number of USTN that can be exchanged is greater than the market demand for USTN:
 
-  - 如果>市场所需 USTN 上限，兑换失败；
+  - If it exceeds the market demand for USTN, the exchange fails;
 
-  - <= 市场所需 USTN 上限，铸造 USTN 发送至用户账户。
+  - If it's less than or equal to the market demand for USTN, USTN is minted and sent to the user's account.
 
-  3. 可兑换 USTN 数目（结果向下取整） =( Unit 数目\*Unit 单价) / USTN 单价 ；
+  3. The number of USTN that can be exchanged (rounded down) = (Number of Units \* Price of Unit) / Price of USTN;
 
-  4. 市场所需 USTN 上限 = max[ 系统已铸造 USTN 总量，5000 0000 ]；
+  4. Market demand for USTN = max [total USTN minted by the system, 50,000,000];
 
-  5. 系统已铸造 USTN 总数 >= 5000 0000 时，兑换 USTN 入口将被关闭。
+  5. When the total number of USTN minted by the system is greater than or equal to 50,000,000, the USTN exchange entrance will be closed.
 
 ![USTN_Finance_Exchange](/img/docs/2.1USTN_Finance_Exchange.png)
 
-- 在 MetaMask 进行确认，继续兑换则点击'Confirm'，中止操作则点击'Reject'。
+- Confirm in MetaMask, click 'Confirm' to continue the exchange, or 'Reject' to abort the operation.
 
 ![MetaMask](/img/docs/MetaMask.png)
 
-- 点击'Confirm'后，系统会提示'exchanged successfully!'。
+- After clicking 'Confirm', the system will display 'exchanged successfully!'.
 
 ![exchanged_successfully](/img/docs/2.1.3exchanged_successfully.png)
 
-- 点击'VIEW HISTORY'，出现之前所有的兑换记录。通过右上角的 Type 可进行筛选，如选择 Unit to USTN，列表中展示所有 Unit to USTN 的信息。
+- Click 'VIEW HISTORY' to see all previous exchange records. You can filter by Type in the upper right corner, for example, select Unit to USTN, and all Unit to USTN information will be displayed in the list.
 
 ![VIEW_HISTORY](/img/docs/2.1.2VIEW_HISTORY.png)
 
-#### 回购 (USTN → Unit)
+#### Repurchase (USTN → Unit)
 
-输入想要回购的 Unit 数量，点击'Submit'提交。输入的数字要大于 0 且小于等于账户余额，否则无法成功提交。
+Enter the number of Units you want to repurchase and click 'Submit'. The input number must be greater than 0 and less than or equal to the account balance, otherwise, it cannot be successfully submitted.
 
-- 规则说明：
+- Rule Explanation:
 
-  1. 用户向系统提供 USTN 回购 Unit，根据 USTN 数量、USTN 单价、Unit 单价计算用户可回购的 Unit 数量；
+  1. Users provide USTN to repurchase Units, and the number of Units that can be repurchased is calculated based on the amount of USTN, the price of USTN, and the price of Unit;
 
-  2. 判断用户回购 Unit 数目是否 > 系统可回购 Unit 上限：
+  2. Determine whether the number of Units repurchased by the user is greater than the system repurchase limit:
 
-  - <= 系统可回购上限，销毁用户提供的 USTN，将回购 Unit 返还给用户；
+  - If it's less than or equal to the system repurchase limit, the USTN provided by the user is destroyed, and the repurchased Unit is returned to the user;
 
-  - 如果>系统可回购上限，Unit 回购失败，返还用户提供的 USTN。
+  - If it exceeds the system repurchase limit, the Unit repurchase fails, and the USTN provided by the user is returned.
 
-  3. 系统可回购 Unit 上限 = （系统 USTN 总量 - 市场所需 USTN 上限）\*USTN 单价/ Unit 单价；
+  3. System repurchase limit for Units = (Total USTN of the system - Market demand for USTN) \* USTN price / Unit price;
 
-  4. Unit 回购功能开放、关闭条件：
+  4. The conditions for opening and closing the Unit repurchase function are:
 
-  - 系统 USTN 总量 > 市场所需 USTN 上限，开放 Unit 回购
+  - When the total USTN of the system > Market demand for USTN, open Unit repurchase;
 
-  - 系统 USTN 总量 <= 市场所需 USTN 上限，关闭 Unit 回购
+  - When the total USTN of the system <= Market demand for USTN
 
 ![Repurchase](/img/docs/Repurchase.png)
 
-- 在 MetaMask 进行确认，继续兑换则点击'Confirm'，中止操作则点击'Reject'。
+- Confirm in MetaMask, click 'Confirm' to continue the exchange, or 'Reject' to abort the operation.
 
 ![MetaMask](/img/docs/MetaMask.png)
 
-- 点击'Confirm'后，系统会提示'exchanged successfully!'。
+- After clicking 'Confirm', the system will display 'exchanged successfully!'.
 
 ![exchanged_successfully](/img/docs/2.1.3exchanged_successfully.png)
 
-### 2. 存入
+### 2. Deposit
 
-#### 存入 USTN
+#### Deposit USTN
 
-- 输入想要存入的 USTN 数量，点击'Submit'进行提交。
+- Enter the amount of USTN you wish to deposit and click 'Submit' to submit.
 
 :::caution
-注意：输入的数字要大于 0 且小于等于账户余额，否则无法成功提交。
+The input number must be greater than 0 and less than or equal to the account balance, otherwise, it cannot be successfully submitted.
 :::
 
 ![Deposit](/img/docs/2.2Deposit.png)
 
-- 点击'VIEW HISTORY'，出现之前所有的存取记录。
+- Click 'VIEW HISTORY' to view all previous deposit and withdrawal records.
 
 ![Deposit_HISTORY](/img/docs/2.2.2Deposit_HISTORY.png)
 
-#### 取出 USTN
+#### Withdraw USTN
 
-- 输入想要取出的 USTN 数量，点击'Submit'进行提交。
+- Enter the amount of USTN you wish to withdraw and click 'Submit' to submit.
 
 :::caution
-注意：输入的数字要大于 0 且小于等于存入的数量，否则无法成功提交.
+Note: The input number must be greater than 0 and less than or equal to the deposited amount, otherwise, it cannot be successfully submitted.
 :::
 
 ![Withdraw](/img/docs/Withdraw.png)
 
-### 贷款
+### Loan
 
-#### 贷款 USTN
+#### Loan
 
-- 输入想要借的代币数量，会自动显示另一种代币的等价值，点击’Submit‘进行提交。
+- Enter the amount of tokens you want to borrow. The equivalent value of the other token will be displayed automatically. Click 'Submit' to submit.
 
 :::caution
-注意：输入的数字要大于 0，否则无法成功提交。
+Note: The input number must be greater than 0, otherwise, it cannot be successfully submitted.
 :::
 
 ![Lendinfg](/img/docs/2.3Lending.png)
 
-- 点击'VIEW HISTORY'，出现之前所有的借还记录。
+- Click 'VIEW HISTORY' to see all previous loan and repayment records.
 
 ![Loan_history](/img/docs/2.3.1Loan_history.png)
 
-- 点击 Details，可以查看借款详情。
+- Click on Details to view loan details.
 
 ![Loan_Detail](/img/docs/2.3.1.4Loan_Detail.png)
 
-#### 还款
+#### Repay
 
-- 在借款历史记录中，可以点击'Repayment'进行还款。
+- In the loan history records, you can click on 'Repayment' to make a repayment.
 
 ![Repayment](/img/docs/Repayment.png)
 
-- 输入要还款的金额。
+- Enter the repayment amount.
 
 :::caution
-注意：输入的数字要大于 0 且小于等于该笔借款数量，否则无法成功提交。
+Note: The input number must be greater than 0 and less than or equal to the loan amount, otherwise, it cannot be successfully submitted.
 :::
 
 ![Repay](/img/docs/2.3.1.1Repay.png)
 
-- 还款成功则显示'Repaid successfully!'; 全部还完则显示'Your loan has been paid off totally!'。
+If the repayment is successful, it will display 'Repaid successfully!'; if all repayments have been made, it will display 'Your loan has been paid off totally!'.
 
 ![Repaid_successfully](/img/docs/2.3.1.2Repaid_successfully.png)
 
-- 关闭弹窗后，会返回到历史记录页面。
+- After closing the pop-up window, it will return to the history record page.
 
-- 点击'Payment History' tab，可以查看之前的还款记录。
+- Click on the 'Payment History' tab to view previous repayment records.
 
 ![Payment_History](/img/docs/2.3.2Payment_History.png)
 
-#### 添加抵押品
+#### Add collateral
 
-- 当某笔贷款的抵押品的价值/贷出 USTN 的价值<=预警线时，系统会对用户发出预警，提示应当补充抵押品。
+- When the value of the collateral for a loan / the value of the lent USTN is less than or equal to the warning line, the system will issue a warning to the user, suggesting to supplement the collateral.
 
 ![Add collateral](/img/docs/2.3.1.3Add_collateral.png)
 
-- 点击‘Add collateral’增加抵押品，在弹窗内输入抵押品数量。
+- Click on 'Add collateral' to add collateral, and enter the amount of collateral in the pop-up window.
 
 ![Add](/img/docs/2.3.1.3Add.png)
 
-- 点击‘Submit’后，如果增加后的抵押品价值/贷出 USTN 价值>预警线，则不再预警。系统会提示‘Add collateral successfully! The alert status has been lifted.’。
+- After clicking 'Submit', if the value of the added collateral / the value of the lent USTN is greater than the warning line, there will be no more warnings. The system will prompt 'Add collateral successfully! The alert status has been lifted.'.
 
 ![Add_collateral_successfully](/img/docs/2.3.1.4Add_collateral_successfully.png)
 
-### 4. 拍卖
+### 4. Auction
 
-- Auction 界面可以可查询到所有正在拍卖的标的。
+- The Auction interface can query all items currently being auctioned.
 
 ![Auotion_Pool](/img/docs/2.4Auotion_Pool.png)
 
-- 点击‘Place a bid’可以参与竞标。
+- Click on 'Place a bid' to participate in the bidding.
 
 ![bid](/img/docs/2.4.1-2bid.png)
 
-- 点击'My bidding history'可以查看我自己参与竞买的记录。
+- Click on 'My bidding history' to view records of my participation in the bidding.
 
 ![bidding_history](/img/docs/2.4.2bidding_history.png)
 
-- 如果用户不是当前标的的最高出价人，点击‘Extract USTN’，可随时将自己投入的 USTN 提取出来。
+- If the user is not currently the highest bidder for the item, click 'Extract USTN' to withdraw the USTN you have invested at any time.
 
 ![Extract_USTN](/img/docs/2.4.2.2Extract_USTN.png)
 
-- 如果当前用户成功中标，点击‘Extract auction’，可将标的物提取至个人账户。
+- If the current user successfully wins the bid, click 'Extract auction' to transfer the item to your personal account.
 
 ![Extract_auction](/img/docs/2.4.2.3Extract_auction.png)
 
-- 点击‘Details’，可以查看某个标的的竞买详情，包括标的信息、中标人信息、竞拍人信息等。
+- Click on 'Details' to view the bidding details of an item, including item information, winning bidder information, bidder information, etc.
 
 ![bid_Details](/img/docs/2.4.2.1bid_Details.png)
 
 ![bid_Details](/img/docs/2.4.2.1-2bid_Details.png)
 
-### 5. 个人资料
+### 5. Profile
 
-#### 我的资产
+#### My Assets
 
-- 点击 Profile 可以进入个人中心页面，此页面展示用户 USTN 余额、存款余额、待还款额等关键数据的统计值。
-  其中，我的资产=USTN 余额 Balance+USTN 存款余额 Deposits；USTN 余额 Balance，展示当前账户的 USTN 余额。
+- Click on Profile to enter the personal center page. This page displays the statistics of key data such as the user's USTN balance, deposit balance, and outstanding repayments. Here, My Assets = USTN Balance + USTN Deposit Balance; USTN Balance shows the current account's USTN balance.
 
 ![Profile](/img/docs/2.5Profile.png)
 
-- 点击 My Assets 中的三个板块中的按钮和'Detail'分别可以进入 Exchange、Deposit、Loan 页面；点击 My auction 板块的'Extract USTN'按钮和'Extract auction'按钮可以进入'My Bidding History'界面。
+- Clicking on the buttons and 'Detail' in the three panels of My Assets and the 'Extract USTN' and 'Extract auction' buttons in the My Auction panel will take you to the Exchange, Deposit, Loan page; click on the 'My Bidding History' interface.
 
 :::info
 🚧 Documentation is in progress.

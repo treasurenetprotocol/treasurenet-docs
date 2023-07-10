@@ -2,50 +2,30 @@
 sidebar_position: 1
 ---
 
-<<<<<<< HEAD
-
-# 介绍
-
-Treasurenet 链利用 Cosmos SDK 和底层的 Tendermint 核心共识引擎。具体来说，Cosmos SDK 是一个框架，可促进在 Tendermint 之上开发安全状态机。
-
-在本文档中，我们将重点介绍我们使用的一些重要模块.
-
-- 基础模块: auth, bank
-- 辅助模块: params
-- 链上治理模块: gov
-- PoS 模块: staking, mint, distribution, slashing
-- # 跨链通信模块: ibc/core
-
 # Introduction
 
-Treasurenet 链利用 Cosmos SDK 和底层的 Tendermint 核心共识引擎。具体来说，Cosmos SDK 是一个框架，可促进在 Tendermint 之上开发安全状态机。
+The Treasurenet chain utilizes the Cosmos SDK and the underlying Tendermint core consensus engine. Specifically, the Cosmos SDK is a framework that facilitates the development of secure state machines on top of Tendermint.
 
-在本文档中，我们将重点介绍我们使用的一些重要模块.
+In this document, we will focus on introducing some important modules that we use.
 
-- 基础模块: auth,bank
-- 辅助模块: params
-- 链上治理模块: gov
-- Pos 模块: staking,mint,distribution,slashing
-- 跨链通信模块: ibc/core
-  > > > > > > > feature/1.0.1
+- Core Modules: auth, bank
+- Auxiliary Module: params
+- On-chain Governance Module: gov
+- Proof-of-Stake Modules: staking, mint, distribution, slashing
+- Inter-Blockchain Communication Module: ibc/core
 
-[Auth](./auth.md) - 为应用程序验证账户和交易，并负责指定基本交易和账户类型;
+[Auth](./auth.md) - Responsible for authenticating accounts and transactions in the application, specifying basic transaction and account types.
 
-[Bank](./bank.md) - 代币转账功能和所有资产总供应量的查询支持；
+[Bank](./bank.md) - Provides token transfer functionality and supports querying the total supply of all assets.
 
-[Distribution](./distribution.md) - 费用分配，并向验证者和委托人提供奖励；
+[Distribution](./distribution.md) - Handles fee distribution and provides rewards to validators and delegators.
 
-[Gov](./gov.md) - 链上提案和投票；
+[Gov](./gov.md) - On-chain proposal and voting system.
 
-[Mint](./mint.md) - 创建新的质押代币单位；
+[Mint](./mint.md) - Creates new units of staking tokens.
 
-[Slashing](./slashing.md) - 验证者惩罚机制；
+[Slashing](./slashing.md) - Implements mechanisms for penalizing validators.
 
-[Staking](./staking.md) - 公共区块链的权益证明层；
+[Staking](./staking.md) - Implements the proof-of-stake layer for the public blockchain.
 
-<<<<<<< HEAD
-[Upgrade](./staking.md) - 有助于将 Treasurenet 链顺利升级到新的软件版本。
-=======
-[Upgrade](./staking.md) - 有助于将 Treasurenet 链顺利升级到新的软件版本。
-
-> > > > > > > feature/1.0.1
+[Upgrade](./staking.md) - Facilitates the smooth upgrade of the Treasurenet chain to a new software version.

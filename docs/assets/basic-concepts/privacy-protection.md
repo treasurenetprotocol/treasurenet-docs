@@ -2,24 +2,28 @@
 sidebar_position: 5
 ---
 
-# 隐私保护
+# Privacy Protection
 
-## 在 Treasurenet 中，何为私人数据
+## What constitutes private data in Treasurenet
 
-生产者的身份信息，如注册信息、特定资产的特定识别特征，以及行业主管机构颁发的许可证等。
+In Treasurenet, we define some key information of the manufacturers in the real world as private data, such as manufacturer name, address, contact information, specific identification numbers of asset sources, and some licenses issued by the official authorities in real life, etc.
 
-## 为何要保护资产隐私
+This information is essential when the manufacturers join Treasurenet because we need to verify whether the manufacturers truly possess the ability to mine, produce, or even operate assets in real life. This is very important to all users who participate or join the Treasurenet platform. If we do not review the relevant information of the manufacturers, the presence of substandard manufacturers or assets would bring no benefit to the entire platform and all users.
 
-隐私对于 RWAs 的安全至关重要。尽管资产的生产力会被实时记录并审计以铸造`$TAT`，但是披露敏感细节，如地点和实体所有者，可能会引来不必要的麻烦。披露或不披露的决定应由每个生产者自行决定。
+Once the Treasurenet platform has reviewed the information of the manufacturers and confirmed that they and their assets are genuine and safe, this information no longer has any more use for other functions in the platform. Therefore, we define this information as private data.
 
-Treasurenet 基金会鼓励每个生产者遵守其管辖区的所有规定。
+## Why we need to protect this privacy
 
-## 如何保护私人数据
+Privacy matters for the security of RWAs. Although an asset’s productivity is recorded live and audited to mint `$TAT`, disclosing sensitive details, such as location and physical owners, may invite unwanted complications. The decision to disclose, or not, should be made by each Producer.
 
-简单来说，经过审计的 RWAs 可以生成$TAT 的追踪记录，但是观察者无法辨识资产的特定身份信息。
+The Treasurenet Foundation encourages each Producer to adhere to all regulations of its jurisdiction(s).
 
-对于 RWAs 的实体生产者，当实体生产者首次接入时，一些信息会暂时向基金会披露，因为基金会需要进行知悉你的业务（KYB）以确保链上生态系统的最大可靠性。
+## How to protect private data
 
-一旦 KYB 过程完成，这些信息将被删除，任何剩余的信息都将被散列，用于生产者自我管理功能。除非生产者自我披露，否则任何外部观察者都无法识别任何与 Treasurenet 链接的资产。
+Simply put, audited RWAs can generate a track record of `$TAT`, but observers cannot distinguish identifying specifics of the asset.
 
-此后，只有生产者在连接后才知道其自身的资产详细信息。任何审计 RWAs 的智能合约都是在散列信息上操作。
+For physical Producers of RWAs, some information is temporarily disclosed to the Foundation when physical Producers first on-board, because the Foundation needs to perform Know-Your-Business (KYB) to ensure maximum reliability for the on-chain ecosystem.
+
+Once the KYB process is completed, this information will be deleted and any remaining information will be hashed, for Producer self-management functions. No outside observer may identify any Treasurenet linked asset, unless the Producer self-discloses.
+
+Hereafter, only the Producer knows its own asset details after connecting. Any smart contract that audits RWAs is operating on hashed information.

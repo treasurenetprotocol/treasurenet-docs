@@ -1,5 +1,5 @@
-# 生产者的好处
+# Benefits of a Producer
 
-- 连接实物资产生产以赚取 `$TAT` 代币
-- 用 `$TAT` 代币竞标额外的区块奖励
-- 在新的 RWA dApps 中使用 `$TAT` 作为链上信用等更多用途
+- Connect real asset production to earn `$TAT` tokens
+- Bid `$TAT` tokens for extra block rewards
+- Use `$TAT` as on-chain credit and more in new RWA dApps

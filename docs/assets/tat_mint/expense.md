@@ -1,23 +1,22 @@
-# 费用
+# Expense
 
-## 1. 存入保证金
+## 1. Deposit margin
 
-- 点击左侧的 Expense Management 查看每一笔保证金存取的相关信息。
-
-- My Expense Balance：您可以查看您账户的保证金余额。
+- Click Expense Management on the left to view information about each margin access.
+- You can view the margin balance of your account here.
 
 ![Expense_Management](/img/docs/Expense_Management.png)
 
-- 点击‘Deposit’可以存保证金，弹窗中输入想存的保证金额度，点击 Submit 提交；
+- Click 'Deposit' to deposit the deposit, enter the amount of deposit you want to deposit in the pop-up window, click Submit to submit.
 
-- 提交成功后，会显示'Deposit successful'。
+- After successfully submitting 'Deposit successful' will be displayed.
 
 ![Deposit](/img/docs/Deposit.png)
 
-## 2. 提取保证金
+## 2. Withdrawal of deposit
 
-- 点击 Withdraw 可以取出保证金，在弹窗中输入想取出的保证金额度，点击 Submit 提交；
+- Click 'Withdraw' to take out the margin, enter the amount of margin you want to take out in the pop-up window, click 'Submit' to submit.
 
-- 取出成功后，会显示'Withdrawal successful'。
+- 'Withdrawal successful' will be displayed after successful fetching.
 
 ![Withdraw](/img/docs/Withdraw.png)

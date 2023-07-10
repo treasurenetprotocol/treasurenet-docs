@@ -1,20 +1,20 @@
-# 连接指南
+# Connection Guidelines
 
-为了最大限度提高 Treasurenet 真实世界资产生态系统的可靠性，运营链下的实物生产者需要暂时披露一些运营信息进行筛选。
+To maximize reliability of Treasurenet's real-world asset ecosystem, physical Producers that operate off-chain are required to temporarily disclose some operating information for screening.
 
-需要注意的是，实物生产者需要满足硬件要求，安装第三方测量设备以记录资产生产情况。
+It is important to note, physical Producers would have hardware requirements to install 3rd party measuring devices for recording asset production.
 
-数字资产生产者具有本地的链上记录，无需进行筛选。
+Digital asset Producers have native on-chain records and are exempt from screening.
 
-## 实物生产者的一般步骤
+## General Steps for physical Producers
 
-### 初始 KYB 和 KYC
+### Initial KYB and KYC
 
-生产者登录到生产门户，在通过 KYB（业务验证）之后，进行 KYC（个人验证）。只有在通过 KYB 后才能启动 KYC。KYB 和 KYC 都由外部数据服务提供商进行验证。
+Producers log into the Production Portal, first go through KYB (business verification), and then KYC (personal verification). KYC can only be initiated after KYB has been passed. Both KYB and KYC are verified by an external data service provider.
 
-### 初始和定期资产审查
+### Initial and periodic asset review
 
-初始审查标准根据每个特定资产类别的工作流程设置。
-Treasurenet 基金会经理将根据适用的资产工作流程审查提交内容。
+Initial review criteria is set according to the workflow of each specific asset class.
+Treasurenet Foundation Manager will review the submissions according to applicable asset workflows.
 
-定期审查通常为每 1 年一次。如果未完成定期审查，则受影响的资产将无法铸造$TAT。当需要提交更新的文件时，生产者将在生产门户收到提示。
+Periodic review is usually every 1 year. If the periodic review is not completed, the affected assets will not be able to mint $TAT. Producers will receive a prompt in the Production Portal when applicable to submit updated documentations.

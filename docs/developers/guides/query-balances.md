@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# 余额查询
+# Query Balances
 
 ## treasurenetd
 
-安装和配置 Treasurenet 守护程序后，开发人员可以使用 `treasurenetd` 使用以下 CLI 命令查询帐户余额：
+After installing and configuring the Treasurenet daemon, developers can use treasurenetd to query account balances using the following CLI commands:
 
 ```shell
 $ treasurenetd query bank balances $ACCOUNT --count-total=$COUNTTOTAL --height=$HEIGHT --output=$OUTPUT --node=$NODE
@@ -20,15 +20,15 @@ pagination:
   total: "0"
 ```
 
-- $ACCOUNT 是 Treasurenet 的用户账户地址 （例如：treasurenet1.....)
-- (可选) $COUNTTOTAL 要查询的余额的记录总数
-- (可选) $HEIGHT 是要查询状态的特定高度
-- (可选) $OUTPUT 是输出格式
-- $NODE 是请求的 RPC 节点 如果运行有本地节点则可以缺省此参数
+- $ACCOUNT is the user account address of Treasurenet (e.g., treasurenet1 .....
+- (Optional) $COUNTTOTAL is the total number of records for the balance to be queried
+- (Optional) $HEIGHT is the specific height of the status to be queried
+- (Optional) $OUTPUT is the output format
+- $NODE is the requested RPC node This parameter can be defaulted if running with a local node
 
 ## JSON-RPC
 
-开发者可以结合 [curl](https://curl.se/) 使用 [eth_getBalance](https://) JSON-RPC 方法查询 aunit 的账户余额
+Developers can use the `eth_getBalance` JSON-RPC method to query the account balance of a unit (ETH) on the Ethereum blockchain. Using the `curl` command to make the API call
 
 ```shell
 # Request
@@ -39,12 +39,12 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":[`$ETHA
 
 ```
 
-- $ETHADDRESS 是要查询余额的 Ethereum 十六进制地址。 请注意，可以使用 js library 等将 Treasurenet 地址（以 treasurenet1... 开头的地址）转换为 Ethereum 地址。
-- $BLOCK 是块号或块哈希（例如“0x0”）。 此参数的原因是 [EIP-1898](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1898.md)。
+- $ETHADDRESS is the Ethereum hexadecimal address to query for the balance. Note that Treasurenet addresses (starting with treasurenet1...) can be converted to Ethereum addresses using, for example, the js library. addresses starting with treasurenet1...) to Ethereum addresses.
+- $BLOCK is the block number or block hash (e.g. "0x0"). The reason for this parameter is [EIP-1898](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1898.md)。
 
 ## gRPC
 
-开发人员可以使用 [grpcurl](https://) 和 AllBalances 端点按地址查询所有的账户余额：
+Developers can query all account balances by address using the grpcurl command line tool and AllBalances endpoints :
 
 ```shell
 # Request

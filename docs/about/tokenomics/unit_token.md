@@ -1,28 +1,28 @@
-# `$UNIT` 代币
+# `$UNIT` Token
 
-UNIT 是 Treasurenet 的本地代币，在 Treasurenet 网络的基层发行，用于便利基础操作。
+UNIT is the native token of Treasurenet, issued at the base layer of the Treasurenet network to facilitate fundamental operations.
 
-虽然 UNIT 代币的行为与其他 POS 代币相似，但 UNIT 与其他加密货币的不同之处在于，它是由现实世界的努力支持的。每个 UNIT 都是通过验证新块而作为奖励创建的，其速率要求实际生产现实世界的资源。
+Though the UNIT token behaves similarly to other POS tokens, UNIT differs from other cryptocurrencies because it is backed by real-world effort. Every UNIT is created as a reward by verifying new blocks, the rate of which requires the production of real-world resources.
 
-UNIT 代币的发行是由现实世界稀有资产和稀有数字资产的生产速率决定的，符合与商品基础货币类似的机制。这种方法意味着 UNIT 代币铸造数量和生成的现实世界稀有资产量之间有着正相关性。这结果导致了一种基于资产的方法，而不是资产支持的方法。
+The issuance of UNIT tokens is determined by the rate of production of real-world rare assets and rare digital assets, conforming to a mechanism akin to commodity-based currencies. This approach entails a positive correlation between the number of UNIT tokens minted and the volume of real-world rare assets generated. Resulting in an asset-based approach rather than an asset-backed one.
 
-基于资产的另一个好处是，设计上不是金融证券产品。不会有流动性和注册要求，就像金融证券产品一样。并且，稳健的数字货币不应依赖另一家公司对法定利润的承诺，这限制了其可扩展性和覆盖范围。
+An added benefit to asset-based is to not be a financial security product by design. There will be no liquidity and registration requirements as there would be with financial security products. And a sound digital currency should have no reliance on another corporation’s promise of fiat profits, which limits scalability and reach.
 
-UNIT 供应逻辑完全专注于创造新的现实世界资产的自然难度。从设计上，UNIT 旨在最大化流动性，同时受现实世界资产的约束。这种独特的方法使 UNIT 相比其他货币更稳定且有价值，因为其供应直接与稀有资产的生产相连。这种动态为铸造 UNIT 创造了现实世界的成本底线，超越计算费用，包含了新稀有资产的创造。
+UNIT supply logic focuses purely on the natural difficulty of creating new real-world assets. By design, UNIT aims to maximize liquidity while grounded by real-world assets. This distinctive approach makes UNIT a more stable and valuable cryptocurrency compared to others, as its supply is directly tied to the production of rare assets. This dynamic creates a real-world cost floor for minting UNIT, extending beyond computing expenses to encompass the creation of new rare assets.
 
-### 在 Treasurenet 中的多重用途：
+### Multiple purposes within Treasurenet:
 
-**网络经济**
-作为本地代币，UNIT 代币在网络内作为主要的实用性和价值转移机制。它被用于支付交易费用（气费）、质押、治理（DAO）以及在 Treasurenet 上的区块奖励。
+**Network Economics**
+UNIT token being the native token serves as the primary utility and value transfer mechanism within the network. It is used for paying transaction fees(gas fees), staking, governance (DAO), and block rewards on Treasurenet
 
-**网络共识和安全**
-验证节点需要质押 UNIT 代币以参与网络并验证交易。这种质押机制有助于保护网络，并确保验证者为其对网络的贡献赚取以 UNIT 代币形式的奖励。
+**Network Consensus and Security**
+Validators are required to stake UNIT tokens to participate in the network and validate transactions. This staking mechanism helps secure the network and ensures validators earn rewards in the form of UNIT tokens for their contributions to the network
 
-**治理**
-UNIT 代币持有者可以通过对平台开发和运营相关的提案和更新进行投票，参与 Treasurenet 生态系统的治理。
+**Governance**
+UNIT token holders can participate in the governance of the Treasurenet ecosystem by voting on proposals and updates related to the platform's development and operation.
 
-**验证节点选择**
-质押的 UNIT 代币数量在决定 Treasurenet 网络内验证者的选择中起着作用。
+**Validator selection**
+The amount of UNIT tokens staked plays a role in determining the selection of validators within the Treasurenet network.
 
-**质押和奖励**
-验证节点为其对网络的贡献（例如提议和验证区块）赚取以 UNIT 代币形式的奖励。
+**Staking and Reward**
+Validators earn rewards in the form of UNIT tokens for their contributions to the network, such as proposing and validating blocks.

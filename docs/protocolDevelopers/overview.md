@@ -2,84 +2,85 @@
 sidebar_position: 1
 ---
 
-# 介绍
+# Introduction
 
-## 共识机制
+## Consensus Mechanism
 
-Treasurenet 是一个高度可扩展、高吞吐量的区块链，运行在权益证明 (PoS) 共识机制上，并在 Tendermint 核心拜占庭容错共识方法之上使用 Cosmos 软件开发工具包 (SDK) 构建。
+Treasurenet is a highly scalable, high throughput blockchain, operating on the Proof of Stake (PoS) consensus mechanism, and is built using the Cosmos Software Development Kit (SDK) atop the Tendermint core Byzantine fault-tolerant consensus method.
 
-虽然工作证明（PoW）被成功的应用于 BTC 区块链网络之中，但创建 PoS 是为了作为一种强大的替代方案。行业参与者提出，比特币使用的巨量能源对世界的电力系统造成的压力。这使得 PoW 的能源成本难以接受，以至于矿工需要衡量他们的收益与能源消耗之间的平衡。
+While Proof of Work (PoW) has been successfully applied in the Bitcoin blockchain network, the creation of PoS serves as a powerful alternative. Industry participants argue about the enormous energy use of Bitcoin imposing a strain on the world's power systems. The energy cost of PoW became so unacceptable that miners need to weigh their returns against energy consumption.
 
-PoW 要求所有的节点消耗大量的算力来争夺记账权，但在每一轮共识中，只有一个节点的工作量有效，意味着有大量的资源被浪费，因此，权益证明机制 Proof of Stake（PoS）在 2013 年被提出，目的是解决资源浪费的问题。
+PoW requires all nodes to consume a large amount of computing power to compete for bookkeeping rights, but in each round of consensus, only one node's work is effective, meaning a significant amount of resources are wasted. Therefore, the Proof of Stake mechanism (PoS) was proposed in 2013 to solve the problem of resource waste.
 
-在 PoS 共识中，节点争夺记账权依靠的不是算力而是权益（代币）。PoS 同样需要计算哈希值，但与 PoW 不同的是，不需要持续暴力计算寻找 nonce 值，每个节点在每一轮共识中只需要计算一次 Hash，当拥有的权益越多，满足 Hash 目标的机会越大，获得记账权的机会越大。可以说，PoS 是一个资源节省的共识协议。
+In PoS consensus, nodes compete for bookkeeping rights based not on computing power but on stake (tokens). PoS also requires the calculation of hash values, but unlike PoW, there's no need for continuous brute force calculation to find nonce values. Each node only needs to calculate a hash once in each round of consensus. The more stake one holds, the greater the chance of meeting the hash goal, and the greater the chance of obtaining bookkeeping rights. Therefore, PoS is a resource-saving consensus protocol.
 
-## 交易和区块
+## Transactions and Blocks
 
-交易是指由账户发起的改变区块链状态的行为。为了有效地执行状态更改，每笔交易都会广播到整个网络。任何节点都可以广播请求在区块链状态机上执行的交易；发生这种情况后，验证器将验证、执行交易并将产生的状态更改传播到网络的其余部分。
+A transaction refers to the behavior initiated by an account to change the state of the blockchain. To effectively execute state changes, each transaction is broadcast to the entire network. Any node can broadcast transactions that are requested to be executed on the blockchain state machine; once this happens, the validators will verify, execute the transactions and propagate the resulting state changes to the rest of the network.
 
-详情可以参考[这里](./concepts/transactions.md)
+Details can be referred to [here](./concepts/transactions.md)
 
-## 安全性
+## Security
 
-Treasurenet 区块链网络的安全性特征主要包括以下几个方面：
+The security features of the Treasurenet blockchain network mainly include the following aspects:
 
-- **分布式核算**： Treasurenet 区块链网络采用分布式核算方式，每个节点都能够参与计算，且每个节点的计算都是独立的，这样就能够保证数据的安全性和可靠性。
-- **去中心化**： Treasurenet 区块链网络是去中心化的，不需要通过中心化的管理机构来进行管理，因此能够避免中心化管理带来的信任问题和安全问题。
-- **不可篡改性**： Treasurenet 区块链网络中的数据是不可篡改的，一旦数据被写入区块链中，就无法被修改，这样就能够保证数据的安全性和可靠性。
-- **高效性**： Treasurenet 区块链网络具有高效性，可以实现快速的数据传输和交易，避免了传统中心化交易方式带来的延迟和繁琐的操作。
-- **跨链互操作性**： Treasurenet 区块链网络支持跨链互操作性，可以与其他区块链网络进行互操作，这样就能够扩展 Treasurenet 区块链网络的应用范围。
+- **Distributed Accounting:** Treasurenet blockchain network adopts a distributed accounting method, each node can participate in the calculation, and each node's calculation is independent, ensuring the security and reliability of the data.
+- **Decentralization:** Treasurenet blockchain network is decentralized, does not need to be managed by a centralized management institution, thus avoiding trust issues and security problems brought by centralized management.
+- **Immutability:** The data in the Treasurenet blockchain network is immutable. Once data is written into the blockchain, it cannot be modified, ensuring the security and reliability of the data.
+- **Efficiency:** The Treasurenet blockchain network is efficient and can achieve fast data transmission and transactions, avoiding the delay and cumbersome operations brought by traditional centralized transaction methods.
+- **Cross-chain Interoperability:** The Treasurenet blockchain network supports cross-chain interoperability and can interact with other blockchain networks, thus expanding the application range of the Treasurenet blockchain network.
 
-## 智能合约
+## Smart Contracts
 
-Ethereum Smart Contract 是以太坊网络中的一种智能合约，是一种自执行的协议，可以在区块链上实现去中心化的交易和管理资产。智能合约使用了以太坊虚拟机（EVM）来执行合约代码，以太坊虚拟机是一种基于图灵完备的编程语言，可以在分布式环境中执行复杂的计算和智能合约。
+Ethereum Smart Contract is a type of smart contract within the Ethereum network. It is a self-executing protocol that enables decentralized transactions and asset management on the blockchain. Smart Contracts utilize the Ethereum Virtual Machine (EVM) to execute contract code. The EVM is a Turing-complete programming language that enables complex computations and smart contracts to be executed in a distributed environment.
 
-智能合约的核心特点是代码生成和执行的分离，这样就避免了传统合约中需要手动编写大量代码的情况。智能合约可以自动处理协议的履行、管理、以及支付，通过数字化的方式实现去中心化的管理和交易，同时也提供了更加安全的交易机制和无需第三方干预的可信交易环境。
+The core feature of Smart Contracts is the separation of code generation and execution, which avoids the need for manually writing extensive code in traditional contracts. Smart contracts can automatically handle protocol fulfillment, management, and payments, enabling decentralized management and transactions in a digitized manner. They also provide a more secure transaction mechanism and a trusted transaction environment without the need for third-party intervention.
 
-在以太坊网络中，智能合约被广泛应用于各种领域，例如智能合约支持的去中心化交易所、稳定币的发行和管理、自动化的资产管理和交易等等。此外，智能合约还可以用于开发跨平台的应用程序，使不同的区块链之间可以进行互操作。
+In the Ethereum network, Smart Contracts are widely used in various fields, such as decentralized exchanges supported by smart contracts, issuance and management of stablecoins, automated asset management and trading, and more. Additionally, Smart Contracts can be used to develop cross-platform applications, enabling interoperability between different blockchains.
 
-- **去中心化**：智能合约使用分布式系统架构，每个合约都是独立运行的，不需要第三方机构来中介管理。这样就避免了传统中心化交易所存在的数据泄露、交易被篡改等风险。
-- **自动化管理**：区块链网络可以自动管理资产和智能合约，避免了手动编写大量代码的情况。这不仅可以提高效率，还可以减少出错的可能性。
-- **安全性高**：使用了加密技术来保证交易的安全性，避免了传统中心化交易所存在的信任问题。此外，智能合约还可以自动处理交易，避免了人为错误的可能性。
-- **跨平台支持**：智能合约可以在多个区块链上运行，使不同的链之间可以进行互操作。这样就可以实现跨链支付、跨链资产交换等功能，使 Treasurenet 网络更加具有应用价值。
+- **Decentralization:** Smart contracts use a distributed system architecture, where each contract operates independently without the need for intermediaries. This avoids risks such as data breaches and tampering that exist in traditional centralized exchanges.
+- **Automated Management:** Blockchain networks can automatically manage assets and smart contracts, eliminating the need for extensive manual coding. This not only improves efficiency but also reduces the possibility of errors.
+- **High Security:** Encryption technology is used to ensure the security of transactions, mitigating trust issues present in traditional centralized exchanges. Additionally, smart contracts can automatically handle transactions, minimizing the potential for human errors.
+- **Cross-platform Support:** Smart contracts can run on multiple blockchains, enabling interoperability between different chains. This enables functionalities such as cross-chain payments and cross-chain asset exchanges, making the Treasurenet network more valuable.
 
-通过智能合约控制数字资产的能力吸引了大量开发者社区在以太坊虚拟机 (EVM) 上构建去中心化应用程序。该社区不断创建广泛的工具并引入标准，这进一步提高了 EVM 兼容技术的采用率。
+The ability to control digital assets through smart contracts has attracted a large community of developers to build decentralized applications on the Ethereum Virtual Machine (EVM). This community continuously creates a wide range of tools and introduces standards, further enhancing the adoption of EVM-compatible technologies.
 
-无论您是在 Treasurenet 上构建新的用例，还是从另一个基于 EVM 的链（例如以太坊）移植现有的 dApp，您都可以轻松地在 Treasurenet 上构建和部署 EVM 智能合约，以实现您的 dApp 的核心业务逻辑。Treasurenet 与 EVM 完全兼容，因此它允许您使用 EVM 上可用的相同工具（Solidity、Remix、Oracles 等）和应用程序接口（即以太坊 JSON-RPC）。
+Whether you are building new use cases on Treasurenet or porting existing dApps from another EVM-based chain, you can easily develop and deploy EVM smart contracts on Treasurenet to implement the core business logic of your dApp. Treasurenet is fully compatible with the EVM, allowing you to use the same tools (Solidity, Remix, Oracles, etc.) and APIs (such as Ethereum JSON-RPC) available on the EVM.
 
-## 升级和治理：
+## Upgrades and Governance:
 
-### 指导原则和价值观
+### Guiding Principles and Values
 
-#### 1. 渐进式去中心化：
+#### 1. Progressive Decentralization：
 
-Treasurenet 网络皆在网络验证以及治理和财务方面尽可能的去中心化。虽然网络弹性和权力下放至关重要，但我们认识到有必要继续进行战略和基于科学的规划，社区将采取渐进式权力下放的立场。
+Treasurenet network strives for maximum decentralization in terms of network validation, governance, and finance. While network resilience and power distribution are crucial, we recognize the need for strategic and science-based planning, and the community will adopt a stance of progressive power decentralization.
 
-#### 2. 以用户为中心：
+#### 2. User-Centrism：
 
-Treasurenet 区块链网络致力于在 Cosmos 生态系统中提供独特且优秀的 EVM 体验。因此，我们必须继续优化
+Treasurenet Blockchain Network is dedicated to providing a unique and exceptional EVM experience within the Cosmos ecosystem. Therefore, we must continue to optimize:
 
-1. 用户采用
-2. 有助于稳定增长的品质：
-   - 网络流动性
-   - 用户体验的改善
-   - 数据主权
-   - 区块的稳定生产
-   - 教育资源
-   - 强有力的治理等。
+1. user adoption
+2. Quality factors that contribute to stable growth:
 
-#### 3. 共识协作
+- Network liquidity
+- Improvement of user experience
+- Data sovereignty
+- Stable block production
+- Educational resources
+- Robust governance, and more.
 
-虽然 Cosmos SDK 的治理实现相对无需许可，但这并不意味着任何人都有权工作或获得报酬。提案将由社区单独根据其优点进行评估，并最终进行表决。此外，提案必须遵循 Treasurenet 网络的治理框架，并遵守章程中概述的原则。
+#### 3. Consensusual Collaboration
 
-### 升级
+While the governance implementation of the Cosmos SDK is relatively permissionless, it does not imply that anyone has the right to work or receive compensation. Proposals will be evaluated by the community based on their merits and subjected to voting. Additionally, proposals must adhere to the governance framework of the Treasurenet network and comply with the principles outlined in the charter.
 
-#### 计划中的升级
+### Upgrades
 
-计划的升级是通过使用升级模块逻辑进行协调的定期升级。这有助于顺利地将 Treasurenet 升级到新的（突破性）软件版本，因为它可以自动处理新版本的状态迁移。
+#### Planned Upgrades
 
-#### 非预计升级
+Planned upgrades are coordinated scheduled upgrades that use the upgrade module logic. This facilitates smoothly upgrading Treasurenet to a new (breaking) software version as it automatically handles the state migration for the new release.
 
-非预计升级是指所有验证者需要在处理过程中的完全相同点优雅地暂停并关闭他们的节点。这可以通过在运行 treasurenetd 启动命令时设置 --halt-height 标志来完成。
+#### Unplanned Upgrades
 
-如果在非预计升级期间出现破坏性变化（见下文），验证者将需要在重新启动他们的节点之前迁移状态和初始数据。
+Unplanned upgrades are upgrades where all the validators need to gracefully halt and shut down their nodes at exactly the same point in the process. This can be done by setting the --halt-height flag when running the treasurenetd start command.
+
+If there are breaking changes during an unplanned upgrade (see below), validators will need to migrate the state and genesis before restarting their nodes.

@@ -2,19 +2,19 @@
 sidebar_position: 1
 ---
 
-# 地址转换器
+# Address converter
 
-一个简单的以太坊（ETH）、COSMOS 和 Treasurenet 地址之间的转换器。
+A simple converter between ETH,COSMOS and Treasurenet address.
 
-### 安装方法
+### Installation
 
 ```shell
     npm install @treasurenet/address-converter
 ```
 
-### 使用方法
+### Usage
 
-#### 转换器 (Converter)
+#### Converter
 
 ```javascript
 import {
@@ -39,7 +39,7 @@ let address = cosmosToEth("cosmos1uttpuj0l32whynx9f5ecmqrklpu2c6m37sldk9");
 // "0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71"
 ```
 
-#### 解码器
+#### Decoders
 
 ```javascript
 import { ETH, TREASURENET, COSMOS } from "@treasurenet/address-converter";
@@ -54,7 +54,7 @@ hex = COSMOS.decoder("cosmos1uttpuj0l32whynx9f5ecmqrklpu2c6m37sldk9");
 // hex.toString('hex') === "e2d61e49ff8a9d724cc54d338d8076f878ac6b71"
 ```
 
-#### 编码器
+#### Encoders
 
 ```javascript
 import { ETH, TREASURENET, COSMOS } from "@treasurenet/address-converter";

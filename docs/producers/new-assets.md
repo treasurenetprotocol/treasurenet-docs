@@ -2,39 +2,39 @@
 sidebar_position: 3
 ---
 
-# 新资产注册
+# New Asset Registration
 
-Treasurenet 欢迎任何有价值的资产加入我们 并产生相应的 TAT 代币。
+Treasurenet welcomes any valuable assets to join us and generate corresponding TAT Tokens.
 
-为了保证和现有的资产相对平衡，我们约定铸造的 TAT 需要满足 1TAT=1US dollar 的价值标的，只要满足这样的价值锚定，你可以把任何资产加入到 Treasurenet 项目中来。
+To ensure a relative balance with existing assets, we agree that the minted TAT needs to meet a value target of 1TAT=1US dollar. As long as this value anchor is met, you can add any assets to the Treasurenet project.
 
-那么如何让新的资产加入到 Treasurenet 中来呢？
+So how do you bring new assets into Treasurenet?
 
-首先，您需要为新的资产撰写合约（合约群） 合约主要包含两个部分
+Firstly, you need to draft contracts (group of contracts) for the new assets. These primarily comprise two parts:
 
-- 生产商资料处理合约（Producer Contract) [->合约编写说明](https://)
-- 产量处理及存储合约 （Production Data Contract) [->合约编写说明](https://)
+- Producer Information Processing Contract (Producer Contract) ->Contract Writing Instructions
+- Production Data Processing and Storage Contract (Production Data Contract) ->Contract Writing Instructions
 
-然后，您需要为新的资产而改动现有的 Oracle 模块[github](https://)，来向合约系统提供可信数据源的验证数据 , 改动之后您需要联系 github 上的工作人员将其作为新的分支，加入到代码库中。
+Next, you need to modify the existing Oracle module github for the new asset, providing the contract system with verification data from a trustworthy data source. After making the changes, you need to contact the staff on github to add it as a new branch to the code library.
 
-第三步，您需要提供一个完整的供生产商使用的工具或者一种方法的介绍说明，来让其他与您一样拥有此类资产的生产商们更加方便的加入进来。
+Thirdly, you need to provide a complete tool or a method for producers to use, allowing other producers who own the same type of assets as you to join more easily.
 
-接着，您就可以来到我们的服务平台 发起新资源的加入提案。
+Then, you can come to our service platform to propose the addition of new resources.
 
-为了让大家更了解您提案中所希望加入的新资源，您需要在提案中至少包含以下的内容：
+To allow everyone to better understand the new resource you wish to add in your proposal, you need to include at least the following content in the proposal:
 
-1. 名称、描述
-2. 业务逻辑、资源价值的介绍(即证明为什么这个资源是有价值的)
-3. 新合约 github 源码地址 合约逻辑的详细描述
-4. 新合约的安全性证明(比如通过了审计)
-5. Oracle 的模块新分支 及 相关说明(需要说明为什么新资源的验证数据是可信且有效的)
-6. 生产商工具(或者资源加入的方法) 以及 详细说明
-7. 联系方式 社交方式 用于反馈信息和交流
+1. Name, description
+2. Business logic, introduction of resource value (i.e., prove why this resource is valuable)
+3. New contract github source code address and detailed description of contract logic
+4. Security proof of the new contract (such as passing an audit)
+5. New branch of Oracle's module and related explanations (need to explain why the verification data of the new resource is trustworthy and effective)
+6. Producer tools (or methods for adding resources) and detailed instructions
+7. Contact information, social ways for feedback, and communication
 
-我们强烈建议您提供尽可能多的额外信息，来让更多的人了解您和您想要加入的资产，这将非常有助于该提案尽快的顺利通过治理投票。
+We strongly suggest you provide as much additional information as possible to let more people know about you and the assets you want to add. This will greatly help the proposal pass the governance vote as soon as possible.
 
-在您的提案通过之后 Treasurenet Foundation 将会和您取得联系，并和您协作完成后续的操作。
+After your proposal is approved, the Treasurenet Foundation will get in touch with you and cooperate with you to complete the subsequent operations.
 
-除此之外，我们也建议您能够提供一个拥有便利功能的网站，这将有利于生产商的日常操作，包括提供数据、查询、历史信息等等。因为并非所有的生产商都具备一定的技术实力。网站数据的获取可以通过事件监听方式和查询操作实现，更多内容可以通过 API 查询。
+In addition, we also recommend that you provide a website with convenient features, which will be beneficial for producers' daily operations, including providing data, queries, historical information, etc. Not all producers possess certain technical capabilities. Website data can be obtained through event listening and query operations. More content can be queried through API.
 
-**当然，如果您不具备足够的开发实力，仍愿意加入我们，可以考虑通过 Dapp 的孵化计划来实现。 关于 Dapp 的孵化计划的更多信息可以点击[这里](https://)**
+**Of course, if you don't have sufficient development capabilities but still wish to join us, you can consider achieving this through the Dapp incubation program. For more information on the Dapp incubation program, click here for more information.**

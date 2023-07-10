@@ -2,44 +2,44 @@
 sidebar_position: 1
 ---
 
-# 生产商
+# Producers
 
-## 定义
+## What is a Producer
 
-生产商是现实世界中的经济贡献者，他们为 Treasurenet 提供物理或数字资产的生产记录以供审计并在链上记录。
+Producers are real world economic contributors, providing physical or digital assets production records to Treasurenet to be audited and recorded on-chain.
 
-例如，生产商可以是生产物理产品的大宗商品公司；也可以是稀缺加密货币的“矿工”。
+For example, a Producer can be a bulk commodity company that produces physical products; it can also be a "miner" of scarce cryptocurrency.
 
-实际上，任何由硬件可以量化并具有可观察市场价格的现实世界资产都可能符合资格。
+In fact, any real-world asset that is quantifiable by hardware and has observable market price may qualify.
 
-## 成为生产商的好处
+## Benefits of a Producer
 
-- 将实际资产生产连接以赚取 `$TAT` 代币
-- 出价 `$TAT` 代币以获取额外的区块奖励
-- 在新的 RWA dApps 中使用 `$TAT` 作为链上信用和更多
+- Connect real asset production to earn TAT tokens
+- Bid TAT tokens for extra block rewards
+- Use TAT as on-chain credit and more in new RWA dApps
 
-## 生产数据
+## Production Data
 
-生产数据是指生产者提供的物理或数字资产的输出。
+Production Data refers to the output of physical or digital assets provided by the Producer.
 
-1. 生产者提供资产的实际产出
-2. Treasurenet 获取生产资产的公开市场价格
-3. Treasurenet 模块进行去中心化的产出审计
+1. Producer provides the real output of assets
+2. Treasurenet obtains the public market price of assets produced
+3. Treasurenet modules conduct decentralized output auditing
 
-通过审计后，将铸造相应于生产资产价值的 `$TAT`。
+After passing the audit, TAT will be minted corresponding to the value of assets produced.
 
-## 如何成为生产商
+## How to be a Producer
 
-Treasurenet 正在构建，并正在努力实现各种资产连接以获取 RWA 生产的匿名审计记录的标准化过程。
+Treasurenet is building and is working towards a standardized process for various assets to connect to obtain anonymously audited records of RWA production.
 
-与此同时，请通过 contact@treasurenet.org 与 Treasurenet 基金会联系进行 RWA 登记。
+In the meantime, please connect with Treasurenet Foundation at contact@treasurenet.org for RWA onboarding.
 
-## 先驱生产者
+## Pilot Producers
 
-### 物理资产：天然气和石油
+### Physical assets: Natural Gas & Oil
 
-天然气和石油是引入 TN 概念的初始选择：稀有资产确定货币供应。这些资产可以在封闭环境中使用现场硬件进行一致性和客观性的监控。
+Natural gas and oil are the initial choices for introducing the TN concept: rare assets to determine currency supply. These assets can be monitored consistently and objectively using on-site hardware in enclosed environments.
 
-### 数字资产：BTC & ETH Classic
+### Digital assets: BTC & ETH Classic
 
-比特币和已建立的网络体现了稀有资产的数字化概念。TN 网关连接到 BTC 网络，因此生产稀有数字资产也将推动 Treasurenet 货币供应。
+Bitcoin and established networks embody the concept of rare assets, digitally. TN Gateway connects to the BTC network, so producing rare digital assets would also drive the Treasurenet currency supply.

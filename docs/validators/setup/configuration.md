@@ -4,13 +4,7 @@ sidebar_position: 2
 
 # Configuration
 
-<<<<<<< HEAD
-Treasurenet 的配置文件在`$HOME/.treasurenetd/config/config.toml`，这其中的一些参数可以通过 treasurenetd config
-
-=======
-Treasurenet 的配置文件在`$HOME/.treasurenetd/config/config.toml`，这其中的一些参数可以通过 treasurenetd config
-
-> > > > > > > feature/1.0.1
+The configuration file for Treasurenet can be found at the path `$HOME/.treasurenetd/config/config.toml`. Certain parameters can be accessed through the treasurenetd config.
 
 ```shell
 treasurenetd config <key> [value]
@@ -424,21 +418,11 @@ max_open_connections = 3
 namespace = "tendermint"
 ```
 
-<<<<<<< HEAD
-
-## Empty blocks VS no empty blocks
-
-### create_empty_blocks = true
-
-# If create_empty_blocks is set to true in your config, blocks will be created ~ every second (with default consensus parameters). You can regulate the delay between blocks by changing the timeout_commit.
-
 ## Empty blocks VS no empty blocks
 
 ### create_empty_blocks = true
 
 If create_empty_blocks is set to true in your config, blocks will be created ~ every second (with default consensus parameters). You can regulate the delay between blocks by changing the timeout_commit.
-
-> > > > > > > feature/1.0.1
 
 E.g. timeout_commit = "10s" should result in ~ 10 second blocks.
 
@@ -446,25 +430,11 @@ create_empty_blocks = false
 
 In this setting, blocks are created when transactions received.
 
-<<<<<<< HEAD
 Note after the block H, Treasurenet creates something we call a "proof block" (only if the application hash changed) H+1. The reason for this is to support proofs. If you have a transaction in block H that changes the state to X, the new application hash will only be included in block H+1.
-=======
-Note after the block H, Treasurenet creates something we call a "proof block" (only if the application hash changed) H+1. The reason for this is to support proofs. If you have a transaction in block H that changes the state to X, the new application hash will only be included in block H+1.
-
-> > > > > > > feature/1.0.1
 
 If after your transaction is committed, you want to get a lite-client proof for the new state (X), you need the new block to be committed in order to do that because the new block has the new application hash for the state X.
 
 That's why we make a new (empty) block if the application hash changes. Otherwise, you won't be able to make a proof for the new state.
-
-<<<<<<< HEAD
-Plus, if you set create_empty_blocks_interval to something other than the default (0), Treasurenet will be creating empty blocks even in the absence of transactions every create_empty_blocks_interval.
-
-For instance, with create_empty_blocks = false and create_empty_blocks_interval = "30s", Treasurenet will only create blocks if there are transactions, or after waiting 30 seconds without receiving any transactions.
-
-## Peers
-
-# In `$HOME/.treasurenetd/config/config.toml` you can set your peers.
 
 Plus, if you set create_empty_blocks_interval to something other than the default (0), Treasurenet will be creating empty blocks even in the absence of transactions every create_empty_blocks_interval.
 
@@ -474,25 +444,16 @@ For instance, with create_empty_blocks = false and create_empty_blocks_interval 
 
 In `$HOME/.treasurenetd/config/config.toml` you can set your peers.
 
-> > > > > > > feature/1.0.1
-
-添加持久对等节点，可以参考[加入主网](../join-mainnet.md),该字段类似于逗号分隔对等点字符(仅作为参考)
+Add persistent peer nodes, you can refer to [join the main network](../join-mainnet.md),the field is similar to comma separated peer characters (for reference only)
 
 ```shell
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = "a07fb95efc5b7ba7492b6c69feec977ccbe6db8e@node0.testnet.treasurenet.io:26656,349186678a0a7976f4ffcd56ce3be1da7622ce09@node1.testnet.treasurenet.io:26656,238fd2f4a698ccd48a5084ebf686df1777f8087b@node2.testnet.treasurenet.io:26656"
 ```
 
-<<<<<<< HEAD
-
 ## Sharing your Peer
 
-=======
-
-## Sharing your Peer
-
-> > > > > > > feature/1.0.1
-> > > > > > > You can see and share your peer with the tendermint show-node-id command
+You can see and share your peer with the tendermint show-node-id command
 
 ```shell
 treasurenetd tendermint show-node-id
@@ -501,11 +462,5 @@ treasurenetd tendermint show-address --home /data/mytestnet/.treasurenetd/
 treasurenetvalcons1s5kh480rtyaj8a4cw4uj2kr5u857c575wh7ytv
 ```
 
-<<<<<<< HEAD
-
 - Peer Format: node-id@ip:port
-- # Example: `f5aff6fc4837935c0d8188e2c0044ffd4ece06d3@node0.testnet.treasurenet.io:26656`
-
-* Peer Format: node-id@ip:port
-* Example: `f5aff6fc4837935c0d8188e2c0044ffd4ece06d3@node0.testnet.treasurenet.io:26656`
-  > > > > > > > feature/1.0.1
+- Example: `f5aff6fc4837935c0d8188e2c0044ffd4ece06d3@node0.testnet.treasurenet.io:26656`

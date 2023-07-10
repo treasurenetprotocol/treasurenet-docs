@@ -1,105 +1,103 @@
-# 代币经济模型
+# Tokenomics
 
-`$UNIT` 代币的总供应量是有限的，但具体的上限将会根据未来稀有资产的生产情况而有所变化。这是因为 Treasurenet 区块奖励会随着时间的推移而减少。生产者们共同合作，创建 RWAs (真实世界资产)，以防止 `$UNIT` 区块奖励快速衰减。而 BTC 是每个周期减少 50%， `$UNIT` 奖励的减少速度是基于 `$TAT` 的铸造量，也就是所产生的资产。
+The total supply of `$UNIT` tokens is finite, but the exact limit will vary depending on the future production of rare assets. This is because Treasurenet block rewards reduce over time. Producers work together to create RWAs to prevent `$UNIT` block rewards from decaying quickly. Whereas BTC reduces by 50% per period, `$UNIT` rewards reduce at a rate based on $`$TAT` minted, hence asset produced.
 
-## `$UNIT` 代币
+## `$UNIT` Token
 
-`$UNIT` 是 Treasurenet 的原生代币，它在 Treasurenet 网络的基础层面发行，用于促进基本操作。
+UNIT is the native token of Treasurenet, issued at the base layer of the Treasurenet network to facili`$TAT`e fundamental operations.
 
-尽管 `$UNIT` 代币的行为类似于其他 POS 代币，但 `$UNIT` 与其他加密货币的不同之处在于，它是由真实世界的努力所支持的。每个 `$UNIT` 都是通过验证新区块而作为奖励创建的，其速率需要真实世界资源的生产。
+Though the UNIT token behaves similarly to other POS tokens, UNIT differs from other cryptocurrencies because it is backed by real-world effort. Every UNIT is created as a reward by verifying new blocks, the rate of which requires the production of real-world resources.
 
-`$UNIT` 代币的发行量是由真实世界稀有资产和稀有数字资产的生产速度来决定的，符合类似于商品货币的机制。这种方法导致 `$UNIT` 代币的铸造数量和真实世界稀有资产产量之间存在正相关关系。从而形成了基于资产的方式，而不是基于资产支持的方式。
+The issuance of UNIT tokens is determined by the rate of production of real-world rare assets and rare digital assets, conforming to a mechanism akin to commodity-based currencies. This approach entails a positive correlation between the number of UNIT tokens minted and the volume of real-world rare assets generated. Resulting in an asset-based approach rather than an asset-backed one.
 
-基于资产的额外好处是，从设计上就不是金融证券产品。因此不需要流动性和注册要求，就像金融证券产品那样。健全的数字货币不应该依赖其他公司对法定利润的承诺，因为这会限制扩展性和覆盖范围。
+An added benefit to asset-based is to not be a financial security product by design. There will be no liquidity and registration requirements as there would be with financial security products. And a sound digital currency should have no reliance on another corporation’s promise of fiat profits, which limits scalability and reach.
 
-`$UNIT` 供应逻辑完全专注于创建新的真实世界资产的自然难度。从设计上，UNIT 旨在最大化流动性，同时由真实世界资产所支撑。这种独特的方法使 `$UNIT` 成为比其他加密货币更稳定和有价值的货币，因为其供应量直接与稀有资产的生产量相联系。这种动态为铸造 `$UNIT` 创造了一个真实世界成本的底线，超越了计算费用，涵盖了新的稀有资产的创造。
+UNIT supply logic focuses purely on the natural difficulty of creating new real-world assets. By design, UNIT aims to maximize liquidity while grounded by real-world assets. This distinctive approach makes UNIT a more stable and valuable cryptocurrency compared to others, as its supply is directly tied to the production of rare assets. This dynamic creates a real-world cost floor for minting UNIT, extending beyond computing expenses to encompass the creation of new rare assets.
 
-## 在 Treasurenet 中有多种用途
+### Multiple purposes within Treasurenet:
 
-### 网络经济学
+**Network Economics**
+UNIT token being the native token serves as the primary utility and value transfer mechanism within the network. It is used for paying transaction fees(gas fees), staking, governance (DAO), and block rewards on Treasurenet
 
-作为原生代币的 `$UNIT` 代币在网络中作为主要的效用和价值转移机制。它用于支付交易费用（Gas 费），质押，治理（DAO），以及在 Treasurenet 上的区块奖励。
+**Network Consensus and Security**
+Validators are required to stake UNIT tokens to participate in the network and validate transactions. This staking mechanism helps secure the network and ensures validators earn rewards in the form of UNIT tokens for their contributions to the network
 
-### 网络共识和安全
+**Governance**
+UNIT token holders can participate in the governance of the Treasurenet ecosystem by voting on proposals and updates related to the platform's development and operation.
 
-验证者需要质押 `$UNIT` 代币以参与网络并验证交易。这种质押机制有助于保护网络，并确保验证者以 `$UNIT` 代币的形式获得对网络贡献的奖励。
+**Validator selection**
+The amount of UNIT tokens staked plays a role in determining the selection of validators within the Treasurenet network.
 
-### 治理
+**Staking and Reward**
+Validators earn rewards in the form of UNIT tokens for their contributions to the network, such as proposing and validating blocks.
 
-`$UNIT` 代币持有者可以通过对平台发展和运营相关的提案和更新进行投票，参与 Treasurenet 生态系统的治理。
+## `$TAT` Token
 
-### 验证者的选择
+`$TAT` serves as the accounting token for representing real-world asset productivity on Treasurenet. `$TAT` serves as a represen`$TAT`ion of the credibility of each Producer, with its utility derived from the underlying asset(s) it records. The purpose of the `$TAT` is to document and verify the legitimacy of the Treasurenet economy.
 
-质押的 `$UNIT` 代币数量在决定 Treasurenet 网络中验证者的选择中起到了作用。
+On-chain proof of creditworthiness:
+`$TAT` tokens serve as an on-chain proof of creditworthiness for Producers in a decentralized and anonymous manner. `$TAT` can be used to transparently price asset financing. This is because `$TAT` tokens track the production of assets by the Producer, which shows that the Producer has an underlying asset and whether this asset is economical.
 
-### 质押和奖励
+Collateralization:
+`$TAT` tokens can be used as collateral for financing activities on the Treasurenet platform. This means that users can use their `$TAT` tokens for financing, without having to sell their real-world assets. On their own, `$TAT` tokens signal a commitment to a financing pool, and the same asset (or portion of the asset) cannot be double-committed elsewhere.
 
-验证者通过对网络的贡献，如提议和验证区块，获得以 `$UNIT` 代币形式的奖励。
+The Treasurenet DAO is also looking to set up real-world legal structures to claim real-world collateral. This means that if a user defaults on a loan, the Treasurenet DAO will be able to seize their real-world assets. This makes the `$TAT` collateralization system more secure, as it provides lenders with a way to recover their money if a borrower defaults.
 
-## `$TAT` 代币
+Although this type of legal structuring is common practice in legacy markets, combining real-world recourse with on-chain creditworthiness allows for radically transparent financing that is not possible without `$TAT` and Treasurenet’s decentralized audit framework.
 
-TAT 作为在 Treasurenet 上表示真实世界资产生产力的记账代币。TAT 是每个生产者信誉的代表，其效用源于其记录的底层资产。TAT 的目的是记录和验证 Treasurenet 经济的合法性。
+Asset-specific indexing:
+Producers who are connected to the TN Gateway can mint `$TAT` tokens on a regular basis. The rate at which `$TAT` tokens are minted depends on the type of asset that is being produced. This means that the cumulative represen`$TAT`ive value of an asset class can be tracked by looking at the number of `$TAT` tokens that have been minted for that asset class. This information can be used to make financial decisions, such as deciding which asset classes to invest in. It is worth noting that the option to make this asset information public is in the hands of the Producers.
 
-### 链上信用证明
+## General Supply Framework
 
-TAT 代币为生产者提供了一种去中心化且匿名的链上信用证明。TAT 可用于透明地定价资产融资。这是因为 TAT 代币跟踪了生产者的资产生产情况，这显示了生产者有底层资产，并且这个资产是否有经济效益。
+### Step 1: How many `$UNIT` tokens?
 
-### 抵押
+First, Treasurenet compares the actual RWA production rate amount against a Target Rate set by the DAO Governance module.
 
-TAT 代币可以在 Treasurenet 平台上用作融资活动的抵押。这意味着用户可以使用他们的 TAT 代币进行融资，而不需要卖掉他们的真实世界资产。就其本身而言，TAT 代币表明了对融资池的承诺，同一资产（或资产的一部分）不能在其他地方被重复承诺。
+How does actual real-world asset production rate stand against Target Rate?
+Reduce block reward based on the difference between actual rate and Target Rate.
 
-Treasurenet DAO 也在寻找建立真实世界法律结构以索取真实世界的抵押品。这意味着如果用户违约，Treasurenet DAO 将能够夺取他们的真实世界资产。这使得 TAT 抵押系统更加安全，因为它为借款人违约时的贷款人提供了一个恢复他们资金的方式。
+Subsequently, there would be 3 general scenarios:
 
-虽然这种法律结构在传统市场上是常见的做法，但是将真实世界的追索权与链上的信用证明结合起来，使得极端透明的融资成为可能，这在没有 TAT 和 Treasurenet 的去中心化审计框架的情况下是无法实现的。
+Fails to meet Target Rate - block reward reduced by 10% to 50%, depending on the magnitude of the difference
+Meets Target Rate - block reward reduced by 10%
+Surpasses the Target Rate - block reward reduced by 1% to 10%, depending on the magnitude of the difference
+Total supply:
 
-针对资产的索引：
-与 TN 网关连接的生产者可以定期铸造 TAT 代币。铸造 TAT 代币的速度取决于正在生产的资产类型。这意味着可以通过查看为该资产类别铸造的 TAT 代币数量，来追踪一个资产类别的累计代表价值。这些信息可以用来做出金融决策，例如决定投资哪些资产类别。值得注意的是，使这些资产信息公开的选项在生产者手中。
+UNIT token supply may likely be between 700 million to 800 million.
 
-## 供应框架
+This estimate is based on the following highlighted assumptions. However, it is vital to understand that the actual amount of future RWA production will determine the outcome. Specifically, more RWA production will lead to higher UNIT supply, and vice versa.
 
-### 步骤 1：有多少 `$UNIT` 代币？
+| Key Assumptions                                | Value                  | Description                                                                                            |
+| ---------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------ |
+| Period                                         | 30,000,000 blocks      | Each period is ~ 1-year                                                                                |
+| Initial block reward                           | 10 UNIT/block          | For the initial 2 periods, block reward maintains constant, giving time for the RWA ecosystem to build |
+| Target Rate (for RWA production)               | 10%                    | Default Target Rate for periodic RWA production growth rate                                            |
+| Maximum block reward reduction                 | 50%                    | Lower edge case; if 0 RWA is produced, block reward aggressively reduces by 50%                        |
+| Minimum block reward reduction                 | 1%                     | Upper edge case; if the RWA growth rate is more than 1,000%, block reward reduces just 1%              |
+| Default block reward reduction                 | 10%                    | Default reduce; if RWA growth rate equals Target Rate, block reward reduces by 10%                     |
+| Future RWA production growth rate distribution | PERT [-50%, 15%, 500%] | It is difficult to forecast the RWA production growth rate,                                            |
 
-首先，Treasurenet 将实际的 RWA 生产率与 DAO 治理模块设定的目标率进行比较。
+We assume the first 3 periods’ growth rate to be 500%, as we develop more RWA connections.
 
-- 实际的真实世界资产生产率与目标率相比如何？
-- 根据实际率和目标率之间的差异降低区块奖励。
+Then, the steady-s`$TAT`e growth rate be modeled as a PERT Distribution,
+defined by - 50% as the low expected rate, 15% as the expected rate, and 500% as the maximum expected rate.
 
-然后，会有三个一般的情况：
+When simulated for 500 periods, UNIT supply may resemble this following distribution. For complete details, please stay tuned for the further releases.
 
-1. 未达到目标率 - 根据差距的大小，区块奖励减少 10%至 50%
-2. 达到目标率 - 区块奖励减少 10%
-3. 超过目标率 - 根据差距的大小，区块奖励减少 1%至 10%
+    ![Expected_supply](/img/docs/expected_supply.png)
 
-总供应量：
+### Step 2: Who earns `$UNIT`?
 
-`$UNIT` 代币的供应量可能在 7 亿到 8 亿之间。
+After determining the total block reward, each block reward is awarded to Active Validator nodes and Active Super Validator nodes.
 
-这个估计基于以下突出的假设。然而，需要理解的重要的是，未来 RWA 生产的实际数量将决定结果。具体来说，更多的 RWA 生产将导致更高的 `$UNIT` 供应量，反之亦然。
+|        | Active Validator node | Active Super Validator node                 |
+| ------ | --------------------- | ------------------------------------------- |
+| Apple  | Red                   | USA                                         |
+| Action | Stakes `$UNIT`        | -Stakes `$UNIT` -Bids `$TAT` (burns `$TAT`) |
+| Reward | Base Rewards          | Base Rewards; Super Validator Rewards       |
 
-| 关键假设                | 价值                   | 描述                                                                                                    |
-| :---------------------- | :--------------------- | :------------------------------------------------------------------------------------------------------ |
-| 周期                    | 30,000,000 区块        | 每个周期约为 1 年                                                                                       |
-| 初始区块奖励            | 10 `$UNIT`/区块        | 对于最初的 2 个周期，区块奖励保持不变，以便为 RWA 生态系统的建立留出时间                                |
-| 目标率（对于 RWA 生产） | 10%                    | 周期性 RWA 生产增长率的默认目标率                                                                       |
-| 最大区块奖励减少        | 50%                    | 下限情况；如果没有产生 RWA，区块奖励将大幅减少 50%                                                      |
-| 最小区块奖励减少        | 1%                     | 上限情况；如果 RWA 增长率超过 1,000%，区块奖励只减少 1%                                                 |
-| 默认区块奖励减少        | 10%                    | 默认减少；如果 RWA 增长率等于目标率，区块奖励减少 10%                                                   |
-| 未来 RWA 生产增长率分布 | PERT [-50%, 15%, 500%] | 预测 RWA 生产增长率的概率分布；最有可能是目标率（15%）；最好情况下是 500%的增长；最坏情况下是 50%的衰退 |
+`$UNIT` holders can stake `$UNIT` into any of the nodes to share in proportional Base Rewards. $`$TAT` holders can bid $`$TAT` as well to share in proportional Super Validator Rewards, which is the Bonus Stake described in Core Concepts.
 
-当模拟 500 个周期时，UNIT 供应可能呈现以下分布。有关完整的详情，请随时关注后续发布。
-
-![Expected_supply](/img/docs/expected_supply.png)
-
-### 第二步：谁获得`$UNIT`？
-
-在确定总块奖励后，每个块奖励将授予活跃验证者节点和活跃超级验证者节点。
-
-|      | 活跃验证者节点 | 活跃超级验证者节点                    |
-| :--- | :------------- | :------------------------------------ |
-| 操作 | 质押`$UNIT`    | 质押`$UNIT`；竞标`$TAT`（烧掉`$TAT`） |
-| 奖励 | 基础奖励       | 基础奖励；超级验证者奖励              |
-
-`$UNIT` 持有者可以将 `$UNIT`质押到任何节点，以按比例分享基础奖励。`$TAT` 持有者也可以竞标`$TAT`，以按比例分享超级验证者奖励，这是核心概念中描述的奖励质押。
-
-从长远来看，我们预计超级验证者奖励占据大约 30%的块奖励。
-超级验证者奖励的规模取决于节点之间 `$TAT` 竞标的竞争程度，以及超级验证者的数量。详细信息将在未来版本中进一步描述。
+In the long run, we estimate Super Validator Rewards make up for about ~30% of the block rewards.
+The magnitude of Super Validator Rewards varies based on how competitive the $`$TAT` bids are between nodes, and based on how many Super Validators are there. Details to be further described in future release.

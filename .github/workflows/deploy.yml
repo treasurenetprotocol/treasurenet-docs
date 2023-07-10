@@ -3,7 +3,7 @@ name: Docusaurus Deploy
 on:
   push:
     branches:
-      - feature/1.0.1
+      - feature/1.0.2
 
 jobs:
   build:

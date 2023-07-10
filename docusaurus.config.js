@@ -18,7 +18,7 @@ const config = {
     projectName: 'treasurenetDoc',
 
     i18n: {
-        defaultLocale: 'zh-Hans',
+        defaultLocale: 'en',
         locales: ['en', 'zh-Hans'],
     },
 
@@ -42,7 +42,7 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl: ({locale, docPath}) => {
-                        if (locale === 'zh-Hans') {
+                        if (locale === 'en') {
                             return `https://github.com/treasurenetprotocol/docs/blob/feature/1.0.1/docs/${docPath}`
                         } else {
                             return `https://github.com/treasurenetprotocol/docs/blob/feature/1.0.1/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`
@@ -102,7 +102,7 @@ const config = {
                         type: 'doc',
                         docId: 'about/introduction',
                         position: 'left',
-                        label: '指南',
+                        label: 'Guide',
                     },
                     /*{
                         type: 'doc',
@@ -126,10 +126,10 @@ const config = {
                 style: 'light',
                 links: [
                     {
-                        title: '文档',
+                        title: 'Docs',
                         items: [
                             {
-                                label: '指南',
+                                label: 'Guide',
                                 to: '/docs/about/introduction',
                             },
                             /*{
@@ -139,7 +139,7 @@ const config = {
                         ],
                     },
                     {
-                        title: '产品',
+                        title: 'Products',
                         items: [
                             {
                                 label: 'Treasurenet',
@@ -150,17 +150,17 @@ const config = {
                                 href: 'https://faucet.treasurenet.io',
                             },
                             {
-                                label: 'Producer 认证',
+                                label: 'Producer Cert',
                                 href: 'https://mplatform.treasurenet.io',
                             },
                             {
-                                label: '服务平台',
+                                label: 'Service Platform',
                                 href: 'https://splatform.treasurenet.io',
                             },
                         ],
                     },
                     {
-                        title: '社交',
+                        title: 'Community',
                         items: [
                             {
                                 label: 'Stack Overflow',
@@ -181,7 +181,7 @@ const config = {
                         ],
                     },
                     {
-                        title: '其他',
+                        title: 'Others',
                         items: [
                             {
                                 label: 'Blog',

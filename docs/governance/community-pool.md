@@ -2,39 +2,39 @@
 sidebar_position: 4
 ---
 
-# 社区基金池
+# Community Pool
 
-TN 代币持有者可以投票批准社区基金池的支出，以资助 TN 生态系统中的开发和项目
+TN token holders can vote to approve community pool expenditures, which can fund development and projects within the TN ecosystem.
 
-## 为什么要创建一个提案来使用社区基金池的资金？
+## Why create a proposal to use Community Pool funds?
 
-还有其他资助选择，最出名的就是 "TN 生态捐赠计划（TN Grants）"。 为什么要创建社区基金池支出提案？
+There are other funding options, the most famous being the "TN Grants Program". Why should you create a community pool spending proposal?
 
-- **作为一种策略：你可以两者都做。**您可以将您的提案提交给 TN 生态捐赠计划，但也可以考虑在链上公开提交您的提案。如果 TN 社区投票赞成，您可以撤回您的申请。
-- **作为一种策略：资金很快。**除了将您的提案推送到链上所需的时间之外，唯一的其他限制因素是固定的 1 天投票期。一旦提案通过，您的帐户将被记入您的提案请求的全部金额。
-- **建立融洽关系。**与社区公开互动是与利益相关者建立关系并向他们宣传工作重要性的机会。可能会出现无法预料的合作关系，如果社区作为利益相关者参与进来，整个社区可能会更加重视您的工作。
-- **要更加独立。**"TN 生态捐赠计划"可能并不总是能够为工作提供资金。拥有更一致的资金来源并与利益相关者进行报告意味着您可以利用您的融洽关系对自己获得资金的能力充满信心，而不必单独依赖基金会。
+- **As a strategy: you can do both.** You can submit your proposal to the TN Grants Program, but also consider openly submitting your proposal on-chain. If the TN community votes in favor, you can withdraw your application.
+- **As a strategy: funding is fast.** Apart from the time required to push your proposal on-chain, the only other limiting factor is a fixed 1-day voting period. Once the proposal passes, your account will be credited with the full amount of your proposal request.
+- **Building good relations.** Publicly interacting with the community is an opportunity to build relationships with stakeholders and promote the importance of your work. Unpredictable collaborations may emerge, and the entire community may pay more attention to your work if the community gets involved as stakeholders.
+- **To be more independent.** The "TN Grants Program" may not always be able to provide funds for work. Having a more consistent source of funding and reporting to stakeholders means you can be confident in your ability to secure funds through your good relations, without solely relying on the foundation.
 
-## 常见问题
+## FAQ
 
-### 社区基金池资金来源是如何的？
+### How is the Community Pool funded?
 
-生成的所有代币中有 10%（通过区块奖励）不断转移到社区池中并在其中累积。
+10% of all tokens generated (through block rewards) are continuously transferred to and accumulated in the community pool.
 
-### 社区基金池的资金如何变动？
+### How can funding for the Community Pool change?
 
-尽管目前的融资率固定为每个时期铸造代币的 10%。资金的当前价值可以通过治理提案进行修改，并在提案通过后立即颁布。
+Although the current funding rate is fixed at 10% of tokens minted per period, the current value of the funds can be altered through a governance proposal and is enacted immediately after the proposal passes.
 
-未能交付的资助项目可能会将资金返还给社区池，实体可以通过将资金直接存入托管账户来帮助为社区池提供资金。
+Funded projects that fail to deliver may return funds to the community pool, and entities can help fund the community pool by directly depositing funds into a custodial account.
 
-### 社区基金池的余额是多少？
+### What is the balance of the Community Pool?
 
-社区矿池账户：
+Community pool account:
 
-### 如何使用来自社区基金池的资金？
+### How can funds from the Community Pool be spent?
 
-来自 treasurenet 社区池的资金可以通过成功的治理提案来使用。
+Funds from the treasurenet community pool can be utilized through successful governance proposals.
 
-### 社区支出提案通过后，资金是如何分发的？
+### How are funds disbursed after a community-spend proposal is passed?
 
-如果社区支出提案成功通过，提案中编码的 treasurenet 数量将从社区池转移到提案中的地址，这将在投票期结束后发生。
+If a community spend proposal passes successfully, the amount of treasurenet encoded in the proposal will be transferred from the community pool to the address in the proposal, which will occur after the voting period ends.

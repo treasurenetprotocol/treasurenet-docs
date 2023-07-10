@@ -1,19 +1,16 @@
-# `$TAT` 代币
+# `$TAT` Token
 
-`$TAT` 作为在宝藏网络（Treasurenet）上代表实际资产产值的记账代币。`$TAT` 代表每个生产者的信用，其实用价值源自它所记录的底层资产。`$TAT`的目的是记录并验证宝藏网络经济的合法性。
+`$TAT` serves as the accounting token for representing real-world asset productivity on Treasurenet. `$TAT` serves as a represen`$TAT`ion of the credibility of each Producer, with its utility derived from the underlying asset(s) it records. The purpose of the `$TAT` is to document and verify the legitimacy of the Treasurenet economy.
 
-## 链上信用证明
+On-chain proof of creditworthiness:
+`$TAT` tokens serve as an on-chain proof of creditworthiness for Producers in a decentralized and anonymous manner. `$TAT` can be used to transparently price asset financing. This is because `$TAT` tokens track the production of assets by the Producer, which shows that the Producer has an underlying asset and whether this asset is economical.
 
-`$TAT` 代币作为一种链上证明生产者信用的方式，在去中心化和匿名的环境下工作。`$TAT` 可用于透明化资产融资的定价。这是因为`$TAT`代币追踪生产者的资产产量，显示生产者是否拥有底层资产，以及这个资产是否经济实用。
+Collateralization:
+`$TAT` tokens can be used as collateral for financing activities on the Treasurenet platform. This means that users can use their `$TAT` tokens for financing, without having to sell their real-world assets. On their own, `$TAT` tokens signal a commitment to a financing pool, and the same asset (or portion of the asset) cannot be double-committed elsewhere.
 
-## 抵押
+The Treasurenet DAO is also looking to set up real-world legal structures to claim real-world collateral. This means that if a user defaults on a loan, the Treasurenet DAO will be able to seize their real-world assets. This makes the `$TAT` collateralization system more secure, as it provides lenders with a way to recover their money if a borrower defaults.
 
-`$TAT`代币可用作在宝藏网络平台上进行融资活动的抵押品。这意味着用户可以使用他们的`$TAT`代币进行融资，而无需出售他们的现实资产。就其本身而言，`$TAT`代币表明对融资池的承诺，同样的资产（或资产的部分）不能在其他地方重复承诺。
+Although this type of legal structuring is common practice in legacy markets, combining real-world recourse with on-chain creditworthiness allows for radically transparent financing that is not possible without `$TAT` and Treasurenet’s decentralized audit framework.
 
-宝藏网络 DAO 还希望建立真实世界的法律结构来索取现实世界的抵押品。这意味着如果用户违约，宝藏网络 DAO 将能够夺取他们的现实资产。这使得`$TAT`抵押系统更为安全，因为它为贷款人提供了一种方式，如果借款人违约，他们可以收回他们的钱。
-
-尽管这种法律结构在传统市场上是常见的做法，但是将现实世界的追偿权与链上信用相结合，使得极度透明的融资成为可能，而没有`$TAT`和宝藏网络的去中心化审计框架，这是不可能的。
-
-## 针对资产的索引
-
-连接到 TN 网关的生产者可以定期铸造`$TAT`代币。`$TAT`代币的铸造速率取决于所生产的资产类型。这意味着，通过查看为该资产类别铸造的`$TAT`代币数量，可以跟踪一个资产类别的累积代表性价值。这个信息可以用来做出财务决策，例如决定投资哪个资产类别。值得注意的是，公开这个资产信息的选择权在生产者手中。
+Asset-specific indexing:
+Producers who are connected to the TN Gateway can mint `$TAT` tokens on a regular basis. The rate at which `$TAT` tokens are minted depends on the type of asset that is being produced. This means that the cumulative represen`$TAT`ive value of an asset class can be tracked by looking at the number of `$TAT` tokens that have been minted for that asset class. This information can be used to make financial decisions, such as deciding which asset classes to invest in. It is worth noting that the option to make this asset information public is in the hands of the Producers.

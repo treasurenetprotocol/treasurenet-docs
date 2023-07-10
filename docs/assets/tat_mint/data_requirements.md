@@ -1,23 +1,23 @@
-# 数据要求
+# Data Requirements
 
-Oracle Feeder Tool 通过查询公开可用的生产数据和市场价格数据集，使相关资产数据模块能够进行生产审计。每个资产类别的工作流程可以期待定期更新和升级，待 DAO 治理提案通过。
+Oracle Feeder Tool queries publicly available production data and market price data sets to allow relevant asset data modules to conduct production audit. Workflows for each asset class can expect regular updates and upgrades, pending DAO Governance proposals.
 
-## 石油和天然气生产数据
+## Oil and Gas Production Data
 
-被列入白名单的天然气和石油生产数据来源：
+Whitelisted natural gas and oil production data sources:
 
 - https://www.petrinex.gov.ab.ca/publicdata
 - https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/#production-data-table
 
-被列入白名单的生产商报告来源：
+Whitelisted Producer reported sources:
 
-- 公开交易的 SCADA（监控与数据采集）SaaS 平台
+- Publicly traded SCADA (Supervisory Control and Data Acquisition) SaaS platforms
 
-## 石油和天然气市场价格数据
+## Oil and Gas Market Price Data
 
-被列入白名单的价格来源应来自多种可观察的价格，并根据资产生产地理位置而有所不同。
+Whitelisted price source is to be from a multitude of observable prices and will vary based on asset production geographic location.
 
-示例白名单来源：
+Example whitelist sources:
 
 - https://www.eia.gov/dnav/ng/ng_pri_fut_s1_d.htm
 - https://oilprice.com/commodity-price-charts?page=chart&sym=CLY00

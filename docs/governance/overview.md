@@ -2,70 +2,67 @@
 sidebar_position: 1
 ---
 
-# 治理
+# About
 
-## 简介
+The Governance module is to be continuously developed with input from the community.
 
-治理模块将持续开发，并汇聚社区的意见。
+Currently, Treasurenet has an on-chain governance mechanism for initiating text proposals, changing chain parameters, modifying built-in contract parameters, and spending funds from the community pool.
 
-目前，Treasurenet 拥有一种链上治理机制，可启动文本提案，更改链参数，修改内置合同参数，并从社区池中支出资金。
+### DAO Website
 
-_正在开发中，敬请期待更新_
+_Notice: Documentation is in progress._
 
-### DAO 网站
+### Decision-making and Communication Channels
 
-决策和沟通讨论渠道
+DAO Website (WIP)
 
-DAO 网站（进行中）
-
-- TN 提案列表
-- 讨论，投票，并记录提案过程
+- TN proposal list
+- Discussion, voting, and documenting proposal process
 
 [Treasurenet Discord](https://discord.gg/treasurenet)
 
-- 讨论提案和升级相关问题
-- 与 TN 团队的核心成员就关键技术进行交流
-- 获取即将进行的 TN 升级以及相关细节的信息
+- Discuss proposals and related issues of upgrades
+- Communicate with core members of the TN team on key technologies
+- Get information about the upcoming upgrades of TN and the related details
+- [DAO Website](https://splatform.treasurenet.io/Governance/pool)
+  - TN proposal list
+  - One-stop discussion, voting, and expressing your views on proposals
+- [Telegram](https://t.me/+hN6G5mGAlD8xMmI5)
+  - TN official Telegram group
+- [Twitter](https://twitter.com/treasurenet_io)
+  - TN official social account
 
-电报
+## Governance Process
 
-- [TN official Telegram group](https://t.me/+hN6G5mGAlD8xMmI5)
+_Notice: Documentation is in progress._
+_Content to include how to complete a proposal, voting, multi-sigs, timelock, etc._
 
-推特
+## Roles and Responsibilities
 
-- [TN official social account](https://twitter.com/treasurenet_io)
+_Notice: Documentation is in progress._
 
-## 治理过程
+## Community Pool
 
-注意：文档正在编制中。
-内容包括如何完成提案，投票，多签名，时间锁等。
+_Notice: Documentation is in progress._
 
-## 角色和责任
+TN token holders can vote to approve community pool expenditures, which can fund development and projects within the TN ecosystem.
 
-注意：文档正在编制中。
+**How is the Community Pool funded?**
 
-## 社区池
+1% of all tokens generated (through block rewards) are automatically transferred to and accumulated in the community pool.
 
-注意：文档正在编制中。
+**How can funding for the Community Pool change?**
 
-TN 代币持有者可以投票批准社区池的支出，这可以为 TN 生态系统内的开发和项目提供资金。
+Although the current funding rate is fixed at 1% per period, it can be altered through a governance proposal and is enacted immediately after the proposal passes.
 
-**社区池是如何获得资金的**
+**What is the balance of the Community Pool?**
 
-所有生成的代币（通过区块奖励）的 1%会自动转移到社区池并积累。
+Community pool account: to be updated
 
-**社区池的资金如何变更？**
+**How can funds from the Community Pool be spent?**
 
-虽然当前的资金率固定为每期 1%，但可以通过治理提案进行更改，并在提案通过后立即实施。
+Funds can be utilized through successful governance proposals.
 
-**社区池的余额是多少？**
+**How are funds disbursed after a community-spend proposal is passed?**
 
-社区池账户：待更新
-
-**社区池的资金如何使用？**
-
-资金可以通过成功的治理提案使用。
-
-**社区支出提案通过后，资金如何分配？**
-
-如果支出提案被通过，所请求的资金将从社区池转移到提案中的地址。
+If a spending proposal is passed, the amount of requested funding will be transferred from the community pool to the address in the proposal.

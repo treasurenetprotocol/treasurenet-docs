@@ -16,25 +16,25 @@ const sidebars = {
     docs: [
         {
             type: 'category',
-            label: '关于Treasurenet',  //About Treasurenet
+            label: 'About Treasurenet',
             link: {
                 type: 'generated-index',
-                title: '关于Treasurenet',
+                title: 'About Treasurenet',
             },
             items: [
                 'about/introduction',
                 {
                     type: 'category',
-                    label: '核心概念', //Core Concepts
+                    label: 'Core Concepts',
                     link: {
                         type: 'generated-index',
-                        title: '核心概念',
+                        title: 'Core Concepts',
                     },
                     items: [
                         'about/core_concepts/layer_1_built_on_RWA_production',
                         {
                             type: 'category',
-                            label: 'Producers',  //Producers
+                            label: 'Producers',
                             link: {
                                 type: 'generated-index',
                                 title: 'Producers',
@@ -48,19 +48,19 @@ const sidebars = {
                         'about/core_concepts/tn_gateway_and_tools',
                         {
                             type: 'category',
-                            label: '去中心化RWA审计', //Decentralized RWA Audit
+                            label: 'Decentralized RWA Audit',
                             link: {
                                 type: 'generated-index',
-                                title: '去中心化RWA审计',
+                                title: 'Decentralized RWA Audit',
                             },
                             items: [
                                 'about/core_concepts/d_audit/decentralized_RWA_audit',
                                 {
                                     type: 'category',
-                                    label: '隐私保护',  //Privacy Protection
+                                    label: 'Privacy Protection',
                                     link: {
                                         type: 'generated-index',
-                                        title: '隐私保护',
+                                        title: 'Privacy Protection',
                                     },
                                     items: [
                                         'about/core_concepts/d_audit/privacy_protection/what_constitutes_private_data_in_treasurenet',
@@ -73,26 +73,26 @@ const sidebars = {
                         },
                         {
                             type: 'category',
-                            label: '质押和额外质押',  //Stake & Bonus Stake
+                            label: 'Stake & Bonus Stake',
                             link: {
                                 type: 'generated-index',
-                                title: '质押和额外质押',
+                                title: 'Stake & Bonus Stake',
                             },
                             items: [
                                 'about/core_concepts/stake_and_bonus_stake/what_is_staking',
                                 'about/core_concepts/stake_and_bonus_stake/what_is_bonus_stake',
                                 'about/core_concepts/stake_and_bonus_stake/why_is_there_bonus_stake',
                             ]
-                    },
+                        },
                     ]
                 },
                 {
                     type: 'category',
-                    label: '代币经济',//Tokenomics
+                    label: 'Tokenomics',
                     link: {
                         type: 'generated-index',
-                        title: '代币经济',
-                        description: '$UNIT 代币的总供应量是有限的，但确切的限制将根据稀有资产未来的生产情况而有所不同。 这是因为 Treasurenet 区块奖励会随着时间的推移而减少。 生产者共同创建 RWA，以防止 $UNIT 区块奖励快速衰减。 虽然 BTC 每期减少 50%，但 $UNIT 奖励的减少率取决于铸造的 $TAT，即资产的生产量。',
+                        title: 'Tokenomics',
+                        description: 'The total supply of $UNIT tokens is finite, but the exact limit will vary depending on the future production of rare assets. This is because Treasurenet block rewards reduce over time. Producers work together to create RWAs to prevent $UNIT block rewards from decaying quickly. Whereas BTC reduces by 50% per period, $UNIT rewards reduce at a rate based on $TAT minted, hence asset produced. ',
                     },
                     items: [
                         'about/tokenomics/unit_token',
@@ -102,10 +102,10 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '开发中的Dapp',  //dApps Under Development
+                    label: 'dApps Under Development',
                     link: {
                         type: 'generated-index',
-                        title: '开发中的Dapp',
+                        title: 'dApps Under Development',
                     },
                     items: [
                         'about/dapps_under_development/ustn',
@@ -117,15 +117,15 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '常见概念',//Fundamentals
+            label: 'Fundamentals',
             link: {
                 type: 'generated-index',
-                title: '常见概念',
+                title: 'Fundamentals',
             },
             items: [
                 {
                     type: 'category',
-                    label: '钱包', //Digital Wallets
+                    label: 'Digital Wallets',
                     items: [
                         'fundamentals/wallets/metamask',
                         'fundamentals/wallets/coinbase',
@@ -137,10 +137,10 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'USTN金融平台',  //USTN Finance Platform
+            label: 'USTN Finance Platform',
             link: {
                 type: 'generated-index',
-                title: 'USTN金融平台',
+                title: 'USTN Finance Platform',
             },
             items: [
                 'ustn/overview',
@@ -150,10 +150,10 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '去中心化治理', //Governance
+            label: 'Governance',
             link: {
                 type: 'generated-index',
-                title: '去中心化治理',
+                title: 'Governance',
             },
             items: [
                 'governance/overview',
@@ -163,30 +163,30 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '产生资产', //Assets Production
+            label: 'Assets Production',
             link: {
                 type: 'generated-index',
-                title: '产生资产',
+                title: 'Assets Production',
             },
             items: [
                 'assets/producer_portal',
                 'assets/connection_guidelines',
                 {
                     type: 'category',
-                    label: '铸造TAT',  //TAT Mint by Asset-Class
+                    label: 'TAT Mint by Asset-Class',
                     link: {
                         type: 'generated-index',
-                        title: '铸造TAT',
-                        description: '注意：文档正在处理中。 进一步的资产连接正在开发中。 要求可以通过 DAO 治理提案进行调整。',
+                        title: 'TAT Mint by Asset-Class',
+                        description: 'Notice: Documentation is in progress. Further asset connections under development. Requirements may be adjusted via DAO Governance proposals.',
                     },
                     items: [
                         {
                             type: 'category',
-                            label: '链接现实世界',  //Pilot real-world connection
+                            label: 'Pilot real-world connection',  //Pilot real-world connection
                             link: {
                                 type: 'generated-index',
-                                title: '链接现实世界',
-                                description: '这适用于所有要连接的可量化的现实世界资产，其中 $TAT 记录了它们各自的可验证资产生产的市场价值。'
+                                title: 'Pilot real-world connection',
+                                description: 'This is applicable for all quantifiable real-world assets to be connected, where $TAT records their respective market value of verifiable asset production.'
                             },
                             items: [
                                 'assets/tat_mint/production_audit',
@@ -196,10 +196,10 @@ const sidebars = {
                         },
                         {
                             type: 'category',
-                            label: 'Producer 指南', //Pilot Producer Guide
+                            label: 'Pilot Producer Guide',
                             link: {
                                 type: 'generated-index',
-                                title: 'Producer 指南',
+                                title: 'Pilot Producer Guide',
                             },
                             items: [
                                 'assets/tat_mint/registration',
@@ -213,11 +213,11 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '新资产加入', //New Asset Workflow Registration
+                    label: 'New Asset Workflow Registration',
                     link: {
                         type: 'generated-index',
-                        title: '新资产加入',
-                        description: 'Treasurenet欢迎稀有资产加入网络并生成相应的TAT。 请通过任何沟通渠道联系Treasurenet基金会。'
+                        title: 'New Asset Workflow Registration',
+                        description: 'Treasurenet welcomes rare assets to join the network and generate corresponding TAT. Please contact Treasurenet Foundation through any communication channels.'
                     },
                     items: [
                         'assets/new_asset_workflow',
@@ -227,16 +227,16 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '质押委托',
+            label: 'For Delegaters',
             link: {
                 type: 'generated-index',
-                title: '质押委托',
+                title: 'For Delegaters',
             },
             items: [
                 'staking/introduction',
                 {
                     type: 'category',
-                    label: '操作指南',  //Operation Guide
+                    label: 'Operation Guide',
                     items: [
                         'staking/operation-guide/staking',
                         'staking/operation-guide/stakeboosting',
@@ -248,7 +248,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '验证节点',
+            label: 'For Validators',
             link: {
                 type: 'generated-index',
                 title: 'For Validators',
@@ -257,7 +257,7 @@ const sidebars = {
                 'validators/overview',
                 {
                     type: 'category',
-                    label: '基本概念',  //Basic Concepts
+                    label: 'Basic Concepts',
                     items: [
                         'validators/concepts/validator-delegator',
                         'validators/concepts/becoming-a-validator',
@@ -266,7 +266,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '快速开始',  //Quick Start
+                    label: 'Quick Start',
                     items: [
                         'validators/quickStart/installation',
                         'validators/quickStart/treasurenetd',
@@ -276,7 +276,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '配置和启动',  //Setup & Configuration
+                    label: 'Setup & Configuration',
                     items: [
                         'validators/setup/run-a-validator',
                         'validators/setup/configuration',
@@ -289,10 +289,10 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '去中心化应用开发',
+            label: 'For Dapp Devs',
             link: {
                 type: 'generated-index',
-                title: '去中心化应用开发',
+                title: 'For Dapp Devs',
             },
             items: [
                 'developers/quick-connect',
@@ -300,7 +300,7 @@ const sidebars = {
                 'developers/clients',
                 {
                     type: 'category',
-                    label: '操作指南', //Guides
+                    label: 'Guides',
                     items: [
                         'developers/guides/wallet-integration',
                         'developers/guides/erc20',
@@ -310,7 +310,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '本地环境',  //Localnet
+                    label: 'Localnet',
                     items: [
                         'developers/localnet/single-node',
                         'developers/localnet/multi-node',
@@ -319,14 +319,14 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: 'Testnet', //Testnet
+                    label: 'Testnet',
                     items: [
                         'developers/testnet/faucet',
                     ]
                 },
                 {
                     type: 'category',
-                    label: 'Treasurenet EVM 工具集', //Treasurenet EVM Tooling
+                    label: 'Treasurenet EVM Tooling',
                     items: [
                         'developers/ethereum-tooling/remix',
                         'developers/ethereum-tooling/hardhat',
@@ -335,7 +335,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '工具库', //Client Libraries
+                    label: 'Client Libraries',
                     items: [
                         'developers/client-libraries/address-converter'
                     ]
@@ -357,16 +357,16 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '协议开发',
+            label: 'For Protocol Devs',
             link: {
                 type: 'generated-index',
-                title: '协议开发',
+                title: 'For Protocol Devs',
             },
             items: [
                 'protocolDevelopers/overview',
                 {
                     type: 'category',
-                    label: '基本概念', //Basic Concepts
+                    label: 'Basic Concepts',
                     items: [
                         'protocolDevelopers/concepts/accounts',
                         'protocolDevelopers/concepts/transactions',
@@ -377,7 +377,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '模块',  //Modules
+                    label: 'Modules',
                     items: [
                         'protocolDevelopers/modules/overview',
                         'protocolDevelopers/modules/auth',
@@ -401,7 +401,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '区块浏览器',
+            label: 'Block Explorers',
             items: [
                 'blockExplorers/intro',
             ]
@@ -411,7 +411,7 @@ const sidebars = {
         'api/intro',
         {
             type: 'category',
-            label: '官方合约', //Official Contracts
+            label: 'Official Contracts',
             items: [
                 'api/officialContracts/tat',
                 'api/officialContracts/ustn',
@@ -439,7 +439,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '工具集', //Tools
+            label: 'Tools',
             items: [
                 'api/tools/intro',
             ]

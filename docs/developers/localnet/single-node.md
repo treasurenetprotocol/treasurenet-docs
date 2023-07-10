@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# 单节点测试网络
+# Single Node
 
-## 自动化本地网络（脚本）
+## Automated Localnet(script)
 
-为了方便起见，您可以通过更改值来自定义本地测试网脚本，例如：
+For convenience, you can customize the local test net script by changing the value, for example:
 
 ```shell
 # customize the name of your key, the chain-id, moniker of the node, keyring backend, and log level
@@ -25,21 +25,21 @@ treasurenetd gentx $KEY 1000000000000000000000aunit --keyring-backend $KEYRING -
 
 ```
 
-默认配置将生成一个带有链 id treasurenetd-1 的单个验证器本地网和一个预定义的帐户（mykey），在创世时分配了一些资金。
+The default configuration will generate a single authenticator local net with chain id treasurenetd-1 and a predefined account (mykey) with some funds allocated at Genesis.
 
-您可以使用以下方法启动本地链：
+You can start the local chain using the following method:
 
 ```shell
 init.sh
 ```
 
-## 手动本地网络
+## Manual Localnet
 
-本指南可帮助您创建单个验证器节点，该节点在本地运行网络以进行测试和其他与开发相关的用途。
+This guide helps you create a single vealidator node that runs the network locally for testing and other development-related purposes.
 
-### 初始化链
+### Initialize the chain
 
-在实际运行节点之前，我们需要初始化链，最重要的是它的创世文件。 这是通过 init 子命令完成的：
+Before actually running the node, we need to initialize the chain, most importantly its genesis file. This is done with the init subcommand:
 
 ```shell
 $MONIKER=testing
@@ -51,29 +51,29 @@ treasurenetd init $MONIKER --chain-id=$CHAINID
 
 ```
 
-上面的命令创建了你的节点和验证器运行所需的所有配置文件，以及一个默认的 genesis 文件，它定义了网络的初始状态。
+The above command creates all the configuration files needed for your node and validator to run, as well as a default genesis file that defines the initial state of the network.
 
-默认情况下，所有这些配置文件都在 ~/.treasurenetd 中，但您可以通过传递 --home 标志覆盖此文件夹的位置。
+By default, all these configuration files are in ~/.treasurenetd, but you can override the location of this folder by passing the --home flag.
 
-### 创世程序步骤
+### Genesis Procedure
 
-#### 添加创世账户
+#### Adding Genesis Accounts
 
-在启动链之前，您需要使用[keyring](https://)向至少一个帐户填充状态：
+Before starting the chain, you need to populate the status to at least one account using [keyring](https://)：
 
 ```shell
 treasurenetd keys add my_validator
 ```
 
-创建本地帐户后，继续在您的链的创世文件中授予它一些 aunit token。 这样做还可以确保您的 chain 知道此帐户的存在：
+After creating your local account, go ahead and grant it some a Unit token in your chain's genesis file. Doing so will also ensure that your chain is aware of the existence of this account:
 
 ```shell
 treasurenetd add-genesis-account my_validator 10000000000aunit
 ```
 
-现在您的帐户有一些 token，您需要在您的链中添加一个 validator。
+Now that your account has some tokens, you need to add a validator to your chain.
 
-对于本指南，您将添加本地节点（通过上面的 init 命令创建）作为链的 validator。 validator 可以在链第一次启动之前通过一个包含在创世文件中的特殊事务来声明，称为 gentx：
+For this guide, you will add the local node (created with the init command above) as the validator of the chain. The validator can be declared before the chain is started for the first time by a special transaction included in the genesis file, called gentx:
 
 ```shell
 # Create a gentx
@@ -83,13 +83,13 @@ treasurenetd add-genesis-account my_validator 1000000000stake,10000000000aunit
 
 ```
 
-一个 gentx 做三件事：
+A gentx performs three important tasks:
 
-- 将您创建的 validator account 注册为 validator operator 帐户（即 the account that controls the validator）。
-- 自行委托 staking token。
-- 将 validator operator account 与将用于签署区块的节点公钥链接。 如果未提供 --pubkey 标志，则默认为通过上述 treasurenetd init 命令创建的本地节点 pubkey。
+- Registers the validator account you created as a validator operator account. This account is responsible for controlling the validator.
+- Delegates staking tokens to the validator account. This ensures that the validator has the necessary stake to participate in the consensus and block validation process.
+- Links the validator operator account to the public key of the node that will be used to sign the blocks. If the --pubkey flag is not provided, the default is set to the local node's public key generated during the initialization process using the treasurenetd init command.
 
-- 有关 gentx 的更多信息，请使用以下命令：
+- For more information on gentx, use the following command:
 
 ```shell
 treasurenetd gentx --help
@@ -97,22 +97,22 @@ treasurenetd gentx --help
 
 #### Collecting gentx
 
-默认情况下，genesis file 文件不包含任何 gentxs。 gentx 是一种交易，它将账户下 genesis file 中存在的 staking token 绑定到 validator，本质上是在 genesis 时创建一个 validator。
+By default, the genesis file does not include any gentxs,these are the transactions that bind staking tokens in the genesis file to a validator, effectively creating the validator during the genesis period.
 
-一旦作为有效 gentx 接收者的超过 2/3 的验证者（由投票权加权）在 genesis_time 之后上线，该链就会启动。
+To start the chain, it requires more than 2/3 of the validators who have valid gentx recipients (weighted by voting power) to come online after the specified genesis time.
 
-可以手动将 gentx 添加到 genesis 文件中，或通过以下命令：
+You have the option to manually add the gentx to the genesis file, or you can use the following command to automatically add it:
 
 ```shell
 # Add the gentx to the genesis file
 treasurenetd collect-gentxs
 ```
 
-此命令会将存储在 ~/.treasurenetd/config/gentx 中的所有 gentx 添加到 genesis 文件中。
+This command will add all gentx stored in `~/.treasurenetd/config/gentx` to the genesis file.
 
 ### Run Testnet
 
-检查 genesis.json 文件的正确性：
+Check the correctness of the genesis.json file:
 
 ```shell
     treasurenetd validate-genesis

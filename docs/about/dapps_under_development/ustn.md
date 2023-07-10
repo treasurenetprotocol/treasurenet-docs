@@ -1,3 +1,3 @@
-# 稳定币 dApp - `USTN`
+# Stablecoin dApp - `USTN`
 
-`USTN`是一个带有储蓄和贷款功能的抵押稳定币 dApp。要生成`USTN`稳定币，用户可以在 Treasurenet 上抵押各种资产，或者使用不同网络的资产进行跨链。当系统确定`USTN`供需条件满足时，用户可以将`$UNIT`兑换为`USTN`。此外，`USTN`的借贷和储蓄功能使用户可以通过支付利息获得贷款或出借以赚取利息。
+`USTN` is a collateralized stablecoin dApp with savings and lending functions. To mint `USTN` stablecoin, users may collateralize various assets on Treasurenet or cross-chain using different networks’ assets. Users may exchange `$UNIT` for `USTN` when the system determines `USTN` supply-demand conditions are met. Additionally, `USTN`’s borrowing and saving functions allow users to get loans by paying interest or lending to earn interest.

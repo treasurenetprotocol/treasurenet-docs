@@ -1,5 +1,5 @@
-# 测试网常用命令
+# Testnet command
 
 :::info
-🚧 Documentation is in progress.
+  🚧 Documentation is in progress.
 :::

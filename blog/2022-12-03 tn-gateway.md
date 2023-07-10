@@ -1,13 +1,13 @@
 ---
 slug: tn-gateway
-title: TN-gateway 构建基本完成
+title: TN-gateway construction is basically completed
 authors: chris
 tags: [treasurenet,tn,docs]
 ---
 
-#### 经过同事们的不屑努力 TN-gateway 的构建基本完成 🎉
+#### After the disdainful efforts of colleagues, the construction of TN-gateway has basically been completed 🎉
 
 <!--truncate-->
 
 ![img](https://www.healthcapusa.com/wp-content/uploads/2019/10/Congratulations-881x294.png)
-开始协调各方进行必要的测试，即将上线，敬请期待。
+Coordinating all parties to carry out the necessary tests, it will be launched soon.

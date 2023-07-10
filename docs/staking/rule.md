@@ -1,15 +1,15 @@
-# 规则
+# Rules
 
-## 需求和流程
+## Requirements and Process
 
-- 指定参与质押所需的最小和最大代币数量、任何特定的硬件或软件要求，以及对谁可以参与的任何限制。
-- 提供有关如何设置质押节点、委托代币和跟踪奖励的分步指南。
+- Specify the minimum and maximum token quantities required for participation in staking, any specific hardware or software requirements, and any limitations on who can participate.
+- Provide a step-by-step guide on how to set up a staking node, delegate tokens, and track rewards.
 
-## 奖励和风险
+## Rewards and Risks
 
-- 解释质押奖励机制，包括奖励分配、支付频率以及可能影响奖励率的任何因素。
-- 讨论 staking 涉及的潜在风险，包括 slashing 的可能性（对不当行为的惩罚）、硬件故障和安全风险。
-- 概述出售或转让质押代币的选项，包括退出质押的过程以及任何相关费用或限制。
+- Explain the staking reward mechanism, including reward distribution, payment frequency, and any factors that may impact the reward rate.
+- Discuss potential risks associated with staking, including the possibility of slashing (punishment for improper behavior), hardware failures, and security risks.
+- Outline options for selling or transferring staked tokens, including the process for unstaking and any associated fees or restrictions.
 
 :::info
 🚧 Documentation is in progress.

@@ -1,15 +1,15 @@
-# 为什么有额外的股权奖励
+# Why is there Bonus Stake
 
-`$UNIT`是一种基于资产的货币，其总供应量由真实世界资产生成的`$TAT`决定。因此，生成这样的资产应该得到适当的奖励。
+`$UNIT` is an asset-based currency where its total supply is determined by `$TAT`, generated from real-world assets. Therefore, generating such assets should be rewarded appropriately.
 
-适当的奖励是关键。要成为一种健全的货币，仅仅为资产所有者铸造代币是不明智的。通常，资产支持的代币主要是金融证券，主要受益者是发行者。
+Rewarded appropriately is the key. To be a sound currency, simply minting a token for asset owners is not wise. Typically, asset-backed tokens are financial securities that mainly benefit the issuers.
 
-在现有的资产支持的代币中，底层资产的数据来源于集中存储记录。如果声称的黄金或现金实际上并不存在，那么代币的价值就变得一文不值，因为它完全依赖于集中权威的承诺或保证。这不能成为一种健全的货币的基础。
+In the case of existing asset-backed tokens, the underlying assets' data is sourced from centralized storage records. If the claimed gold or cash is not actually present, the token's value becomes worthless, as it relies solely on commitment or assurance by a centralized authority. This cannot be the base for a sound currency.
 
-此外，在资产支持的代币的背景下，它们通常通过智能合约在现有的网络之上发行。例如，现有的黄金代币是在以太坊区块链上发行的。然而，在比特币或以太坊这样的现有网络中，参与区块链的奖励（如 BTC 或 ETH）并未直接受到真实世界资产的影响。
+Also, in the context of asset-backed tokens, they are typically issued on top of existing networks through smart contracts. For instance, an existing gold token is issued on the Ethereum blockchain. However, in existing networks like Bitcoin or Ethereum, the rewards for participating in the blockchain (such as BTC or ETH) are not directly influenced by real-world assets.
 
-网络的本币和建立在其上的资产支持代币之间没有固有的连接。因此，真实世界的资产并不能对网络奖励产生任何影响。
+There is no inherent connection between the native currency of the network and the asset-backed token built on top of it. As a result, real-world assets do not exert any influence on the network rewards.
 
-相反，Treasurenet 首先使用`$TAT`来衡量所有资产，然后使用`$TAT`来确定应该铸造多少基于资产的货币，即`$UNIT`。
+Instead, Treasurenet first uses `$TAT` to measure all assets, then uses `$TAT` to determine how much asset-based currency, `$UNIT`, that should be minted.
 
-最后，Treasurenet 通过权益证明过程，适当地奖励那些帮助保护网络，或为网络贡献真实资产，甚至两者兼有的参与者`$UNIT`代币。
+Finally, Treasurenet uses a proof-of-stake process to appropriately reward `$UNIT` tokens to participants that help secure the network, or contributed real-assets to the network, or even both.
