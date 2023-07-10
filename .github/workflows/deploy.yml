@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Build
         uses: actions/setup-node@master
-          - run: npm install
-          - run: npm run build
+      - run: npm install
+      - run: npm run build
 
       - name: Deploy to Server
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
