@@ -8,7 +8,7 @@ sidebar_position: 2
 
 FoundationManager enters the HomePage page after successful login.
 
-![Home_page](/img/docs/Home_page.png)
+![Home_page](/img/docs/home_page.png)
 
 ## 2. Approval of New Well
 

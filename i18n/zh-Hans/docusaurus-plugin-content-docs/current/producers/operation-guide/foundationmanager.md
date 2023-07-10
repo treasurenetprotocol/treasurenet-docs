@@ -8,7 +8,7 @@ sidebar_position: 2
 
 基金会经理登录成功后进入主页页面。
 
-![Home_page](/img/docs/Home_page.png)
+![Home_page](/img/docs/home_page.png)
 
 ## 2. 新建油井批准
 
