@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+# Installation
+
 ## Install Binaries
 
 Treasurenet is a high-performance blockchain network that uses the Proof-of-Stake (PoS) consensus mechanism. It is compatible with Ethereum and also incorporates Tendermint and Ethereum's technologies to implement a PoS+BFT (Byzantine Fault Tolerance) consensus mechanism. This combination allows Treasurenet to achieve fast transaction processing times, high throughput, and strong security guarantees.
