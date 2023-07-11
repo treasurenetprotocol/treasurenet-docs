@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# 快速连接
+# Quick Connect
 
-## 公开的可用节点
+## Publicly Available Nodes
 
-**🥺 待汇总**
+**🥺 To be collected**
 
 | URL | Description | Status | Maintainer |
 | --- | ----------- | ------ | ---------- |
@@ -14,13 +14,13 @@ sidebar_position: 2
 
 ## Cosmos gRPC
 
-Treasurenet 为所有集成的 Cosmos SDK 模块公开 gRPC 端点。 这使得钱包和区块浏览器更容易与权益证明逻辑和原生 Cosmos 交易和查询进行交互。
+Treasurenet exposes gRPC endpoints for all integrated Cosmos SDK modules. This facilitates interaction with Proof-of-Stake logic and native Cosmos transactions and queries, making it easier for wallets and block explorers to connect.
 
 ### Cosmos gRPC-Gateway(HTTP REST)
 
-## 以太坊 JSON-RPC
+## Ethereum JSON-RPC
 
-## 以太坊 Websocket
+## Ethereum Websocket
 
 ```shell
 # connect to tendermint websocket at port 8546 as defined above

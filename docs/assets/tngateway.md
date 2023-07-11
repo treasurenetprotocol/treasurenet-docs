@@ -2,52 +2,50 @@
 sidebar_position: 1
 ---
 
-# TN Gateway 和工具
+# TN Gateway and Tools
 
-## 什么是 TN Gateway
+## TN Gateway
 
-TN gateway 是一个为 Treasurenet 区块链服务的 API 集线器，便利地收集、组织、存储以及传输来自外部源的数据和智能合约或去中心化应用（dApps）之间的数据。它使得信息能够从外部源无缝地流入和流出，确保区块链生态系统能够获取并利用实时数据。
+TN Gateway is an API hub for the Treasurenet blockchain, facilitating the collection, organization, storage, and transmission of data between external sources and smart contracts or dApps. It enables the seamless flow of information to and from external sources, ensuring that the blockchain ecosystem can access and utilize real-time data.
 
-TN gateway 对开发者极其有用，将会提供广泛的数据，同时遵守协议的隐私参数，例如关于去中心化应用、权益证明活动、资产生产数据、代币交易记录以及其他相关数据的记录。此外，它还为有效的数据组织和排序提供了重要的索引和统计服务。
+Useful for developers, TN Gateway will offer an extensive array of data, while adhering to protocol privacy parameters, such as records pertaining to dApps, staking activities, asset production data, token transaction records, and other related data. Additionally, it provides essential indexing and statistical services for effective data organization and sorting purposes.
 
-## 数据工具
+## Data Tools
 
-链下工具允许链下角色（生产者和基金会管理者）有效地与协议互动。工具是自动化的程序，能帮助生产者将硬件表连接到协议，并提供其他相关的资产数据。
+Off-chain Tools allow off-chain roles (Producers and Foundation Managers) to efficiently interact with the protocol. Tools are automated programs that can help Producers connect hardware meters to the protocol and feed other relevant asset data.
 
-## 谁可以使用它
+## Who can use it?
 
-TN-Gateway 将在不久之后开发 API 接口使用的申请。通过简单的注册和审核，任何人都可以使用它。
+TN Gateway will soon open applications for the use of its API interface. Through simple registration and review, anyone can use it.
 
-## 使用它能做什么？
+## What can it be used for?
 
-TN-Gateway 可以为您一站式的提供链上数据的查询，甚至数据分析。当然，TN-Gateway 也在不断升级，来提供更多的查询信息，更便利的查询方式。
+TN Gateway can provide you with a one-stop solution for querying on-chain data and even data analysis. Of course, TN Gateway is continuously upgrading to provide more query information and more convenient query methods.
 
-您可以尝试使用 TN Gateway
+You can try using TN Gateway to:
 
-- 查证一个匿名油井的产量变化曲线
+- Verify the production change curve of an anonymous oil well
+- Conduct research and analysis for mining
+- Query transaction sizes to understand trends
 
-- 为矿产挖掘做调研分析
+## How is TN Gateway secured?
 
-- 查询交易规模 洞悉趋势
+#### Encryption protection for sensitive data
 
-## 如何保证 TN Gateway 是安全的
+We use irreversible algorithms to conceal key information, which is very necessary because not all information can be disclosed unconditionally.
 
-#### 对于敏感数据的加密保护
+#### Admission and access control
 
-我们通过不可逆的算法隐匿了关键信息，这是非常必要的。因为不是所有的信息都可以毫无条件的公开。
+The system will control access rights according to your different uses. This will ensure the security of the information while satisfying different user needs, and also avoid attacks or extortion due to unrestricted data flow.
 
-#### 准入及访问权限控制
+## Why is the data from TN Gateway trustworthy?
 
-系统会根据您的不同用途对于访问权限进行控制，这将使得不同的用户需求得到满足的同时确保信息的安全，同时也避免遭受攻击或者因为数据不加限制的流动而被讹诈。
+#### Reliable data source
 
-## 为什么 TN Gateway 的数据是可信的
+Most of the data from the TN Gateway comes from the event listening module (DataProvider) of the Treasurenet blockchain network, which ensures the reliability of the data source to the maximum extent because events are only thrown when transactions are executed normally.
 
-#### 数据来源可信
+#### TN Gateway is open-source
 
-TN Gateway 的数据来源大部分来自于 Treasurenet 区块链网络的事件监听模块(dataProvider),这最大限度的保证了数据来源的可靠，因为只有交易被正常执行时事件才会被抛出
+You can view all the code of the TN Gateway on [github](https://github.com/treasurenetprotocol). It was originally initiated by the Treasurenet Foundation and later contributed by netizens, which leaves almost no possibility of cheating.
 
-#### TN Gateway 是开源的
-
-您可以在[github](http://www.google.com)上查看 TN-Gateway 的全部代码，他们最初由 Treasurenet Foundation 发起，之后由网友贡献而来，这几乎没有作弊的可能。
-
-我们欢迎所有对 Treasurenet 感兴趣的开发者为此贡献代码。
+We welcome all developers interested in Treasurenet to contribute code for this.

@@ -2,55 +2,41 @@
 sidebar_position: 4
 ---
 
-# 常见问题
+# FAQ
 
-## validator 可以带着委托人的 UNIT 逃跑
+## Can validators run away with delegated UNIT?
 
-不会。 通过委托给 Validator，用户委托了质押权。Validator 拥有的抵押权越多，他在共识和一般流程中的权重就越大。但这并不意味这验证者可以保管其委托人的 UNIT。
+No, they cannot. By delegating to a validator, users delegate their staking rights. The more stake a validator holds, the greater their weight in consensus and general processes. However, this does not mean that validators can hold their delegators' UNIT.
 
 :::info
-在质押时，你应该始终优先考虑你信任的 Validator。但是，你也不必担心您的委托资金被盗，因为 Validator 不可能窃取质押资金。
+When staking, you should always prioritize validators you trust. However, you do not need to worry about your delegated funds being stolen because validators cannot steal staked funds.
 :::
 
-尽管委托的 UNIT 不能被 Validator 窃取，但如果 Validator 行为不当，Staker 仍需承担责任。发生这种情况时，Staker 的份额将根据他们新的相对份额比例被部分削减。
+While the delegated UNIT cannot be stolen by validators, if a validator behaves improperly, the staker still bears responsibility. In such cases, the staker's shares will be partially reduced based on their new relative share ratio.
 
-## 为什么要质押
+## Why Stake?
 
-加密货币投资者希望获得质押奖励，但是不想经历配置验证节点的麻烦，或者没有足够的加密货币来满足成为验证节点的最低要求，就需要用到委托。
+Cryptocurrency investors seek staking rewards but may not want to go through the hassle of setting up a validating node or may not have enough cryptocurrency to meet the minimum requirements for becoming a validating node. Delegation comes into play in such situations.
 
-运营验证者节点需要一定的技术门槛，并不是所有的人都有能力独立运营验证者节点，但是为了促使尽可能多的流通中的链上资产参与共识投票，Treasurenet 允许任意实体将自己持有的链上资产委托(delegate)给某个活多个验证者，由该验证者代自己参与共识投票。
+Operating a validator node requires a certain level of technical expertise, and not everyone is capable of independently running a validating node. However, in order to encourage as many on-chain assets as possible to participate in consensus voting, Treasurenet allows any entity to delegate their on-chain assets to one or multiple active validators, who will participate in consensus voting on their behalf.
 
-## 什么是 Validator 佣金
+## What is Validator Commission?
 
-分配奖励时，活跃验证者的运营方可以抽取其代理的链上资产的部分收益作为佣金(commission),以奖励其为节点稳定运行所付出的努力。通过这种共同受益和共同担责的机制设计，才能让验证者运营方有意愿维持验证者节点的安全、稳定、高效的运行，用来吸引更多链上资产持有方。
+When allocating rewards, the operator of an active validator can deduct a portion of the income from the delegated on-chain assets as a commission, rewarding their efforts in maintaining stable node operation. This mechanism of shared benefits and shared responsibility incentivizes validator operators to maintain the security, stability, and efficiency of the validator nodes, attracting more on-chain asset holders.
 
-## 费用如何分配
+## How are fees distributed?
 
-- 在活跃验证者之间按照投票权重分发区块奖励。
-- 从所有的区块奖励中按照参数 CommunityTax(默认为 2%)抽取固定比例作为社区税，存放在我们的社区池中，用于后面我们的社区建设，可以通过 gov 的方式来讲这部分 token 奖励给对社区做出过贡献的。
-- 区块提案者获得当前奖励的固定比例(由参数 BaseProposerReward 默认为 1%,TatReward 默认为 80%)。
-- 根据区块中包含的投票信息，给区块提案者分配额外奖励。
-  - 区块中包含的投票信息与参数 BonusProposerReward(默认为 4%)决定了额外奖励的比例。
-  - 当所有活跃验证者都进行了投票并且所有投票都被打包进区块时区块提案者可以得到的额外奖励比例增大，比例由 BonusProposerReward 指定。
-  - 当验证者有 TAT 进行了委托，提案者获取的额外奖励比例增大，比例为 TatReward(默认为 80%)。
-- 扣除社区税、扣除区块提案者的基础奖励和额外奖励之后，剩余的区块奖励在所有的活跃验证者(包含区块提案者)之间按照投票权重进行分发。
-- 验证者抽取整体收益的一定比例作为自己的佣金(commission)，这个比例由 Validator 中 Commission 指定。
-- 扣除佣金之后的收益，按照抵押份额在验证者的委托人之间进行分发，验证者自抵押部分也在这一步中参与分成。
+- Block rewards are distributed among active validators based on their voting weight.
+- A fixed percentage of the total block rewards, determined by the CommunityTax parameter (default: 2%), is extracted as a community tax and stored in our community pool for future community development. This portion of token rewards can be allocated to contributors to the community through governance.
+- Block proposers receive a fixed percentage of the current reward as BaseProposerReward (default: 1%) and TatReward (default: 80%).
+- Additional rewards are allocated to block proposers based on the voting information contained in the block.
+  - The percentage of additional rewards is determined by the voting information in the block and the BonusProposerReward parameter (default: 4%).
+  - When all active validators have voted, and all votes are included in the block, the block proposer receives an increased percentage of additional rewards specified by the BonusProposerReward parameter.
+  - If validators have received delegations of TAT, the block proposer receives an increased percentage of additional rewards specified by TatReward (default: 80%).
+- After deducting the community tax, the base reward, and the additional reward of the block proposer, the remaining block rewards are distributed among all active validators (including the block proposer) based on their voting weight.
+- Validators deduct a certain percentage of the overall income as their commission, specified by the Commission parameter.
+- After deducting the commission, the remaining income is distributed among the validator's delegators based on their stake shares, and the validator's self-delegated amount is also included in this distribution.
 
-## Validator 行为不当，发生份额削减，造成损失的规则是什么？
+## What are the rules for share reduction in case of improper validator behavior causing loss?
 
-根据[POS 机制概述](./introduction.md),链上资产委托人和验证者节点运营方共同承担收益和风险，收益情况可以查看[费用非配](./qa.md),而链上惩罚是直接扣除固定比例的抵押链上资产。
-
-虽然抵押的链上资产数量会随着惩罚事件的发生而减少，但是由于共同受罚的策略，每次委托的链上资产在一个验证者运营方代理的链上资产中所占份额是固定不变的。
-
-## 成为 Super Validator 有什么好处？
-
-有机会成为 Active Super Validator，获得更多 POS 奖励（UNIT）。质押的 TAT 越多，最后可以获得的奖励就越多，奖励具体[计算公式](https://124.70.23.119:3021/docs/validators/concepts/incentives#bonus-stake-%E8%8E%B7%E5%BE%97%E9%A2%9D%E5%A4%96%E5%A5%96%E5%8A%B1)。
-
-## Stake boosting 普通人可以参加吗？
-
-不可以，现在仅支持 Validator 参与 Stake Boosting。事实上，系统中是没有限制的，但普通用户即使质押了 TAT 也没有任何作用，不会获得奖励。
-
-## Stake boosting 后的 TAT 还可以取回吗？
-
-不可以。您的 TAT 质押成功后当即会被烧毁，无法取回，无法延续到下一轮，仅一次有效。
+According to the [POS Mechanism Overview](./introduction.md), both the on-chain asset delegators and the operator of the validator node bear the benefits and risks. The distribution of rewards can be seen in the [Fee Distribution](./qa.md). On-chain penalties directly deduct a fixed percentage

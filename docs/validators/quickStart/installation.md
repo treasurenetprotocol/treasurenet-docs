@@ -2,41 +2,43 @@
 sidebar_position: 1
 ---
 
-## 安装二进制文件
+# Installation
 
-Treasurenet 是一款非常快速的 POS 区块链，并且整体兼容以太坊。Treasurenet 集成看 Tendermint 和 ethereum 实现了 POS+BFT 的共识机制。
+## Install Binaries
 
-## 单节点部署
+Treasurenet is a high-performance blockchain network that uses the Proof-of-Stake (PoS) consensus mechanism. It is compatible with Ethereum and also incorporates Tendermint and Ethereum's technologies to implement a PoS+BFT (Byzantine Fault Tolerance) consensus mechanism. This combination allows Treasurenet to achieve fast transaction processing times, high throughput, and strong security guarantees.
 
-1. 确保您按照了 go 环境和 git
+## Single Node Deployment
+
+1. Make sure you have set up the go environment and git.
+
    :::caution
-   ❗️ Treasurenet 构建需要安装[Go](https://golang.org/dl/) 版本 1.18+
-   Golang 官网下载地址: https://golang.org/dl/
+   ❗️ Treasurenet build requires Go version 1.18+ Golang website download: https://golang.org/dl/
    :::
 
-2. 打开官网下载地址选择对应系统版本。
+2. Open the official download address and select the corresponding system version.
 
-3. 进入安装包存放路径，在 ~ 下创建 go 文件夹，并进入 go 文件夹。
+3. To enter the Installation package storage path and create a go folder under ~ and then enter the go folder you may use the following commands in your terminal.
+
    :::note
    `mkdir ~/go && cd ~/go` <br />
    `wget https://go.dev/dl/go1.18.linux-amd64.tar.gz`  
    :::
 
-4. 添加/usr/local/go/bin 目录到 PATH 变量中(linux 中 GOPATH 环境变量配置)
+4. Add the /usr/local/go/bin directory to the PATH variable (GOPATH environment variable configuration in linux)
 
 :::note
-在`etc/profile`或者`vi .bashrc`中写入并保存 <br />
+Write and save in `etc/profile` or `vi .bashrc` <br />
 `export GOPATH=$HOME/go` <br />
 `export PATH=$PATH:$GOPATH/BIN` <br />
-更新一下配置文件 <br />
-`source etc/profile` 或者 `source .bashrc` <br />
-查看环境变量 <br />
+Update the configuration file `source etc/profile` or `source .bashrc` <br />
+View Environment Variables <br />
 `go env`
 :::
 
 ### Github
 
-克隆代码并 build treasurenet
+To clone the code and build Treasurenet, you can run the following commands in your terminal:
 
 ```shell
     git clone https://github.com/treasurenetprotocol/treasurenet.git
@@ -46,7 +48,7 @@ Treasurenet 是一款非常快速的 POS 区块链，并且整体兼容以太坊
     make install
 ```
 
-检查是否正确安装
+Check for proper Installation
 
 ```shell
     treasurenetd version

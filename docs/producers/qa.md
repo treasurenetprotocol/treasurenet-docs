@@ -2,68 +2,68 @@
 sidebar_position: 4
 ---
 
-# 常见问题
+# FAQ
 
-## 关于 Producer
+## About Producer
 
-### 为什么我登录 ProductionPortal 时，看到很多身份? 我应该怎样选择?
+### Why do I see many identities when I log into the ProductionPortal? How should I choose?
 
-每一位 ProductionPortal 的用户，都可以拥有两种角色：生产商和受益人。
+Every user of the ProductionPortal can have two roles: a producer and a beneficiary.
 
-例如，您是生产商 A，拥有很多资产，也是生产商 B 的资产受益人（生产商 B 已经将您添加为他的井的受益人），此时，使用您的账号登录系统，界面就会给展示您所有的身份信息，生产商 A 和生产商 B 的受益人；
+For example, you are Producer A, owning many assets, and also a beneficiary of the assets of Producer B (Producer B has added you as a beneficiary of his well). At this time, when you log in to the system with your account, the interface will display all your identity information, Producer A and the beneficiary of Producer B;
 
-如果您要管理自己的井、保证金、铸造 TAT 等，选择生产商 A 登录；
+If you want to manage your own wells, margin, and cast TAT, select Producer A to log in;
 
-如果您想管理自己在生产商 B 内的受益比例，可以选择生产商 B 受益人登录。
+If you want to manage your beneficiary ratio within Producer B, you can choose to log in as the beneficiary of Producer B.
 
-### 我无法通过 KYB/KYC，应该怎么办?
+### I cannot pass KYB/KYC, what should I do?
 
-当您注册 ProductionPortal 后，需要进行 KYB 和 KYC，如果填写信息全部正确但一直无法通过，请在[Discord](https://discord.com/channels/990530508834340905/990530510746964004)上寻求帮助。
+After registering for ProductionPortal, you need to go through KYB and KYC. If all the information filled in is correct but cannot pass, please seek help on [Discord](https://discord.com/channels/990530508834340905/990530510746964004).
 
-## 关于油井
+## About Oil Wells
 
-### 我的油井没能通过审核，怎么办?
+### What if my oil well fails the audit?
 
-如果您新建的油井申请，被审核员驳回，您可以修改井的信息，再次提交申请，直至审核通过。
+If your newly created oil well application is rejected by the auditor, you can modify the information of the well and resubmit the application until it passes the audit.
 
-如果审核不通过，井内的资产产量无法铸造成 TAT。
+If the audit does not pass, the output of the assets in the well cannot be cast into TAT.
 
-### 我的油井未能按时年审会怎样?
+### What if my oil well fails the annual review on time?
 
-如果您的油井没能在一年到期前 5 天提交年审，系统将在到期后关闭油井的铸造 TAT 权限，也就是说，虽然您可以继续将该井的产量上传，但无法再铸造为 TAT。所以，请在油井即将到期时，及时提交油质年审。
+If your oil well does not submit an annual review 5 days before the expiration of one year, the system will shut down the oil well's permission to cast TAT after it expires. That is to say, although you can continue to upload the output of this well, it cannot be cast into TAT anymore. Therefore, please submit the oil quality annual review in time when the oil well is about to expire.
 
-### 为什么要使用 ProducerTool？
+### Why use ProducerTool?
 
-为了将您拥有的资产产量，通过标准化的流程上传到系统中，同时还能兼顾多样的用户群体，所以我们创造了 ProducerTool。
+To upload the output of the assets you own to the system through a standardized process, while also catering to a diverse user base, we created ProducerTool.
 
-实际上，只要您具备常规 ETH 合约调用的技术能力（比如 web3，Geth），我们已经提供了相当详细的 API，您完全可以开发您自己的 ProducerTool，甚至可以集成到您的现有软件系统之中，我们建议并且鼓励这么做。
+In fact, as long as you have the technical ability to call regular ETH contracts (such as web3, Geth), we have provided quite detailed APIs, and you can completely develop your own ProducerTool, and you can even integrate it into your existing software system. We encourage and recommend doing so.
 
-如果您乐于分享，您也可以把您的软件分享给其他人。共同建设生产商环境，让资源上传更加便利。
+If you are willing to share, you can also share your software with others. Build a production environment together and make resource uploading more convenient.
 
-### 我的产量没能正常上传，应该怎么办？
+### What should I do if my output is not uploaded correctly?
 
-如果您某天的产量因各种意外情况未及时上传，可以重新上传；但已经铸造过 TAT 的那个月份的缺失产量，无法再重新上传。
+If your output for a certain day is not uploaded on time due to various accidents, you can re-upload it; but the missing output for the month that has been cast into TAT cannot be re-uploaded.
 
-### 我上传的油井产量数据不正确，可以修改吗？
+### Can I modify the data of the oil well production I uploaded?
 
-如果您上传的产量数据是错误的，无法修改。所以请仔细核对要上传系统的产量，这将影响您最终能获得的 TAT 数量。
+If the output data you uploaded is wrong, it cannot be modified. So please check the output to be uploaded to the system carefully, which will affect the number of TATs you can ultimately obtain.
 
-### 我为我的井添加了额外的受益人，可以去掉他吗?
+### I have added additional beneficiaries to my well, can I remove them?
 
-如果您想去掉您的井的受益人，可以先将他的受益比例设置为 0，将其原来拥有的受益比例全部转给自己或其他人，然后就可以删除这位受益人了。
+If you want to remove the beneficiary of your well, you can first set his benefit ratio to 0, transfer all his original benefit ratios to yourself or others, and then you can delete this beneficiary.
 
-## 关于 TAT
+## About TAT
 
-### 为什么我的保证金被扣除，要怎样避免保证金被扣除？
+### Why was my margin deducted, and how can I avoid the deduction of margin?
 
-在您触发铸造 TAT 的操作时，系统会进行产量审计，如果发现您上传的产量与系统从官方渠道查询的产量偏差很大时，将会扣除保证金；
+When you trigger the operation of casting TAT, the system will audit the output. If it is found that the output you uploaded is significantly deviating from the output queried by the system from the official channel, the margin will be deducted;
 
-所以，为避免保证金被扣除，您应该提前核对产量数据，尽量做到与官方渠道查询的结果一致。
+So, to avoid the deduction of margin, you should check the output data in advance and try to be consistent with the results queried from the official channel.
 
-### 为什么我的保证金会是负数？
+### Why is my margin negative?
 
-为了保证您最大可能地铸造出 TAT，如果您保证金余额>0，但余额<要扣除的 UNIT 数量，我们会按照要扣除的 UNIT 数量直接扣除您的保证金，所以会产生负数的情况。
+In order to ensure that you cast TAT to the greatest possible extent, if your margin balance>0, but balance < the number of UNITs to be deducted, we will deduct your margin according to the number of UNITs to be deducted, so a negative situation will occur.
 
-例如：生产商山姆，保证金余额是 10UNIT，2023 年 2 月铸造 TAT 时，产量审计出现偏差，根据计算需要扣除 15UNIT，系统扣除成功后，此时山姆的保证金余额是-5UNIT；
+For example: Producer Sam, the margin balance is 10 UNIT, when casting TAT in February 2023, the output audit deviates, and it is calculated that 15UNIT needs to be deducted. After the system successfully deducts it, Sam’s margin balance is now -5 UNIT;
 
-当 2023 年 3 月，山姆再次想铸造 TAT 时，发现无法铸造，因为保证金余额<0，所以他必须补缴保证金到至少大于 0 时，才能成功铸造 TAT。
+In March 2023, Sam wants to cast TAT again, but he finds that he can’t cast it, because the margin balance<0, so he must make up the margin to at least greater than 0 before he can successfully cast TAT.

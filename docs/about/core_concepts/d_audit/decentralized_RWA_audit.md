@@ -1,7 +1,7 @@
-# 概述
+# Overview
 
-真实世界资产生产数据通过 Treasurenet 区块链中的智能合约进行审核。设计如此，不同的资产类别会调用各自的资产数据模块，因为每个资产类别都将有独特的行业流程。
+Real-world asset production data is audited by smart contracts in the Treasurenet blockchain. By design, different asset classes call respective asset data modules, because each asset class will have unique industry processes.
 
-资产数据模块与 Oracle 模块协同工作，通过与公开可访问的来源交叉引用生产率，验证来自硬件表的资产生产记录，这些来源由 Treasurenet 的 DAO 治理智能合约列入白名单。
+Asset data modules work in tandem with the Oracle module to validate the asset production record from hardware meters by cross-referencing the production rates with publicly accessible sources, whitelisted by Treasurenet’s DAO governance smart contract.
 
-一旦成功验证了生产数据，TN 协议将分配相应数量的`$TAT`作为对生产者的奖励。
+Upon successful verification of the production data, the TN protocol will allocate the corresponding quantity of `$TAT` as a reward to Producers.

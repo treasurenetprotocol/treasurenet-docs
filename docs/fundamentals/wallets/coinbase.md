@@ -2,29 +2,32 @@
 sidebar_position: 2
 ---
 
-# Coinbase 钱包
+# Coinbase Wallet
 
-## 什么是 Coinbase 钱包？
+## What is Coinbase Wallet?
 
-Coinbase 浏览器扩展钱包是一个用于访问支持以太坊的应用程序和管理用户身份的钱包。 它可用于通过正在运行的 Treasurenet 节点连接 Treasurenet。
+The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled applications and managing user identities. It can be used to connect to Treasurenet via a running Treasurenet node.
 
-## 如何在你的浏览器上安装 Coinbase 钱包？
+## How do I install Coinbase Wallet on your browser?
 
-1. 安装 MetaMask 插件前，您需要先安装 Chrome 浏览器。
-2. 浏览器安装成功后，通过 Chrome 浏览器，进入 Chrome 应用商店，找到 Coinbase 钱包，点击'添加至 Chrome'，下载完成后，浏览器右上角插件栏会出现蓝色圆圈图标，说明安装成功。
+1. Before installing the MetaMask plugin, you need to install the Chrome browser first.
+2. After successfully installing the Chrome browser, open the Chrome App Store, find Coinbase Wallet, click 'Add to Chrome'. Once the download is completed, a blue circle icon will appear in the top right corner of the browser's plugin bar, indicating that the extension is installed successfully.
 
 ![download2](/img/docs/download2.png)
 
-## 如何连接 Coinbase 钱包？
+## How do I connect to Coinbase Wallet?
 
-- 最快且最推荐的方法是通过官网链接你的钱包，我们会直接引导你通过 Coinbase 钱包交互链接到我们的节点并完成创建。
+- The fastest and most recommended way to link your wallet is through the official website, where we will directly guide you to link with our node using Coinbase Wallet and complete the wallet creation
+  process.
 
-- 如果您只是作为 TokenHolder 并不想通过官网的引导来链接 Treasurenet 网络, 您也可以手动链接。
+- If you are just a TokenHolder and do not want to link to the Treasurenet network via the official website, you can also do so manually.
 
-### 手动添加 Treasurenet 主网
+### Manually adding Treasurenet Mainnet
 
-1. 在您的浏览器上打开 Coinbase 钱包扩展程序，如果您尚未登录，您可能需要登录您的 Coinbase 钱包帐户；
-2. 打开设置>网络>添加网络，填写下方网络信息：
+1. Open the Coinbase Wallet extension on your browser, you may need to log in to your Coinbase Wallet account if you are not already logged in.
+
+2. Open Settings > Network > Add Network and fill in the following network information:
+
    - Network Name : Treausurenet Mainnet Alpha
    - New RPC URL: https://wallet.treasurenet.io
    - Chain ID :9001
@@ -37,25 +40,26 @@ Coinbase 浏览器扩展钱包是一个用于访问支持以太坊的应用程�
 
 ![addnetwork3](/img/docs/addnetwork3.png)
 
-### 手动添加 Treasurenet 测试网
+### Manually adding Treasurenet Testnet.
 
-1. 在您的浏览器上打开 Coinbase 扩展程序，如果您尚未登录，请先登录您的 Coinbase 帐户
-2. 打开设置>网络>添加网络，填写下方网络信息
+1. Open the Coinbase extension in your browser and log in to your Coinbase account if you are not already logged in.
 
-   - Network Name : Treausurenet Testnet
-   - New RPC URL: https://wallet.testnet.treasurenet.io
-   - Chain ID：9000
-   - Currency Symbol (optional): UNIT
-   - Block Explorer URL (optional)：https://evmexplorer.testnet.treasurenet.io/
+2.Open Settings > Network > Add Network and fill in the network information below:
+
+- Network Name : Treausurenet Testnet
+- New RPC URL: https://wallet.testnet.treasurenet.io
+- Chain ID：9000
+- Currency Symbol (optional): UNIT
+- Block Explorer URL (optional)：https://evmexplorer.testnet.treasurenet.io/
 
 ![addtestnetwork](/img/docs/addtestnetwork.png)
 
-## 如何导入代币？
+## How do I import tokens?
 
-1. 打开设置>隐藏资产, 点击加号标志，填写下方合约地址:
+1. Open Settings > Hidden Assets, click on the plus sign and fill in the contract address below.
 
-- USTN : `0x7102e133acfbDE1BE72C25f6669117Dd75DE7184`
-- TAT : `0xDe5e255231Cdc6c40fF238FB55E35Ea9d4a111D8`
+- USTN : 0x7102e133acfbDE1BE72C25f6669117Dd75DE7184
+- TAT : 0xDe5e255231Cdc6c40fF238FB55E35Ea9d4a111D8
 
 ![addtoken1](/img/docs/addtoken1.png)
 
@@ -65,4 +69,4 @@ Coinbase 浏览器扩展钱包是一个用于访问支持以太坊的应用程�
 
 ![addtoken4](/img/docs/addtoken4.png)
 
-完成以上操作，现在您的 Coinbase 钱包已经连接到我们的区块链网络，您可以通过官网查看您的相关资产并进行相关操作。
+After completing the above operations, your Coinbase wallet is now connected to our blockchain network and you can view your relevant assets and perform related operations through the official website.

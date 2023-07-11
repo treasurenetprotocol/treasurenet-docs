@@ -1,5 +1,5 @@
-# 为什么我们需要保护这份隐私
+# Why we need to protect this privacy
 
-隐私对 RWAs 的安全至关重要。虽然资产的生产力会被实时记录并且用来审核以铸造 `$TAT`，但是披露敏感细节，比如位置和实际所有者，可能会带来不必要的麻烦。关于披露或者不披露的决定应由每一个生产者自己做出。
+Privacy matters for the security of RWAs. Although an asset’s productivity is recorded live and audited to mint `$TAT`, disclosing sensitive details, such as location and physical owners, may invite unwanted complications. The decision to disclose, or not, should be made by each Producer.
 
-Treasurenet 基金会鼓励每一个生产者都要遵守其管辖区内的所有法规。
+The Treasurenet Foundation encourages each Producer to adhere to all regulations of its jurisdiction(s).

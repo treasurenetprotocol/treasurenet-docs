@@ -1,9 +1,9 @@
-# 如何保护私人数据
+# How to protect private data
 
-简单来说，经过审计的 RWA 可以生成`$TAT`的追踪记录，但观察者无法区分资产的识别细节。
+Simply put, audited RWAs can generate a track record of `$TAT`, but observers cannot distinguish identifying specifics of the asset.
 
-对于物理 RWA 的生产者，当物理生产者首次接入时，部分信息会暂时公开给基金会，因为基金会需要进行了解你的业务(KYB)以确保链上生态系统的最大可靠性。
+For physical Producers of RWAs, some information is temporarily disclosed to the Foundation when physical Producers first on-board, because the Foundation needs to perform Know-Your-Business (KYB) to ensure maximum reliability for the on-chain ecosystem.
 
-一旦 KYB 过程完成，这些信息将被删除，任何剩余的信息将被哈希处理，用于生产者自我管理功能。除非生产者自我披露，否则任何外部观察者都无法识别任何与 Treasurenet 关联的资产。
+Once the KYB process is completed, this information will be deleted and any remaining information will be hashed, for Producer self-management functions. No outside observer may identify any Treasurenet linked asset, unless the Producer self-discloses.
 
-此后，只有生产者在接入后知道自己的资产细节。任何审计 RWA 的智能合约都是在哈希信息上操作。
+Hereafter, only the Producer knows its own asset details after connecting. Any smart contract that audits RWAs is operating on hashed information.

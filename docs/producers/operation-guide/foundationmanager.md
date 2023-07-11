@@ -2,21 +2,21 @@
 sidebar_position: 2
 ---
 
-# 基金会经理
+# Foundation Manager
 
-## 1. 主页
+## 1. Home Page
 
-基金会经理登录成功后进入主页页面。
+FoundationManager enters the HomePage page after successful login.
 
-![Home_page](/img/docs/Home_page.png)
+![Home_page](/img/docs/home_page.png)
 
-## 2. 新建油井批准
+## 2. Approval of New Well
 
-- 在本页面查看新提交的新建油井申请信息，并进行审核。
+- View information about newly submitted applications for new wells on this page and review them.
 
 ![Approval_of_New_Well](/img/docs/Approval_of_New_Well.png)
 
-- 点击'Review'对新油井进行审批，可以选择'Approval'或者'Reject'。
+- Click 'Review' for approval of new wells, you can choose 'Approve' or 'Reject'.
 
 ![Review](/img/docs/Review.png)
 
@@ -26,20 +26,20 @@ sidebar_position: 2
 
 ## 3. Annual Review
 
-- 在本页面查看需要进行油质年审的的矿井信息。
+- Check this page for information on mines that require annual oil quality audits.
 
 ![Annual_Review](/img/docs/Annual_Review.png)
 
-- 点击'Examine'进入审核页面，点击'Approval'通过审核，点击'Reject'不通过审核。
+- Click 'Examine' to enter the review page, click 'Approve' to pass the review, click 'Reject' to not pass the review.
 
 ## 4. Messages
 
-- 点击 Messages，进入发送站内信的页面。在右上方可以隐藏已读的信息，也可以将所有信息标为已读。
+- Click Messages to go to the page where you can send messages to your site. On the top right, you can hide the read messages or mark all messages as read.
 
 ![Messages](/img/docs/Messages.png)
 
-- 点击右上角'Send to Producer'，跳转到信息填写界面，进行站内信的发送。
+- Click 'Send to Producer' in the upper right corner to jump to the message filling screen to send the message.
 
 ![Send_Messages](/img/docs/Send_Messages.png)
 
-填写收信人，主题，和具体的站内信内容。点击'Submit'，进行发送。发送成功则提示'Sent message successfully!'。
+Fill in the recipient, subject, and specific content of the message. Click 'Submit' to send. If the message is sent successfully, you will be prompted with 'Sent message successfully!

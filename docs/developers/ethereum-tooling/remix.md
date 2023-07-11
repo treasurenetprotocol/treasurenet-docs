@@ -1,23 +1,23 @@
-# 用 Remix 部署智能合约
+# Remix: Deploying a Smart Contract
 
-[Remix](http://remix.ethereum.org/) 是一个面向浏览器的 IDE，用于 Solidity 智能合约。在本指南中，我们将学习如何通过 Remix 将合约部署到正在运行的 Treasurenet 网络，并与其进行交互。
+[Remix](http://remix.ethereum.org/) is an in-browser IDE for [Solidity](https://github.com/ethereum/solidity) smart contracts. In this guide, we will learn how to deploy a contract to a running Treasurenet network through Remix and interact with it.
 
-## 连接到 Remix
+## Connect to Remix
 
 :::info
-如果您尚未准备就绪，请参照 Metamask guide 相关文档中的步骤连接您的 metamask 到 Treasurenet Blockchain network（最好是 testnet，这将为您减少开销）. 并确保您的账户拥有一定的 UNIT token。
+If you are not ready, please refer to the steps in the Metamask guide to connect your metamask to the Treasurenet Blockchain network (preferably testnet, which will reduce your overhead). And make sure your account has a certain UNIT token.
 :::
 
-打开[Remix](http://remix.ethereum.org/)IDE 站点， 会有一些默认文件展示在窗口中。
+Open the [Remix](http://remix.ethereum.org/)IDE site, there will be some default files displayed in the window。
 
 ![remix_1](/img/docs/remix_1.png)
 
-在最左边的栏中，选择 Solidity Compiler 并编译合约。
+In the far left column, select Solidity Compiler and compile the contract.
 
-接下来选择"Deploy and Run"选项。选择"Injected Provider - Metamask"作为 Environment. 这会唤起您的 metamask 来验证连接。
+Next select the "Deploy and Run" option. Select "Injected Provider - Metamask" as Environment. This will invoke your metamask to verify the connection.
 
-完成之后 您可以在 Account 中看到您的账户地址，Token 的余量等信息。
+After completion, you can see your account address, Token balance and other information in Account.
 
 ![remix_2](/img/docs/remix_2.png)
 
-此时点击 Deploy 即可完成部署操作。
+Click Deploy at this point to complete the deployment operation.

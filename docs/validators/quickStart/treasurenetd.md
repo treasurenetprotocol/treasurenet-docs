@@ -2,25 +2,25 @@
 sidebar_position: 2
 ---
 
-# treasurenetd 快速指引
+# treasurenetd
 
-treasurenetd 是一个 all-in-one 的命令行接口工具，它支持钱包管理、查询和交易操作。
+treasurenetd is an all-in-one command line interface tool that supports wallet management, query and transaction operations.
 
-## 使用 treasurenetd
+## Using treasurenetd
 
-检查您运行的版本
+Check the version you're running
 
 ```shell
     treasurenetd version
 ```
 
-也可以使用-h 或者 --help 命令来获得帮助信息
+You can also use the -h or --help command to get help information
 
 ```shell
     treasurenet -h
 ```
 
-### 配置和数据目录
+### Configuration and Data Directory
 
 ```shell
                       # ~/.treasurenetd
@@ -32,9 +32,10 @@ treasurenetd 是一个 all-in-one 的命令行接口工具，它支持钱包管�
 
 ```
 
-### 客户端配置
+### Configuration and Data Directory
 
-我们可以使用 treasurenetd config 命令来查看默认客户端配置设置。
+We can use the treasurenetd config command to view the default client configuration settings.
+treasurenetd config
 
 ```shell
 treasurenetd config
@@ -48,9 +49,10 @@ treasurenetd config
 }
 ```
 
-我们可以根据我们的选择对默认设置进行更改，因此它允许用户一次性预先设置配置，以便之后使用相同的配置做好准备
+The default settings in Treasurenet can be customized based on user preferences, allowing users to preset configurations for future use. This simplifies the process and ensures that the desired settings are already in place when needed.
 
-例如，可以使用以下命令将链标识符 treasurenet_9000-1 从空白名称更改为：
+For example, the chain identifier treasurenet_9000-1 can be changed from a blank name using the following command:
+treasurenetd config “chain-id” test_9000-1 treasurenetd config
 
 ```shell
 treasurenetd config “chain-id” test_9000-1 treasurenetd config
@@ -64,9 +66,9 @@ treasurenetd config “chain-id” test_9000-1 treasurenetd config
 }
 ```
 
-其他值可以用同样的方法改变
+Other values can be changed the same way
 
-或者，我们可以直接在 client.toml 的一个地方对配置值进行更改。它位于.treasurenetd/config/client.toml 我们安装 treasurenet 的文件夹的路径下：
+Alternatively, we can make changes to the configuration values directly in one of the places in client.toml. It is located in .treasurenetd/config/client.toml in the path of the folder where we installed treasurenet:
 
 ```shell
 # This is a TOML config file.
@@ -88,7 +90,7 @@ node = "tcp://localhost:26657"
 broadcast-mode = "sync"
 ```
 
-在 中进行必要的更改后 client.toml，然后保存。例如，如果我们直接将 chain-id 更改为 test_9000-1，它会立即更改，如下所示。
+Make the necessary changes in the client.toml and then save it. For example, if we directly change the chain-id to test_9000-1, it will change immediately, as shown below.
 
 ```shell
 {
@@ -100,20 +102,20 @@ broadcast-mode = "sync"
 }
 ```
 
-### 配置文件
+### Options
 
 一些 treasurenetd 常用的 flag 如下：
 
-| Option            | Description              | Type   | Default Value    |
-| ----------------- | ------------------------ | ------ | ---------------- | --------- | ------ | ------ | --------- | ---- |
-| --chain-id        | Full Chain ID            | string | ""               |
-| --home            | 配置文件和数据文件的目录 | string | ～/.treasurenetd |
-| --keyring-backend | keyring's backend        | {"os"  | "file"           | "kwallet" | "pass" | "test" | "memory"} | "os" |
-| --output          | 输出格式                 | string | "text"           |
+| Option            | Description                                | Type   | Default Value    |
+| ----------------- | ------------------------------------------ | ------ | ---------------- | --------- | ------ | ------ | --------- | ---- |
+| --chain-id        | Full Chain ID                              | string | ""               |
+| --home            | Directory for configuration and data files | string | ～/.treasurenetd |
+| --keyring-backend | keyring's backend                          | {"os"  | "file"           | "kwallet" | "pass" | "test" | "memory"} | "os" |
+| --output          | Output Format                              | string | "text"           |
 
-### 常用命令
+### Command List
 
-一些常用的 treasurenetd 命令，你可以通过-h 命令获得完整列表。
+Here are Some common treasurenetd commands, you can get the full list with the -h command.
 
 | Command    | Description                                                                     |
 | ---------- | :------------------------------------------------------------------------------ |

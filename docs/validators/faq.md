@@ -2,101 +2,109 @@
 sidebar_position: 7
 ---
 
-# 常见问题
+# FAQ
 
-## 简介
+## Introduce
 
-### 什么是验证节点？
+### What is a validator?
 
-TreasuerNet [基于 Tendermint](https://docs.tendermint.com/main/introduction/what-is-tendermint.html)它依赖于一组负责在区块链中提交新块的验证器。这些验证者通过广播包含由每个验证者的私钥签名的加密签名的投票来参与共识协议。
+TreasuerNet [based on Tendermint](https://docs.tendermint.com/main/introduction/what-is-tendermint.html) relies on a set of validators responsible for committing new blocks in the blockchain. These validators participate in the consensus protocol by broadcasting encrypted signatures, signed with the private key of each validator, in the form of votes.
 
-验证者候选者可以绑定他们自己的 UNIT 或者 TAT，并让代币持有者将 UNIT “委托”或质押给他们。Treasurenet 目前只允许 100 个 validator 参与共识，但随着时间的推移，可以通过治理提案增加验证器的数量。验证者由委托给他们的 UNIT 代币总数和 TAT 一起决定([参见活跃验证者的选取规则](./faq.md))，投票权最高的前 100 名验证者候选人是当前的活跃验证者参与共识生成新的区块。
+Validator candidates can stake their own UNIT or TAT and allow token holders to "delegate" or stake their UNIT to them. Currently, Treasurenet only allows 100 validators to participate in consensus, but the number of validators can be increased over time through governance proposals. Validators are determined by the total number of UNIT tokens delegated to them, along with TAT ([refer to the rules for selecting active validators](./faq.md)). The top 100 validator candidates with the highest voting power are the current active validators participating in consensus to generate new blocks.
 
-验证者及其委托人通过执行 Tendermint 共识协议赚取 Unit 作为区块条款和代币作为交易费用。请注意，验证者可以为其委托人收取的费用设置佣金百分比作为额外奖励。
+Validators and their delegators earn Units as block rewards and tokens as transaction fees by executing the Tendermint consensus protocol. Please note that validators can set a commission percentage as an additional reward for the fees they charge their delegators.
 
-如果验证者双重签名或长时间离线，他们质押的 UNIT（包括委托给他们的用户的 UNIT）可能会被罚没。处罚取决于违规的严重程度。
+If validators double-sign or remain offline for an extended period, the staked UNIT (including UNIT delegated by their users) may be subject to slashing. The severity of the penalty depends on the nature of the violation.
 
-### 活跃验证节点的选取规则
+### Selection Rules for Active Validators
 
 :::caution
-产品补充 更易懂的版本
+Product Supplement - Easier to understand version
 :::
 
-1. 每个节点要想成为 Validator 必须自抵押 UNIT，且验证者的自我委托永远不能低于 min-self-delegation(最小自抵押,默认为 158unit)。
-2. 第一轮筛选满足 min-self-delegation 的 validator，取权重最高的前 400 个 validator 进行选取。
-   - 通过 event 监听 bid 操作，获取质押 TAT 的 validator 为 list-supervalidator。
-   - 第一步中没有质押 TAT 的 validator 称为 list-validator。
-3. 判断 Active Validator(活跃验证者)的数量:
-   - 如果 list-supervalidator + list-validator >= 200,Active Validator 的数量 num = 100。
-   - 如果 list-supervalidator + listvalidator < 200,Actibr Validator 的数量 num = (list-supervalidator + listvalidator ) / 2。
-4. 第二轮筛选
-   - 当 list-supervalidator < 100, 且 listvalidator > 100, All-list-super = list-supervalidator (选取全部的 list-supervalidator 作为参考值), num-validator = 2 \* num - num(All-list-super), 从 list-validator 中选取权重前 num-validator，组成新的 All-list-validator。
-   - 当 list-supervalidator >= 100 且 list-validator >= 100, 从 list-supervalidator 中选取前 100 组成新的 All-list-super, 从 list-validator 中选取权重前 100，组成新的 All-list-validator。
-   - list-supervalidator < 100 且 list-validator < 100, All-list-super = list-supervalidator, All-list-validator = list-validator。
-   - 当 list-supervalidator > 100, 且 listvalidator < 100, All-list-validator = list-validator (选取全部的 list-validator 作为参考值), num-super = 2 \* num - num(All-list-validator), 从 list-supervalidator 中选取权重前 num-super，组成新的 All-list-super。
-5. 第三轮筛选，组成新的 Active Validator 进行接下来的 pos 运算
-   - 将 All-list-super 和 All-list-validator 组成新的列表 list，然后随机选取其中的 num 作为 Active Validator
+1. Each node that wants to become a Validator must self-delegate a certain amount of UNIT, and the self-delegation of a Validator should never be less than the min-self-delegation (defaulted to 158 units).
 
-### 什么是质押
+2. In the first round of selection, Validators that meet the min-self-delegation requirement are considered, and the top 400 Validators with the highest weight are chosen.
 
-Treasurenet 是一种公共的权益证明（Proof-of-Stake，PoS）区块链，这意味着验证者的权重取决于抵押作为担保的质押代币（UNIT）的数量。这些质押代币可以由验证者直接质押，也可以由 UNIT 持有人委托给他们。
+   - By monitoring the bid operation through an event, the Validators that have staked TAT are listed as list-supervalidators.
+   - Validators without any TAT stake in the first step are referred to as list-validators.
 
-系统中的任何用户都可以通过发送一笔 create-validator 交易来表明自己成为验证者的意图。从那时起，他们就成为了验证者。
-验证者的权重（即总权益或投票权）决定了它是否是一个活跃的验证者，也决定了该节点提出区块的频率以及它将获得多少收益。根据 active Validator 选取规则选出合适的 validator 作为活跃验证者。如果验证者双重签名或经常离线，他们将冒着被抵押的代币（包括用户委托的 UNIT）被协议“罚没”的风险，以惩罚疏忽和不当行为。
+3. Determining the number of Active Validators:
 
-### 什么是全节点
+   - If the sum of list-supervalidators and list-validators is greater than or equal to 200, the number of Active Validators (num) is set to 100.
+   - If the sum of list-supervalidators and list-validators is less than 200, num is set to (list-supervalidators + list-validators) / 2.
 
-完整节点是一个程序，它可以完全验证区块链的交易和区块。它与仅处理区块头和一小部分交易的轻客户端节点有所不同。运行完整节点需要比轻客户端更多的资源，但这是成为验证者所必需的。实际上，运行完整节点仅意味着运行未被篡改且更新的软件版本，具有低网络延迟且没有停机时间。
+4. Second round of selection:
 
-当然，任何用户都可以并且被鼓励运行完整节点，即使他们并不打算成为验证者。
+   - When list-supervalidators are fewer than 100 and list-validators are more than 100, All-list-super is set to list-supervalidators (taking all list-supervalidators as reference). num-validator is calculated as 2 \* num - num(All-list-super), and the top num-validator Validators from list-validators are selected to form the new All-list-validator.
+   - When list-supervalidators are greater than or equal to 100 and list-validators are greater than or equal to 100, the top 100 Validators are selected from list-supervalidators to form the new All-list-super, and the top 100 Validators are selected from list-validators to form the new All-list-validator.
+   - When list-supervalidators are fewer than 100 and list-validators are fewer than 100, All-list-super is set to list-supervalidators, and All-list-validator is set to list-validators.
+   - When list-supervalidators are greater than 100 and list-validators are fewer than 100, All-list-validator is set to list-validators (taking all list-validators as reference), num-super is calculated as 2 \* num - num(All-list-validator), and the top num-super Validators from list-supervalidators are selected to form the new All-list-super.
 
-### 什么是委托人？
+5. In the third round of selection, the new Active Validators are formed for the subsequent proof-of-stake (POS) operations.
+   - All-list-super and All-list-validator are combined into a new list, and a random selection of num Validators from this list is chosen as the Active Validators.
 
-不能或不想操作验证节点的人仍然可以作为委托人参与质押过程。事实上，验证者的选择不是基于他们自己委托的股份，而是基于他们的总股份，即他们自己委托的股份和委托给他们的股份的总和。这是一个重要的属性，因为它使委托人可以防止验证者表现出不良行为。如果验证者行为不端，他们的委托人会将他们的 UNIT 移离他们，从而减少他们的股份。最终，通过[Active Validator 的选取规则](./faq.md)，他们将退出验证者集。
+### What is "staking"?
 
-**委托人分享他们验证者的收入，但他们也分担风险。** 在收入方面，验证人和委托人的不同之处在于，验证人可以对分配给委托人的收入收取佣金。该佣金事先为委托人所知，并且只能根据预定义的约束进行更改([请参阅 staking](../protocolDevelopers/modules/staking.md))。就风险而言，如果验证者行为不当，委托人的 UNIT 可能会被削减。有关更多信息，请参阅[slashing](../protocolDevelopers/modules/slashing.md)。
+Treasurenet is a public Proof-of-Stake (PoS) blockchain, meaning that validator's weight is determined by the amount of staking tokens (UNIT) bonded as collateral. These staking tokens can be staked directly by the validator or delegated to them by UNIT holders.
 
-要成为委托人，UNIT 持有者需要发送一个“委托交易”，在其中指定他们想要绑定多少个 UNIT 以及与哪个验证者绑定。候选验证者列表将显示在 TreasutreNet 浏览器中。之后，如果委托人想要解绑部分或全部股份，他们需要发送“解绑交易”。从那里开始，委托人将不得不等待 3 周才能取回他们的 UNIT。委托人还可以发送“重新绑定交易”以从一个验证器切换到另一个验证器，而无需经过 3 周的等待期([请参阅重新委托和解除绑定](../protocolDevelopers/modules/staking.md))。
+Any user in the system can declare its intention to become a validator by sending a [create-validator](./faq.md) transaction. From there, they become validators.
 
-### 验证节点状态
+The weight of a validator (i.e., total stake or voting power) determines whether it is an active validator and also determines the frequency at which the node proposes blocks and the amount of rewards it will receive. The active validator selection rules are based on selecting suitable validators as active validators. If validators engage in double-signing or frequently go offline, they run the risk of having their staked tokens (including UNIT delegated by users) "slashed" by the protocol as a punishment for negligence and improper behavior.
 
-Treasurenetd 中的 Validator 可以有三种状态 Unbonded、Unbonding 和 Bonded。
-通过 Msg-CreateValidator 消息创建的新验证者被初始化成 Unbonded 状态，并被设置份额以及投票权重。staking 模块的 EndBlocker()会统计本区块验证者状态的变化
+### What is a full node?
 
-- 新创建的 Validator 的投票权重排名进入前 100 名:状态从 Unbonded 变成 Bonded。
-- 新创建的 Validator 的投票权重排名没有进入前 100 名:Unbonded 状态维持不变。
-- 投票权重增加且投票权重排名进入前 100 名时的状态切换
-  - Unbonded --> Bonded: 初次成为活跃验证者。
-  - Unbonding --> Bonded: 再次成为活跃验证者。
-  - Bonded 维持不变: 已经是活跃验证者
+A full node is a program that fully validates transactions and blocks of a blockchain. It is distinct from a light client node that only processes block headers and a small subset of transactions. Running a full node requires more resources than a light client but is necessary in order to be a validator. In practice, running a full-node only implies running a non-compromised and up-to-date version of the software with low network latency and without downtime.
 
-### 什么是质押（staking）的含义？
+Of course, it is possible and encouraged for any user to run full nodes even if they do not plan to be validators.
 
-锁仓 UNIT 可以被视为对验证活动的安全押金。当验证者或委托人想要取回部分或全部押金时，他们发送一个解锁事务。然后，押金经历两周的解锁期，在此期间，如果在解锁过程开始前验证者有潜在的不当行为，他们有可能被处以惩罚。
+### What is a delegator?
 
-验证者以及与之关联的委托人会收到区块奖励、区块收益和手续费奖励。如果验证者有不当行为，其总押金的一定比例会被削减（惩罚的严重程度取决于不当行为的类型）。这意味着将 UNIT 抵押给该验证者的每个用户都会按比例受到惩罚。因此，委托人有动力委托给他们预计能够安全运行的验证者。
+People who are unable or unwilling to operate a validating node can still participate in the staking process as delegators. In fact, the selection of validators is not based on the shares they delegate themselves, but on their total shares, which includes both the shares they delegate themselves and the shares delegated to them. This is an important attribute as it allows delegators to prevent validators from engaging in malicious behavior. If a validator misbehaves, their delegators can remove their UNIT from them, thus reducing their shares. Eventually, through the [Active Validator selection rules](./faq.md), they will exit the validator set.
 
-### 激励
+**Delegators share in the income of their validators but also bear the risk.** In terms of income, the difference between validators and delegators is that validators can charge a commission on the income allocated to delegators. This commission is known in advance to the delegators and can only be changed according to predefined constraints (refer to [staking](../protocolDevelopers/modules/staking.md)). As for the risk, if a validator behaves improperly, the delegator's UNIT may be slashed. For more information, refer to [slashing](../protocolDevelopers/modules/slashing.md).
 
-#### 什么是质押的激励措施？
+To become a delegator, UNIT holders need to send a "delegate transaction" specifying how many UNITs they want to stake and which validator they want to delegate to. The list of candidate validators is displayed on the TreasutreNet browser. Afterwards, if a delegator wants to unbond some or all of their shares, they need to send an "unbond transaction." From there, the delegator will have to wait for 3 weeks to retrieve their UNITs. Delegators can also send a "redelegate transaction" to switch from one validator to another without the 3-week waiting period ([refer to redelegation and unbonding](../protocolDevelopers/modules/staking.md)).
 
-区块奖励由两部分构成，验证者权益池中每个成员都会获得不同类型的收入:
+### Validator states
 
-- Block rewards: 链上资产铸造生成新的区块奖励，为了激励公司投票过程的参与方，将链上资产奖励给公司投票的过程参与方。
-- Transaction fees: Treasurenet 链上发生交易所产生的交易费用
+In Treasurenetd, the Validator can have three states: Unbonded, Unbonding, and Bonded.
+A newly created Validator through the Msg-CreateValidator message is initialized as Unbonded state and is assigned shares and voting power. The EndBlocker() function in the staking module records the changes in the validator's state for the current block.
 
-最新铸造的链上资产与收集到的交易费用合并在一起，就得到了当前区块奖励，然后根据每个验证在的权重分配给验证者的权益池，然后在每个验证者的权益池中，按照每个委托人的股份比例分配给委托人。
+- If a newly created Validator's voting power ranking enters the top 100, the state changes from Unbonded to Bonded.
+- If a newly created Validator's voting power ranking doesn't enter the top 100, the Unbonded state remains unchanged.
+- When the voting power increases and the voting power ranking enters the top 100, the state transitions are as follows:
+  - Unbonded to Bonded: Becomes an active validator for the first time.
+  - Unbonding to Bonded: Becomes an active validator again.
+  - Bonded state remains unchanged: Already an active validator.
 
-#### 作为验证者运营的激励是什么？
+### What does staking imply?
 
-验证人由于佣金而相对于委托人赚取更多的收入。
+Staking UNIT can be thought of as a safety deposit on validation activities. When a validator or a delegator wants to retrieve part or all of their deposit, they send an unbonding transaction. Then, the deposit undergoes a two week unbonding period during which they are liable to being slashed for potential misbehaviors committed by the validator before the unbonding process started.
 
-验证人在治理中也扮演着重要角色。如果委托人未投票，他们将继承来自验证人的投票权。这使得验证人在生态系统中拥有重大责任。
+Validators, and by association delegators, receive block provisions, block rewards, and fee rewards. If a validator misbehaves, a certain portion of its total stake is slashed (the severity of the penalty depends on the type of misbehavior). This means that every user that bonded UNIT to this validator gets penalized in proportion to its stake. Delegators are therefore incentivized to delegate to validators that they anticipate will function safely.
 
-#### 什么是验证节点的佣金？
+### Incentives
 
-一个验证者池所收到的收入会在验证者和其委托人之间分配。验证者可以对分配给其委托人的收入部分收取佣金。这个佣金以百分比的形式设定。每个验证者都可以自由设定其初始佣金、每日最大佣金变动率和最大佣金。Treasurenet 强制执行每个验证者所设定的参数。这些参数只能在最初宣布候选人身份时定义，并且在宣布后只能进一步受到限制。
+#### What is the incentive to stake?
 
-#### 如何分配区块规定？
+The block rewards consist of two parts, and each member of the validator stake pool receives different types of income:
 
-[参阅 distribution 模块中关于奖励分配的介绍](../protocolDevelopers/modules/distribution.md)
+- Block rewards: New block rewards are generated through on-chain asset minting. To incentivize participants in the voting process, on-chain assets are rewarded to those involved in the voting process.
+- Transaction fees: Transaction fees generated by transactions occurring on the Treasurenet blockchain.
+
+The newly minted on-chain assets are combined with the collected transaction fees to form the current block rewards. These rewards are then distributed to the validator stake pool based on the weight of each validator. Within each validator's stake pool, they are further allocated to delegators proportionally based on their stake.
+
+#### What is the incentive to run a validator ?
+
+Validators earn proportionally more revenue than their delegators because of commissions.
+
+Validators also play a major role in governance. If a delegator does not vote, they inherit the vote from their validator. This gives validators a major responsibility in the ecosystem.
+
+#### What is a validator's commission?
+
+Revenue received by a validator's pool is split between the validator and its delegators. The validator can apply a commission on the part of the revenue that goes to its delegators. This commission is set as a percentage. Each validator is free to set its initial commission, maximum daily commission change rate and maximum commission. Treasurenet enforces the parameter that each validator sets. These parameters can only be defined when initially declaring candidacy, and may only be constrained further after being declared.
+
+#### How are block provisions distributed?
+
+[Please refer to the introduction about reward allocation in the "distribution" module.](../protocolDevelopers/modules/distribution.md)

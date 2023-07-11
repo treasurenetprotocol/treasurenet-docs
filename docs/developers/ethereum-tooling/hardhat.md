@@ -1,16 +1,16 @@
-# 用 Hardhat 部署智能合约
+# Hardhat: Deploying a Smart Contract
 
-[Hardhat](https://hardhat.org/) 是一个用于构建基于以太坊的智能合约的灵活开发环境。它的设计考虑了整合性和可扩展性。
+[Hardhat](https://hardhat.org/) is a versatile development environment specifically created for building smart contracts on the Ethereum network. It offers flexibility, allowing developers to easily integrate and extend its functionalities.
 
-## 安装依赖项
+## Install Dependencies
 
 :::info
-在继续之前，您需要安装 Node.js（我们将使用 v16.x 版本）和 npm 包管理器。
+Before proceeding, you need to install Node.js (we'll use v16.x) and the npm package manager.
 :::
 
-## 创建 Hardhat 项目
+## Create Hardhat Project
 
-要创建一个新项目，请导航到您的项目目录并运行以下命令：
+To create a new project, navigate to your project directory and run:
 
 ```shell
 $ npx hardhat
@@ -34,7 +34,7 @@ $ npx hardhat
   Quit
 ```
 
-按照提示，您应该在您的目录中创建一个新的项目结构。请参考 Hardhat 配置页面上的配置选项列表，以在 hardhat.config.js 中指定配置选项。最重要的是，您应该将 defaultNetwork 条目设置为指向您所需的 JSON-RPC 网络。
+By following the prompts, you will be able to create a new project structure in your chosen directory. To configure your Hardhat project, you can refer to the Hardhat config page, which provides a list of configuration options that can be specified in the `hardhat.config.js` file. One crucial configuration is setting the `defaultNetwork` entry to point to your desired JSON-RPC network.
 
 ```shell
 module.exports = {
@@ -46,22 +46,20 @@ module.exports = {
       url: "https://node1.testnet.treasurenet.io:8545",
       accounts: [privateKey1, privateKey2, ...]
     }
-  },
-  ...
+  }
 }
 ```
 
-为了确保您定位到正确的网络，您可以向默认的网络提供商查询可用于您的帐户列表。
+To ensure you are targeting the correct network, you can query for a list of accounts available to you from your default network provider:
 
 ```shell
 $ npx hardhat accounts
 0xf39Fd6e51aad88F6F4ce6aB88273c5d6ba293358
-...
 ```
 
-## 部署智能合约
+## Deploying a Smart Contract
 
-您将会看到在 contracts/Greeter.sol 下已经提供了一个默认的智能合约，使用 Solidity 编写。
+A default smart contract, written in Solidity, has already been provided under `contracts/Greeter.sol`:
 
 ```solidity
 pragma solidity ^0.8.0;
@@ -88,19 +86,21 @@ contract Greeter {
 
 ```
 
-这份合同允许您设置和查询一个字符串问候语。Hardhat 还提供了一个脚本，用于将智能合约部署到目标网络；可以通过以下命令调用此脚本，将其目标定为您的默认网络：
+This contract allows you to set and query a string greeting.
+
+Hardhat also provides a script to deploy smart contracts to a target network; this can be invoked via the following command, targeting your default network:
 
 ```shell
 npx hardhat run scripts/deploy.js
 ```
 
-Hardhat 还可以通过 `--network \<your-network\>` 标志手动指定目标网络：
+Hardhat also lets you manually specify a target network via the --network your-network flag:
 
 ```shell
 npx hardhat run --network {{ $themeConfig.project.rpc_url_testnet }} scripts/deploy.js
 ```
 
-最后，尝试运行一个 Hardhat 测试：
+Finally, try running a Hardhat test:
 
 ```shell
 $ npx hardhat test

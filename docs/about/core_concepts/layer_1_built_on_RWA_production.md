@@ -1,23 +1,21 @@
-# 基于 RWA 生产的第一层
+# Layer 1 built on RWA Production
 
-Treasurenet 协议提出了一个新颖的方法，即其原生协议代币的供应速率（发射）直接与真实世界资产的生产速率绑定，而不是存储。因此，原生协议代币捕获并代表了真实世界资产生产的记录值，围绕这个价值创建了一个繁荣的生态系统。
+Treasurenet Protocol presents a novel approach, wherein the supply rate (emission) of its native protocol token is directly tied to the production rate of real-world assets, as opposed to storage. Consequently, the native protocol token captures and represents the recorded value of the real-world assets produced, creating a thriving ecosystem centered around this value.
 
-### 双代币系统
+## Two-Token System
 
-Treasurenet 基于两种代币运作：
+Treasurenet operates on the basis of two tokens:
 
-#### `$TAT`
+### $TAT
 
-TAT 作为真实世界资产生产的记录，并奖励给资产生产者作为他们的工作。
+TAT serves as a record of real-world asset production and is rewarded to asset producers for their work.
 
-#### `$UNIT`
+### $UNIT
 
-`$UNIT`，这个生态系统的主要代币，是通过权益证明过程产生的。
+`$UNIT`, the primary token of the ecosystem, is minted by a proof-of-stake process. UNIT emission is based on the production of TAT, hence reflecting the value of real-world assets. This makes UNIT an asset-based token rather than an asset-backed one.
 
-`$UNIT` 的发行基于 `$TAT` 的产出，因此反映了实物资产的价值。这使得 `$UNIT` 成为了一个基于资产的代币，而非资产支持的代币。
+## DeFi WEB 3 Infrastructure
 
-### DeFi WEB 3 基础设施
+Treasurenet brings forth the novel concept of on-chain creditworthiness, asset-based collateralization, and a unique approach to asset-based tokens, instead of asset-backed tokens.
 
-Treasurenet 提出了链上信用，基于资产的抵押和基于资产的代币的独特方法，而不是基于资产的代币。
-
-TAT 可以作为一种证明，证明生产者已经产生了可验证的价值。通过对真实世界资产生产力的代币化，Treasurenet 推动了具有真实世界资产的 DeFi 应用的边界。
+TAT can be used as a proof-of-production that a Producer has generated verifiable value. By tokenizing real-world asset productivity, Treasurenet pushes the boundary of DeFi applications with real-world assets.

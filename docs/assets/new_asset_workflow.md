@@ -1,12 +1,12 @@
-# 一般要求
+# General requirements
 
-1. 能力草拟两组合同以满足新资产的需求：
+1. Ability draft 2 group of contracts for the new assets:
 
-- 生产者信息处理合同（生产者合同）
-- 生产数据处理与存储合同（生产数据合同）
+- Producer Information Processing Contract (Producer Contract)
+- Production Data Processing and Storage Contract (Production Data Contract)
 
-2. 能够在 GitHub 上提出新资产工作流程的验证流程，以向 Oracle 模块添加新逻辑
+2. Ability to propose verification process for new asset workflow on GitHub in order to add new logic to the Oracle module
 
-3. 能够提供一套生产数据上传工具供同一类型资产的生产者使用
+3. Ability to provide a set of ProductionData Uploader tools for Producer of same asset type to use
 
-Treasurenet Foundation 和您可以合作创建一个关于 DAO 治理模块的提案，供社区批准。
+Treasurenet Foundation and you can work together on creating a proposal on the DAO Governance module for the community to approve.

@@ -2,8 +2,8 @@
 sidebar_position: 1
 ---
 
-# 追踪交易
+# Trace Transactions
 
 :::info
-🚧 文档正在整理中
+  🚧 Documentation is in progress.
 :::

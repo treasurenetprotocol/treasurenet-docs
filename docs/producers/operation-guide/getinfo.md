@@ -1,11 +1,12 @@
-# 获取生产数据信息
+# Get Production Data Info
 
 :::info
 Waiting for development to be completed
 :::
 
-## 简介
+## Introduction
 
-## 注册为 TN-Gateway 的客户
+## register as Client of TN-Gateway
 
-## API 接口
+## APIs
+

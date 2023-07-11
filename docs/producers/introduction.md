@@ -1,48 +1,51 @@
-# 生产门户简介
+# introduction
 
-本章将围绕生产门户进行相关介绍，您可以在该章节详细了解到怎样在 Treasurenet 上增加一个新的资产、怎样成为生产商、怎样铸造 TAT，以及怎样使用生产门户等内容。
+This chapter will focus on the introduction of the Production Portal. In this section, you can learn in detail about how to add a new asset on Treasurenet, how to become a producer, how to mint TAT, and how to use the Production Portal.
 
-## 什么是生产门户？
+## What is the Producer Portal?
 
-生产门户是围绕生产商的资产和 TAT 创建的一个使用系统。
-生产门户是一个能够将实体资产通过可视化操作来创建数字资产（Mint TAT）的系统,它旨在帮助实体资产的拥有者方便快捷地创建 TAT。通过 生产门户，用户可以将实体资产转化为数字资产，然后将其交易或转移给其他用户，从而实现资产的流动性和价值的提升。
+The Production Portal is a system created around the assets and TAT of producers. It is a system that allows the creation of digital assets (Mint TAT) from physical assets through visual operations, aiming to help physical asset owners create TAT conveniently and quickly.
 
-- Treasurenet 将能够在 Treasurenet 网络上提供符合要求的实体矿产生产数据的用户称为[Producer](/docs/assets/basic-concepts/producer)。
+Through the Production Portal, users can convert physical assets into digital assets, and then trade or transfer them to other users, thereby achieving liquidity and value enhancement.
 
-- Producer 可以将自己生产资源的数据信息通过 Producer Tool 上传到 Treasurenet，按照美元计价的方式获得相应的 TAT Token。
+Treasurenet refers to users who can provide physical mining production data that meet the requirements on the Treasurenet network as [Producers](/docs/assets/basic-concepts/producer).
 
-TAT Token 不直接参与 DeFi 他是一种生产证明，可以用于 Bonus Stake 来在您的 PoS Stake 中获得更多奖励 （参考[Bonus Stake 章节](https://)）
+Producers can upload their resource production data to Treasurenet through the Producer Tool, and obtain the corresponding TAT Token priced in US dollars.
 
-## 我可以使用生产门户做什么？
+TAT Token does not directly participate in DeFi. It is a production proof that can be used for Bonus Stake to get more rewards in your PoS Stake (Refer to the [Bonus Stake section]).
 
-### 1. 注册成为生产商
+## What can I do with the Production Portal?
 
-针对于官方资产 我们提供了相对完善的网站来让您更快的上手。[https://mplatform.treasurenet.io](https://mplatform.treasurenet.io)
+### 1.Register as a producer
 
-如果您需要更详细的说明 可以参考[Producer Registration](/docs/producers/operation-guide/producer/registration)章节
+For official assets, we provide a relatively complete website for you to get started faster. https://mplatform.treasurenet.io
 
-#### 成为生产商的资质
+If you need more detailed instructions, you can refer to the [Producer Registration](/docs/producers/operation-guide/producer/registration) section.
 
-首先，不同的资产需要的资质不同，现在系统支持的资产点击[这里](/docs/producers/assets)查看。
+#### Qualifications to become a producer
 
-如果您是石油或天然气的生产商，所需资质点击[这里](https://)查看。
+Firstly, different assets require different qualifications. For assets currently supported by the system, click [here](/docs/producers/assets) to view.
 
-### 2. 创建井
+If you are a producer of oil or natural gas, click here to see the required qualifications.
 
-您需要将矿井先添加到系统中，并通过审核，然后才能上传产量。点击[查看操作步骤](/docs/producers/operation-guide/producer/wellmanagement#2%E6%B7%BB%E5%8A%A0%E7%9F%BF%E4%BA%95%E6%B5%8B%E9%87%8F%E7%82%B9)。
+### 2. Create a well
 
-### 3. 上传资产产量
+You need to add the mine to the system first and pass the audit before you can upload the output. Click [here](/docs/producers/operation-guide/producer/wellmanagement#2%E6%B7%BB%E5%8A%A0%E7%9F%BF%E4%BA%95%E6%B5%8B%E9%87%8F%E7%82%B9) to see the operation steps.
 
-您需要上传资产真实的产量到系统中，经过产量审计后才可铸造 TAT。点击[查看操作步骤](/docs/producers/operation-guide/production-data-upload)。
+### 3. Upload asset output
 
-### 4. 存入保证金
+You need to upload the real output of the asset to the system. After the output audit, TAT can be minted. Click [here](/docs/producers/operation-guide/production-data-upload) to see the operation steps.
 
-您需要预存一定量的保证金，以保证产量审计出现偏差时，有足够的保证金证明您并非恶意将产量上传错误，同时可以铸造 TAT。点击[查看操作步骤](/docs/producers/operation-guide/producer/expense#1-%E5%AD%98%E5%85%A5%E4%BF%9D%E8%AF%81%E9%87%91)。
+### 4.Deposit a margin
 
-### 5. 铸造 TAT
+You need to pre-deposit a certain amount of margin to ensure that when the output audit deviates, there is enough margin to prove that you did not maliciously upload the output incorrectly, and at the same time, TAT can be minted. Click [here](/docs/producers/operation-guide/producer/expense#1-%E5%AD%98%E5%85%A5%E4%BF%9D%E8%AF%81%E9%87%91) to see the operation steps.
 
-当上述步骤全部正确且完成后，您需要在系统中点击铸造 TAT 的按钮，系统将进行产量审计，如通过审计，将成功铸造 TAT，并发送至您的账户内。点击[查看操作步骤](/docs/producers/operation-guide/producer/mint)。
+### 5. Mint TAT
 
-## 关于系统内的各种计算规则
+When all the above steps are completed correctly, you need to click the mint TAT button in the system, the system will conduct an output audit, if the audit passes, TAT will be successfully minted and sent to your account. Click [here](/docs/producers/operation-guide/producer/mint) to see the operation steps.
 
-在 生产门户 中，涉及很多计算，例如产量和 TAT 的换算关系、产量审计导致扣除保证金的计算规则等，所有的规则将在[Rules](/docs/producers/rules)集中进行说明。
+## About various calculation rules in the system
+
+In the Production Portal, many calculations are involved, such as the conversion relationship between output and TAT, the calculation rules of output audit leading to deduction of margin, etc., all rules will be explained in the [Rules section](/docs/producers/rules).
+
+在 Production Portal 中，涉及很多计算，例如产量和 TAT 的换算关系、产量审计导致扣除保证金的计算规则等，所有的规则将在[Rules](/docs/producers/rules)集中进行说明。

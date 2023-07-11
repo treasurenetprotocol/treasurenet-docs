@@ -3,13 +3,21 @@ name: Docusaurus Deploy
 on:
   push:
     branches:
-      - feature/1.0.1
+      - feature/1.0.2
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        uses: actions/setup-node@master
+        with:
+          node-version: 16
+      - run: npm install
+      - run: npm run build
+
       - name: Deploy to Server
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
@@ -20,7 +28,5 @@ jobs:
           connect_timeout: 180s
 
           scp: |
-            ./* => /data/docs/
-          last_ssh: |
-            cd /data/docs/
-            npm run build
+            ./build/* => /data/docs/build/
+

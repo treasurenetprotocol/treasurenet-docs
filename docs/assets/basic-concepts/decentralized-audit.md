@@ -2,40 +2,40 @@
 sidebar_position: 4
 ---
 
-# 去中心化的真实世界资产审计
+# Decentralized RWA Audit
 
-真实世界资产生产数据通过 Treasurenet 区块链中的智能合约进行审计。按设计，不同的资产类别将调用相应的资产数据模块，因为每种资产类别都会有独特的行业流程。
+Real-world asset production data is audited by smart contracts in the Treasurenet blockchain. By design, different asset classes call respective asset data modules, because each asset class will have unique industry processes.
 
-资产数据模块与 Oracle 模块协同工作，通过与公开可访问的源进行交叉参考，验证硬件表中的资产生产记录，这些源由 Treasurenet 的 DAO 治理智能合约进行白名单筛选。
+Asset data modules work in tandem with the Oracle module to validate the asset production record from hardware meters by cross-referencing the production rates with publicly accessible sources, whitelisted by Treasurenet’s DAO governance smart contract.
 
-在成功验证生产数据后，Treasurenet 协议将分配相应数量的 `$TAT` 作为奖励给生产者。
+Upon successful verification of the production data, the TN protocol will allocate the corresponding quantity of `$TAT` as a reward to Producers.
 
-## 什么是审计
+## What is an Audit
 
-在 Treasurenet 中，审计是特指对能够铸造出 `$TAT` 代币的资产的产量进行验证和校对的过程。
+In Treasurenet, auditing specifically refers to the process of verifying and correcting the output of assets that can be minted into `$TAT` tokens.
 
-- 验证产量，指生产商上传到 Treasurenet 中的产量，不会直接被铸造为 `$TAT` 代币，首先需要与官方的产量数据做比对，验证生产商上传的产量数据是真实且无偏差的；
+- Verifying output means that the output uploaded to Treasurenet by producers will not be directly minted into `$TAT` tokens. First, it needs to be compared with the official output data to verify that the output data uploaded by the producer is real and unbiased;
 
-- 校对产量，是指如果在验证产量时，发现生产商上传的产量数据与官方的产量数据有过大偏差，我们将对产量数据进行调整，校对后的产量才能用于铸造 `$TAT` 代币。
+- Correcting output refers to when a significant discrepancy is found between the producer's uploaded output data and the official output data during the verification process. We will adjust the output data; only the corrected output can be used for minting `$TAT` tokens.
 
-## 什么是去中心化审计
+## What is a Decentralized Audit
 
-在上述对审计的描述中，我们知道审计过后的资产产量将用于铸造 `$TAT` 代币，因此审计后的资产产量的多少十分重要，这意味着审计后的产量多，能够造出的 `$TAT` 代币就会变多，审计后的产量少，能够造出的 `$TAT` 代币数量就少。
+From the above description of auditing, we know that the output of assets after auditing will be used to mint `$TAT` tokens. Therefore, the amount of asset output after auditing is very important. This means that the more output after auditing, the more `$TAT` tokens can be minted, and the fewer outputs after auditing, the fewer `$TAT` tokens can be minted.
 
-因此，谁来审计、怎么审计、审计结果是否公平公正公开就很重要。所以，我们需要保证铸造出的 `$TAT` 代币数量不是由任何人或组织随意决定的，而是经过一套相对客观的不被任何人为因素干扰的规则决定的。我们将这一套规则写入合约中，任何人力或组织都无法直接更改这套审计规则。因此，这一套规则就是去中心化审计。
+Therefore, who audits, how to audit, and whether the audit results are fair, just, and open are all very important. So, we need to ensure that the number of `$TAT` tokens minted is not arbitrarily determined by anyone or any organization, but is determined by a set of relatively objective rules that are not interfered with by any human factors. We write these rules into the contract, and no individual or organization can directly change this set of audit rules. Therefore, this set of rules is decentralized auditing.
 
-## 怎样进行去中心化审计
+## How to conduct a Decentralized Audit
 
-我们用石油这种资产铸造 `$TAT` 代币的过程，举例去中心化审计：
+We use the process of minting `$TAT` tokens with an asset like oil as an example of decentralized auditing:
 
-1. 某位石油生产商，将自己的石油产量上传至 Treasurenet；
+An oil producer uploads their oil output to Treasurenet;
 
-2. 每个月的固定时间，我们都会从官方数据获取该生产商传至官方的产量数据；
+At a fixed time each month, we will obtain the output data that the producer submitted to the official data source;
 
-3. 生产商自行触发铸造 `$TAT` 代币的操作，该操作首先会触发合约进行产量审计，审计完成后再进行 `$TAT` 的铸造操作；
+The producer initiates the operation to mint `$TAT` tokens on their own. This operation will first trigger the contract to audit the output. After the audit is completed, the operation to mint `$TAT` tokens is performed;
 
 :::note
-产量审计，将根据合约规则，对两处产量数据进行对比、校对，如偏差较大，需要扣除一定的保证金，具体的校对规则详见[此处](/).
+The output audit, according to the contract rules, will compare and correct the output data from both sources. If there is a significant deviation, a certain amount of margin will need to be deducted. The specific correction rules can be seen [here](/).
 :::
 
-当然，铸造 `$TAT` 代币不仅需要校对后的资产产量数据，还需要资产的价格数据，此处不做赘述，关于 `$TAT` 的铸造，详见[此处](/).
+Of course, minting `$TAT` tokens not only requires the corrected asset output data but also the price data of the asset. This will not be elaborated here. For details on the minting of `$TAT`, see [here](/).

@@ -1,7 +1,7 @@
-# 什么是生产者
+# What is a Producer
 
-生产者是现实世界中的经济贡献者，他们向 Treasurenet 提供物理或数字资产的生产记录以进行审计并在链上记录。
+Producers are real world economic contributors, providing physical or digital assets production records to Treasurenet to be audited and recorded on-chain.
 
-例如，生产者可以是生产物理产品的大宗商品公司；它也可以是稀有加密货币的“矿工”。
+For example, a Producer can be a bulk commodity company that produces physical products; it can also be a "miner" of scarce cryptocurrency.
 
-实际上，任何可以通过硬件量化并具有可观察市场价格的现实世界资产都可能符合资格。
+In fact, any real-world asset that is quantifiable by hardware and has observable market price may qualify.

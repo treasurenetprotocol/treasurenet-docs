@@ -1,102 +1,127 @@
 # Rules
 
-该部分内容，主要围绕Treasurenet Production Portal中涉及的重点计算规则进行说明。
+This section mainly explains the key calculation rules involved in the Treasurenet Production Portal.
 
-### 资质
-#### 什么是资质准入？
-资质准入，是Producer在将资产添加到Treasurenet中时，对您本身做的资质审查和准入。
+### Qualifications
 
-#### 如何资质准入？
-1. Producer 登录Production Portal，先进行 KYB（企业验证），再进行 KYC（个人验证），KYB 通过后才可进行KYC。
-2. KYB 与 KYC 均为外部系统进行验证，KYC 通过后， Producer 准入通过。
+#### What is qualification admission?
 
-注意：如果还没有通过 KYC 就中断准入流程，不保存已填写内容，下次进入系统后您需重新填写准入申请。
+Qualification admission refers to the qualification review and admission of the Producer when adding assets to Treasurenet.
 
-### 年审
-#### 什么是年审？
-年审，特指系统对实体矿产的载体——油井，进行的每年一次的资质审查。如果不完成年审，您资产的产量将无法铸造TAT。
+#### How to get qualified?
 
-#### 如何年审？
-1. 当一口井添加成功满360天后，您将收到系统发送的站内信，同时可以在油井管理页面看到油质年审功能；
-2. Producer需点击该功能，打开油质年审详情页，重新上传矿井油质化学成分等信息，提交申请；
-3. Foundation Manager会审核您填写的信息
-    * 审核通过，则年审通过，您的矿井新增365天的有效期
-    * 审核不通过，您需要修改年审信息，再次提交
+1. Producers log into the Production Portal, first go through KYB (corporate verification), and then KYC (personal verification). KYC can only be initiated after KYB has been passed.
+2. Both KYB and KYC are verified by an external system. After KYC is passed, Producer admission is complete.
 
-### 产量审计
-#### 什么是产量审计？
-产量审计，是将上月的产量与政府产量对比，计算出产量偏差比，根据产量偏差比会对Producer的保证金进行相应扣除，并修正产量和产量价值。
+Note: If the admission process is interrupted before passing KYC and the filled content is not saved, you will need to refill the admission application when you log back into the system.
 
-系统将根据产量审计后的产量价值，进行TAT的铸造，因此产量审计是很重要的一步，影响着您能获得的TAT的多少。
+### Annual Review
 
-#### 如何触发产量审计？
-1. 由Producer在 WellManagement 页面，选择“可铸造”状态的产量记录，点击【Mint TAT】。
-2. 在弹窗内选择【yes】
-    *  触发对该月产量的审计动作。
-    *  根据产量审计结果铸造相应的TAT、扣除保证金。
+#### What is the annual review?
 
-#### 怎样进行产量审计？
+Annual review refers to the system's yearly qualification review of physical mines' carrier—oil wells. If the annual review is not completed, the output of your assets will not be able to mint TAT.
 
-1. 系统每天会分别统计每口矿井，您上传的产量总和；
-2. 每月固定时间从官方平台，获取该口矿井的月度产量数据；
-    * 当前资产使用的官方产量，是政府背书的产量数据，完全公开，无法篡改
-3. 将上述两个值进行对比，计算出产量偏差比；
-4. 根据产量偏差比修正生产商上月矿产产量和对应的市场价值。
-5. 根据产量偏差比扣除保证金
-    * 修正后市场价值=（官方公布上月产量/链上存储的生产商上月产量）*链上存储上月产量价值。
-    * 产量偏差比=（链上存储生产商上月产量-官方公布上月产量）/官方公布上月产量*100%产量偏差比。
-    * 扣除保证金规则：
+#### How to carry out an annual review?
 
-   | 产量偏差比 | 修正产量 | 扣除保证金 |
-   | ---    | ------   | ---   |
-   | <0  | 生产商 | 不扣  |
-   | 0  | 生产商  | 不扣 |
-   |（0, 10%]   | 官方产量 | 不扣  |
-   |（10%, 30%] | 官方产量  | 扣除的保证金=(修正后的市场价值*产量偏差比*保证金扣除比例 )<br/>保证金扣除比例=1%（该值由governance模块设置）  |
-   | >30%| 官方产量 | 扣除的保证金=(修正后的市场价值*产量偏差比*保证金扣除比例 )<br/>产量偏差比=100%保证金扣除比例=1%（该值由governance模块设置） |
+1. When a well has been successfully added for 360 days, you will receive an internal message from the system, and you can also see the oil quality annual review feature on the Well Management page;
+2. Producers need to click this feature, open the oil quality annual review detail page, re-upload information such as the chemical composition of the mine oil, and submit the application;
+3. The Foundation Manager will review the information you filled in
 
+   - If approved, the annual review is passed, and your mine will have an additional 365-day validity period
+   - If not approved, you need to modify the annual review information and resubmit
 
-### 市场价值
-#### 什么是市场价值？
-市场价值特指Producer持有的资产，在真实交易市场中的价值。我们会在真实世界中的价格网站中，查询最新的资产单价进行相关计算。
+###Production Audit
 
-Production Portal中的市场价值=您上传的资产产量*官方价格网站中的单价。
+#### What is a production audit?
 
-#### 怎样计算市场价值？
-不同的资产，市场价值的计算方式有略微不同，目前的石油和天然气的市场价值计算规则为：
-* OIL 市场价值（美元） = 当天产量 * 当天价格 * 油价折扣
-* GAS 市场价值（美元） = 当天产量 * 当天价格
+Production audit refers to the comparison of last month's production with government production, calculating the production deviation ratio. According to the production deviation ratio, the Producer's margin will be deducted accordingly, and the production and production value will be adjusted.
 
-油价折扣为石油该种资产特有的规则，不同品相对应的不同价格，完全根据您添加矿井时的具体参数进行计算。
+The system will mint TAT according to the production value after the production audit. Therefore, production audit is an essential step that affects how much TAT you can obtain.
 
-#### 油价折扣怎样计算？
-在您添加矿井时，需要填写该矿井的折扣比、酸度、API比重，这三个值将影响该井的油价折扣大小，具体如下：
-* 折扣比90% ：API比重 > 31.10 && 酸度 < 0.50%
-* 折扣比85% ：API比重 > 31.10 && 酸度 >= 0.50%
-* 折扣比80% ：API比重 <= 31.10 && 酸度 < 0.50%
-* 折扣比75% ：API比重 <= 31.10 && 酸度 >= 0.50%
+#### How to trigger a production audit?
 
+1. Producers select "Mintable" status production records on the WellManagement page and click [Mint TAT].
+2. Choose [yes] in the pop-up window
 
-### 官方数据
+   - Trigger the audit action for that month's production.
+   - Mint the corresponding TAT according to the production audit result and deduct the margin.
 
-#### 官方产量数据
-1. 每月UTC时间的5日0:00AM，系统会定时获取官方产量数据；
-2. 官方产量获取地址：https://www.petrinex.gov.ab.ca/publicdata
-3. 系统将根据要审计产量的年月，在上述地址进行筛选；
-4. 从筛选结果中根据月份、资产类型等条件找出要审计矿井的编号，记录对应的月度产量。
+#### How is a production audit conducted?
 
-#### 官方产量价格
-* 油的价格
-1. 获取地址：https://oilprice.com/commodity-price-charts?page=chart&sym=CLY00
-2. 获取规则：查询并记录昨日的收盘价格
+1. The system will count the total amount of production uploaded by each well every day;
 
-* 汽的价格
-1. 获取地址：https://www.eia.gov/dnav/ng/ng_pri_fut_s1_d.htm
-2. 获取规则：查询并记录昨日的价格
+2. At a fixed time each month, get the monthly production data of that well from the official platform;
 
-### 铸造TAT
-1. Producer在 WellManagement 页面，选择“可铸造”状态的产量记录，点击【Mint TAT】。
-2. 在弹窗内选择【yes】，系统将根据产量审计后的矿产市场价值生成TAT，TAT铸造成功后直接转入您的账户中；
-3. 如果您的矿井有受益人，受益人将按照其受益比例分得您铸造的TAT
+3. The official production currently used by assets is government-endorsed production data, which is completely public and unmodifiable
+   Compare the above two values to calculate the production deviation ratio;
 
-例如：矿井1有两位受益人，A为Producer，受益比例80%，B为受益人1，受益比例20%，则矿井1在3月铸造100TAT，Producer账户内新增80TAT，受益人1账户新增20TAT。
+4. Correct the producer's last month's mining production and corresponding market value based on the production deviation ratio.
+
+5. Deduct the margin according to the production deviation ratio
+
+   - Revised market value = (Officially announced last month's production / Producer's last month's production stored on the chain) \_ Last month's production value stored on the chain.
+   - Production deviation ratio = (Producer's last month's production stored on the chain - Officially announced last month's production) / Officially announced last month's production \_ 100% production deviation ratio.
+   - Margin deduction rule:
+
+| Deviation Ratio | Adjusted Yield | Deducted Margin                                                                                                                                                                      |
+| --------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <0              | Producer       | No deduction                                                                                                                                                                         |
+| 0               | Producer       | No deduction                                                                                                                                                                         |
+| (0, 10%]        | Official Yield | No deduction                                                                                                                                                                         |
+| (10%, 30%]      | Official Yield | Deducted margin = (Adjusted Market Value _ Deviation Ratio _ Margin Deduction Percentage)<br/>Margin Deduction Percentage = 1% (set by the governance module)                        |
+| >30%            | Official Yield | Deducted margin = (Adjusted Market Value _ Deviation Ratio _ Margin Deduction Percentage)<br/>Deviation Ratio = 100% Margin Deduction Percentage = 1% (set by the governance module) |
+
+### Market Value
+
+#### What is market value?
+
+Market value specifically refers to the value of assets held by the Producer in the real trading market. We will query the latest asset unit price on the real-world price website for related calculations.
+
+The market value in the Production Portal = Your uploaded asset production \* unit price on the official price website.
+
+#### How to calculate market value?
+
+Different assets have slightly different ways of calculating market value. The current market value calculation rules for oil and natural gas are:
+
+    - OIL Market value (USD) = Daily production * Daily price * Oil price discount
+    - GAS Market value (USD) = Daily production * Daily price
+
+The oil price discount is a specific rule for this type of oil asset, different grades correspond to different prices, and the calculation is entirely based on the specific parameters when you add a well.
+
+#### How to calculate the oil price discount?
+
+When you add a well, you need to fill in the discount ratio, acidity, and API gravity of the well. These three values will affect the size of the oil price discount for this well, specifically as follows:
+
+    - 90% discount ratio: API gravity > 31.10 && Acidity < 0.50%
+    - 85% discount ratio: API gravity > 31.10 && Acidity >= 0.50%
+    - 80% discount ratio: API gravity <= 31.10 && Acidity < 0.50%
+    - 75% discount ratio: API gravity <= 31.10 && Acidity >= 0.50%
+
+### Official Data
+
+#### Official Production Data
+
+1. Every month at 0:00AM UTC on the 5th, the system will regularly obtain official production data;
+2. Official production data source: https://www.petrinex.gov.ab.ca/publicdata
+3. The system will filter based on the year and month of the production to be audited at the above address;
+4. From the filtered results, find the audit well's number based on conditions such as month, asset type, and record the corresponding monthly production.
+
+#### Official Production Price
+
+- Oil price
+
+1. Source: https://oilprice.com/commodity-price-charts?page=chart&sym=CLY00
+2. Rules: Query and record yesterday's closing price
+
+- Gas price
+
+1. Source: https://www.eia.gov/dnav/ng/ng_pri_fut_s1_d.htm
+2. Rules: Query and record yesterday's price
+
+### Minting TAT
+
+1. Producers select "Mintable" status production records on the WellManagement page and click [Mint TAT].
+2. Choose [yes] in the pop-up window, and the system will generate TAT based on the market value of the mined production after the production audit. After the successful minting of TAT, it will be directly transferred to your account;
+3. If your well has beneficiaries, the beneficiaries will share the TAT you mint according to their benefit ratio.
+
+For example: Well 1 has two beneficiaries, A is the Producer with a benefit ratio of 80%, B is Beneficiary 1 with a benefit ratio of 20%, then when Well 1 mints 100 TAT in March, Producer's account adds 80 TAT, Beneficiary 1's account adds 20 TAT.

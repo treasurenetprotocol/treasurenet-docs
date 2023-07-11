@@ -2,54 +2,46 @@
 sidebar_position: 1
 ---
 
-# 成为验证者
+# Becoming a Validator
 
-验证器节点是一种存储区块链历史副本并验证新交易的节点，是区块链的支柱，无论加密市场上涨、下跌还是横盘整理，它们都能赚钱
-您需要拥有自己的服务器，并确保其硬件和软件配置满足验证者的基本要求。 通过 GitHub 下载、安装、运行，成为 Treasurenet 区块链网络的一个节点。 通过初始质押成为验证者。 我们欢迎所有有兴趣加入我们的个人或组织加入。
+Validator nodes, which store copies of blockchain history and validate new transactions, serve as the backbone of the blockchain. They generate revenue irrespective of the cryptocurrency market's direction. To operate a validator node, one must have a server with hardware and software configurations meeting the basic requirements. Download, install, and run the necessary software from GitHub to become a node within the Treasurenet blockchain network. An initial stake enables you to become a validator. We encourage all interested individuals or organizations to join us.
 
-## 成为验证者意味着什么
+## What does it mean to be a validator?
 
-任何持有 Unit 代币都可以运行一个节点来批准网络中的交易，并获得 Unit 形式的奖励。
-验证者运行 treasurenet 链，并且持有该区块链的副本(配置和数据目录)来验证区块网络中的交易。
-每隔 5 秒，区块网络将广播到系统的最新交易，并对交易进行验证和签名，以确保它们永远不会被更改。
-验证者可以获得额外的区块奖励。
-验证者在贡献他们的计算机资源来维护网络，还通过投票参与网络治理。
-验证者是网络的维护者，负责维护网络，还负责通过治理机制来引导区块链的发展，需要持有 Unit 代币的持有者对重要决策和网络升级进行投票分配。
+Anyone holding a Unit token can operate a node to approve transactions within the network and receive rewards in the form of Units. Validators run the Treasurenet chain and maintain a copy of the blockchain (configuration and data directory) to verify transactions on the block network. Every 5 seconds, the block network broadcasts the latest transactions to the system, while validators validate and sign these transactions to ensure their immutability. Validators receive additional block rewards for their efforts.
 
-## 硬件
+By contributing their computing resources, validators help maintain the network and participate in network governance through voting. Validators serve as the network's maintainers and are responsible for its upkeep. They also play a crucial role in guiding the blockchain via governance mechanisms that necessitate Unit token holders to vote on essential decisions and network upgrades.
 
-验证者应该期望为其数据中心位置配备冗余电源、连接和存储备份。 预计会有几个用于光纤、防火墙和交换的冗余网络盒，然后是带有冗余硬盘驱动器和故障转移的小型服务器。 一开始，硬件可能处于数据中心设备的低端。
+## Hardware Requirements
 
-我们预计最初的网络要求会很低。 随着网络的增长，带宽、CPU 和内存需求将会增加。 建议使用大型硬盘来存储多年的区块链历史。
+Validators should have redundant power, connectivity, and storage backup at their data center locations. They should have multiple redundant network boxes for fiber, firewalls, and switching, along with smaller servers featuring redundant hard drives and failover. Initially, hardware will likely be on the lower end of the data center equipment spectrum.
 
-## 支持的操作系统
+In the beginning, network requirements are expected to be minimal. As the network expands, bandwidth, CPU, and memory demands will grow. It is advisable to use large hard drives to store years of blockchain history.
 
-理论上我们支持所有基于 Unix 的操作系统以及 macOS、Microsoft Windows，但 Treasurenet 是年轻的，我们尚未有足够的时间去实验，并确保其在相应操作系统上可以如预期般正常运作。我们目前可以确信的是 其在 linux/x86_64 上是完全可以正常运作的.
+## Supported OS
 
-## 最低配置
+Treasurenet theoretically supports all Unix-based operating systems, macOS, and Microsoft Windows. However, as a young platform, it hasn't been extensively tested on all operating systems. Currently, it is confirmed to work seamlessly on Linux/x86_64.
 
-要运行主网或测试网验证器节点，您需要一台具有以下最低硬件要求的机器：
+## Minimum Requirements
 
-4 个或更多物理 CPU 内核
-至少 500GB 的 SSD 磁盘存储空间
-至少 16GB 内存 (RAM)
-至少 100mbps 网络带宽
-随着区块链使用量的增长，对服务器的要求也可能会增加，因此您也应该制定更新服务器的计划。
+To run a main or test network validator node, you will need a machine with the following minimum hardware requirements:
 
-## 如何成为验证者
+- 4 or more physical CPU cores
+- At least 500GB of SSD disk storage
+- At least 16GB of memory (RAM)
+- At least 100mbps of network bandwidth.
 
-- 每个节点至少质押 158 个 Unit 代币，在 Treasurenet 区块链网络中，要求所有验证者都有抵押要求。
-- 运行一个完整节点。
+With the growth of blockchain usage, server demands are expected to rise; thus, planning for server upgrades is important to accommodate future needs.
 
-## 如何成为验证者
+## How to become a validator?
 
-- 每个节点至少质押 158 个 Unit 代币，在 Treasurenet 区块链网络中，要求所有验证者都有抵押要求。
-- 运行一个完整节点。
+- Each node must stake a minimum of 158 Unit tokens in the Treasurenet blockchain network, where all validators are required to meet staking requirements.
+- To participate, run a full node.
 
-## 软件
+## Software
 
-详细的关于如何安装、部署、启动节点的方法 , 我们提供了开源了 Github 项目 ,并附带详细的文档.(具体细节可以参考后面的快速指引说明文件)
+For instructions on installing, deploying, and starting the node, we offer an open-source GitHub project with comprehensive documentation. (For more information, please refer to the Quick Guide document provided.)
 
-## 社区
+## Community
 
-讨论成为验证者的更多细节，并在我们的 Discord 上向验证者社区的其他成员寻求建议。
+For more information on becoming a validator and seeking advice from other members of the validator community, join our Discord server.

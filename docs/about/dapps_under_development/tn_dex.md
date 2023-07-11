@@ -1,3 +1,3 @@
-# 原生交易应用程序 - TN DEX
+# Native Exchange dApp - TN DEX
 
-随着生产者和去中心化应用（dApps）的连接，对于实物资产（RWAs）的交易需求将会增加。TN DEX 是一个在宝藏网络（Treasurenet）上的去中心化交易所，旨在促进宝藏网络资产与跨链资产之间的自动化市场制作。
+As Producers and dApps connect, there will be increased demand for transactions, particularly for RWAs. TN DEX is a decentralized exchange on Treasurenet to facili`$TAT`e automated market-making between Treasurenet assets and cross-chain assets.

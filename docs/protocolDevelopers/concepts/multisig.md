@@ -1,45 +1,52 @@
-# 多重签名
+# Multisig
 
-学习如何使用密钥环多签名生成、签名和广播交易。
+Learn how to generate, sign and broadcast a transaction using the keyring multisig.
 
-多签名账户是一种拥有特殊密钥的 Treasurenet 账户，可以要求多个签名来签署交易。
-这可以用于增加账户的安全性，或者要求多个参与方的同意来进行交易。可以通过指定以下内容来创建多签名账户：
+A **multisig account** is an Treasurenet account with a special key that can require more than one signature to sign transactions.
+This can be useful for increasing the security of the account or for requiring the consent of multiple parties to make
+transactions. Multisig accounts can be created by specifying:
 
-- 所需签名的阈值数量
-- 参与签名的公钥
+- threshold number of signatures required
+- the public keys involved in signing
 
-要使用多签名账户进行签名，交易必须由账户指定的不同密钥单独签名。然后，这些签名将合并成一个多重签名，用于签署交易。如果缺少所需阈值数量的签名，结果的多重签名将被视为无效。
+To sign with a multisig account, the transaction must be signed individually by the different keys specified for the
+account. Then, the signatures will be combined into a multi-signature which can be used to sign the transaction. If
+fewer than the threshold number of signatures needed are present, the resultant multi-signature is considered invalid.
 
-## 生成多重签名密钥
+## Generate a Multisig key
 
 ```shell
 treasurenetd keys add --multisig=name1,name2,name3[...] --multisig-threshold=K new_key_name
 ```
 
-`K` 是必须签署携带公钥地址的交易的最少私钥数量。
+```K``` is the minimum number of private keys that must have signed the transactions that carry the public key's address
+as signer.
 
-`--multisig` 标志必须包含将组合成新的公钥并存储在本地数据库中的公钥的名称。通过 --multisig 提供的所有名称必须已经存在于本地数据库中。
+The ```--multisig``` flag must contain the name of public keys that will be combined into a public key that will be
+generated and stored as new_key_name in the local database. All names supplied through --multisig must already exist in
+the local database.
 
-除非设置了 `--nosort` 标志，否则在命令行中提供键的顺序不重要，即以下命令生成两个相同的键：
+Unless the flag --nosort is set, the order in which the keys are supplied on the command line does not matter, i.e. the
+following commands generate two identical keys:
 
 ```shell
 treasurenetd keys add --multisig=p1,p2,p3 --multisig-threshold=2 multisig_address
 treasurenetd keys add --multisig=p2,p3,p1 --multisig-threshold=2 multisig_address
 ```
 
-多重签名地址也可以通过 which 命令动态生成并打印：
+Multisig addresses can also be generated on-the-fly and printed through the which command:
 
 ```shell
 treasurenetd keys show --multisig-threshold=K name1 name2 name3 [...]
 ```
 
-## 签署一笔交易
+## Signing a transaction
 
-### 步骤 1：创建多签名密钥
+### Step 1: Create the multisig key
 
-让我们假设你有 test1 和 test2，想要与 test3 创建一个多签账户。
+Let's assume that you have test1 and test2 want to make a multisig account with test3.
 
-首先，将 test3 的公钥导入你的密钥环中。
+First import the public keys of test3 into your keyring.
 
 ```shell
 treasurenetd keys add \
@@ -47,7 +54,7 @@ test3 \
 --pubkey=treasurenetpub1addwnpepqgcxazmq6wgt2j4rdfumsfwla0zfk8e5sws3p3zg5dkm9007hmfysxas0u2
 ```
 
-生成 2/3 阈值的多签密钥。
+Generate the multisig key with 2/3 threshold.
 
 ```shell
 treasurenetd keys add \
@@ -56,7 +63,7 @@ multi \
 --multisig-threshold=2
 ```
 
-你可以看到它的地址和详细信息：
+You can see its address and details:
 
 ```shell
 treasurenetd keys show multi
@@ -67,10 +74,10 @@ treasurenetd keys show multi
   mnemonic: ""
   threshold: 0
   pubkeys: []
-
+  
 ```
 
-让我们向多重签名钱包添加 10 个单位：
+Let's add 10 UNIT to the multisig wallet:
 
 ```shell
 treasurenetd tx bank send \
@@ -83,9 +90,9 @@ treasurenet1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
 --broadcast-mode=block
 ```
 
-### 步骤 2：创建多签交易
+### Step 2: Create the multisig transaction
 
-我们想从我们的多签账户向 treasurenet1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft 发送 5 个 UNIT。
+We want to send 5 UNIT from our multisig account to treasurenet1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft.
 
 ```shell
 treasurenetd tx bank send \
@@ -98,7 +105,7 @@ treasurenet157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq \
 --generate-only > unsignedTx.json
 ```
 
-文件 `unsignedTx.json` 包含以 JSON 编码的未签名交易。
+The file unsignedTx.json contains the unsigned transaction encoded in JSON.
 
 ```json
 {
@@ -139,9 +146,9 @@ treasurenet157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq \
 }
 ```
 
-### 步骤 3：分别签名
+### Step 3: Sign individually
 
-使用 test1 和 test2 进行签名，并创建个别签名。
+Sign with test1 and test2 and create individual signatures.
 
 ```shell
 treasurenetd tx sign \
@@ -161,9 +168,9 @@ unsignedTx.json \
 --chain-id=treasurenet_9000-4
 ```
 
-### 第四步：创建多签名
+### Step 4: Create multisignature
 
-将签名组合以签署交易。
+Combine signatures to sign transaction.
 
 ```shell
 treasurenetd tx multisign \
@@ -174,7 +181,7 @@ test1sig.json test2sig.json \
 --chain-id=treasurenet_9000-4
 ```
 
-交易现已签署:
+The TX is now signed:
 
 ```json
 {
@@ -259,7 +266,7 @@ test1sig.json test2sig.json \
 }
 ```
 
-### 步骤 5: 广播交易
+### Step 5: Broadcast transaction
 
 ```shell
 treasurenetd tx broadcast signedTx.json \

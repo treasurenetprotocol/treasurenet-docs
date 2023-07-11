@@ -2,21 +2,21 @@
 sidebar_position: 3
 ---
 
-# 燃气费和费用
+# Gas and Fees
 
-燃气费的概念表示在状态机上执行特定操作所需的计算量。
+The concept of Gas represents the amount of computation required to execute specific operations on the state machine.
 
-燃气费源自以太坊上的概念，通过向系统支付少量以太的价值来承担操作所需的计算消耗，以避免 EVM 交易计算量无限制的增长，EVM 的每个操作都会消耗一定的 Gas，通常是原生 Token 的一小部分，用户需要为它们想要进行的操作付费，这些操作仅包含交易类操作，像是转账或者调用、部署合约。
+Gas originates from Ethereum, where a small amount of token value is paid to the system to cover the computational cost of operations. This prevents unrestricted growth of computational workload in EVM transactions. Each operation in the EVM consumes a certain amount of Gas, usually a fraction of the native token. Users need to pay for the operations they wish to perform, which typically include transactional operations such as transfers or contract invocations and deployments.
 
-与以太坊完全一样，Treasurenet 使用了 Gas 的概念，这就是 Treasurenet 在执行期间资源使用情况的表现，Treasurenet 上的操作表示为对区块链账本的写入。
+Similar to Ethereum, TN (Treasurenet) utilizes the concept of Gas, which reflects the resource usage during execution. Operations on TN are represented as writes to the blockchain ledger.
 
-在 Treasurenet 中，消息执行期间会计算并向用户收取费用。该费用是根据消息执行中消耗的 Gas 总和进行计算的，费用等于 Gas 乘以 Gas 单价。
+During message execution on TN, fees are calculated and charged to the users. The fee is calculated based on the total Gas consumed during message execution, where the fee equals Gas multiplied by the Gas price.
 
-## 匹配 EVM 燃气消耗
+## Matching EVM Gas Consumption
 
-Treasurenet 是支持以太坊 [Web3](https://web3js.readthedocs.io/en/v1.7.5/) 工具的 EVM 兼容区块链系统。因此，gas 消耗必须和其他 EVM 持平，特别是 以太坊。
+TN is an EVM-compatible blockchain system that supports Ethereum [Web3](https://web3js.readthedocs.io/en/v1.7.5/) tools. Therefore, Gas consumption must align with other EVM systems, especially Ethereum.
 
-EVM 和 Cosmos 状态转换的主要区别在于 EVM 对于每个 OPCODE 使用 gas 表确定费用，而 Cosmos 是通过在 GasConfig 中的设置访问数据库确定每字节的成本来为每个 CRUD 操作收取 Gas 费用。
+The main difference between EVM and Cosmos state transitions is that EVM uses a gas table to determine the cost for each OPCODE, while Cosmos charges Gas fees for each CRUD operation based on the cost per byte accessed in the GasConfig.
 
 ```golang
 // GasConfig defines gas cost for each operation on KVStores
@@ -31,16 +31,16 @@ type GasConfig struct {
 }
 ```
 
-为了匹配 EVM 消耗的 gas，SDK 中的 gas 消耗逻辑被忽略，而是通过从消息中定义的 gas limit 中减去状态转换剩余 gas 加上 refund 来计算消耗的 gas。
+To match the gas consumption of the EVM, the gas consumption logic in the SDK is ignored. Instead, gas consumption is calculated by subtracting the remaining gas from the state transition from the gas limit defined in the message and adding the refund.
 
-为了忽略 SDK 的 gas 消耗，我们将交易 GasMeter 计数重置为 0，并手动将其设置为 gasUsed 执行结束时 EVM 模块计算的值。
+To ignore the gas consumption of the SDK, we reset the transaction GasMeter count to 0 and manually set it to the value calculated by the EVM module when execution is completed.
 
 ### AnteHandler
 
-Cosmos SDK [AnteHandler](https://docs.cosmos.network/main/basics/gas-fees.html#antehandler) 在事务执行之前执行基本检查。这些检查通常是签名验证、交易字段验证、交易费用等。
+The [AnteHandler](https://docs.cosmos.network/main/basics/gas-fees.html#antehandler) in the Cosmos SDK performs basic checks before transaction execution. These checks typically include signature verification, transaction field validation, transaction fees, etc.
 
-关于 gas 消耗和费用，AnteHandler 检查用户是否有足够的余额来支付交易成本（金额加费用），以及检查消息中定义的 gas 限制是否大于或等于消息的计算固有 gas。
+Regarding gas consumption and fees, the AnteHandler checks if the user has sufficient balance to pay for the transaction cost (amount plus fees) and whether the gas limit defined in the message is greater than or equal to the inherent gas calculation of the message.
 
-## 燃气费返还
+## Gas Refunds
 
-在 EVM 中，可以在执行之前指定 gas。指定的总 gas 在执行开始时（AnteHandler 步骤期间）被消耗，如果在执行后剩余任何 gas，剩余的 gas 将退还给用户。
+In the EVM, gas can be specified before execution. The specified total gas is consumed at the start of execution (during the AnteHandler step), and if there is any remaining gas after execution, the remaining gas is refunded to the user.

@@ -1,14 +1,14 @@
-# 资产
+# Assets
 
-## 官方资产
+## Official Assets
 
-| 名称           | 描述 | 维护者             | 状态   |
-| -------------- | ---- | ------------------ | ------ |
-| 加拿大石油矿产 |      | Treasurenet 基金会 | 运行中 |
+| Name                        | Descrption | Maintainer             | Status |
+| --------------------------- | ---------- | ---------------------- | ------ |
+| Canadian Petroleum Minerals |            | Treasurenet Foundation | Live   |
 
-## 非官方资产
+## Unofficial Assets
 
-| 名称 | 描述 | 维护者 | 状态 |
-| ---- | ---- | ------ | ---- |
+| Name | Descrption | Maintainer | Status |
+| ---- | ---------- | ---------- | ------ |
 
-## 加拿大石油矿物
+## Canadian Petroleum Minerals

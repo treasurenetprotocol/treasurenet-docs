@@ -2,43 +2,43 @@
 sidebar_position: 4
 ---
 
-# 常见问题
+# FAQ
 
-## 什么是 USTN？
+## What is USTN?
 
-USTN Token 是一种资产，可以像其他数字货币一样在链上交易，但它们以 1:1 的比例与现实世界的货币挂钩，所以被称为稳定币。
+The USTN Token is an asset that can be traded on-chain like other cryptocurrencies, but it's pegged 1:1 with real-world currency, so it's called a stablecoin.
 
-## 怎样获得 USTN？
+## How to get USTN?
 
-1. 使用 UNIT 在 USTN Finance 中进行兑换或贷款；
-2. 兑换是指根据 UNIT 价值换相应数量的 USTN，1 USTN=1 $，如果 USTN 的总量已经达到 50,000,000，将无法继续兑换 USTN；
-3. 贷款是指使用 UNIT 通过一定质押率贷出相应数量的 USTN，如果此时系统中没有 USTN 的存款，则无法贷出 USTN。
+1. You can obtain USTN by exchanging or loaning with UNIT in USTN Finance.
+2. Exchanging refers to getting a certain amount of USTN according to the value of UNIT. 1 USTN=1 $, if the total amount of USTN has reached 50,000,000, it won't be possible to continue exchanging for USTN.
+3. Loaning refers to loaning a certain amount of USTN by using UNIT through a certain collateral rate. If there are no USTN deposits in the system at this time, USTN cannot be loaned out.
 
-## 我可以怎样使用 USTN？
+## How can I use USTN?
 
-在 USTN Finance，您可以将 USTN 存款以获取利息，或者使用 USTN 兑换出 UNIT，具体的使用方式点击[此处](https://124.70.23.119:3021/docs/ustn/financial-operations)查看。
+In USTN Finance, you can deposit USTN to earn interest, or use USTN to exchange for UNIT. For specific usage, click [here](https://124.70.23.119:3021/en/docs/ustn/financial-operations/) to view.
 
-## 存入 USTN 后，什么时候开始计算利息？利率是多少？
+## After depositing USTN, when will the interest start to be calculated? What is the interest rate?
 
-1. 存入 USTN 后第二天开始计算利息；
-2. 利息根据贷款侧的还款多少来波动计算，也就是说，如果没有人还款，则没有存款利息，还款数量越高，则存款利息越高。
+1. Interest will start to be calculated the day after USTN is deposited.
+2. The interest rate fluctuates based on the amount of repayment on the loan side. That is, if no one repays, there will be no deposit interest. The higher the repayment amount, the higher the deposit interest.
 
-## 为什么我的贷款会被预警？
+## Why would my loan be warned?
 
-1. 当 UNIT 价格波动过大，使得当前贷款的质押率小于等于预警线时，系统会发出预警；
-2. 此时您应当补充抵押品，否则该笔贷款有可能被清算，您的抵押品将无法通过还款拿回。
+1. When the price of UNIT fluctuates too much, causing the current collateral rate of the loan to be less than or equal to the warning line, the system will issue a warning.
+2. At this time, you should replenish the collateral, otherwise, the loan may be liquidated, and your collateral cannot be retrieved through repayment.
 
-### 什么是预警线？
+### What is the warning line?
 
-- 预警指当您的抵押品价值降低，贷款的当前质押率小于某个特定值时，系统发出的警告，此时您需要补充抵押品，否则您的该笔贷款有可能被清算；
-- 该特定值被称为预警线，预警线=贷款质押率\*95%
+- The warning refers to the alert issued by the system when the value of your collateral drops, and the current collateral rate of the loan is less than a specific value. At this time, you need to replenish the collateral, otherwise, your loan may be liquidated.
+- This specific value is called the warning line, the warning line=loan collateral rate\*95%
 
-## 为什么我的贷款会被清算？
+## Why would my loan be liquidated?
 
-1. 当 UNIT 价格波动过大，使得当前贷款的质押率远远小于清算线时，该笔贷款就会被清算，成为一个拍卖标的;
-2. 如果您想赎回您的质押品 UNIT，您可以参与竞买，只要出价最高就能赎回您质押的 UNIT。
+1. When the price of UNIT fluctuates too much, causing the current collateral rate of the loan to be far less than the liquidation line, the loan will be liquidated and become an auction target.
+2. If you want to redeem your collateral UNIT, you can participate in the bidding. As long as you have the highest bid, you can redeem your pledged UNIT.
 
-### 什么是清算线？
+### What is the liquidation line?
 
-- 清算指当您的贷款当前的质押率小于某个特定值时，该笔贷款将被清算并以拍卖品的形式进行处理，您的抵押品将无法通过还款进行赎回；
-- 该特定值被称为清算线，清算线=135%（=质押率\*90%）
+- Liquidation refers to when the current collateral rate of your loan is less than a specific value, the loan will be liquidated and processed in the form of auction goods, and your collateral cannot be redeemed through repayment.
+- This specific value is called the liquidation line, the liquidation line=135% (=collateral rate\*90%)

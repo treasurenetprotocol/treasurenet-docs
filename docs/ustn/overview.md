@@ -1,35 +1,39 @@
-# USTN 财务平台
+---
+sidebar_position: 1
+---
 
-_正在开发中，敬请期待更新_
+# Introduction
 
-## 关于
+_Under development, stay tuned for updates_
 
-### USTN 是什么？
+## What is `$USTN`?
 
-USTN 目前正在开发中，它是 Treasurenet 的稳定币，其波动性针对 1 美元最小化，适用于结算场合。
+Currently under development, `$USTN` is Treasurenet's stablecoin to have minimal variance against 1 US dollar, which can be used for settlement where applicable.
 
-### 如何获得 USTN？
+## How to get `$USTN`?
 
-您可以通过 USTN 财务平台交换或借用$`$UNIT` 和其他货币来获得 USTN。
+You can obtain `$USTN` by exchanging or borrowing with $UNIT, and other currencies, in `$USTN` Finance.
 
-交换是指根据 `$UNIT` 或其他货币的价值购买一定数量的 USTN。
+Exchanging refers to purchasing a certain amount of `$USTN` according to the value of $UNIT or other currencies.
 
-但是，如果 USTN 的现有供应量已经达到了一定的限度，就无法继续兑换 USTN。这个限制是根据市场上 USTN 供需状况动态计算的。
+But if the outstanding supply of `$USTN` has reached a certain limit, it won't be possible to continue exchanging for `$USTN`. This limit is dynamically calculated based on `$USTN` supply and demand status on the market.
 
-借款则是使用 `$UNIT` 作为抵押品。如果此时系统内没有 USTN 存款，就无法贷款出 USTN。
+Borrowing refers to using UNIT as collateral. If there are no `$USTN` deposits in the system at this time, `$USTN` cannot be loaned out.
 
-### 什么是 USTN Finance？
+## What is `$USTN` Finance?
 
-USTN Finance 是围绕 USTN 建立的一个用于存款、取款和贷款偿还的界面。该系统旨在为用户提供便利且易于使用的数字资产管理方法。
+`$USTN` Finance is an interface built around `$USTN` for deposit, withdrawal, and loan repayments. This system aims to provide users with a convenient and easy-to-use digital asset management method.
 
-我可以在 USTN Finance 做什么？
+## What can I do in `$USTN` Finance?
 
-用户可以在 USTN Finance 中使用 USTN 进行基本的金融操作，包括：
+Users can use `$USTN` to perform basic financial operations in `$USTN` Finance, which include:
 
-1. 将 USTN 存入 Treasurenet 的 USTN Finance 并计算利息
-2. 从 USTN Finance 中取出 USTN
-3. 质押 `$UNIT` 并贷出 USTN
-4. 补充贷款的抵押物
-5. 向 USTN Finance 偿还贷款的 USTN，并返回用户的 `$UNIT`
-6. 将 USTN 转账给您的同行
-7. 检查您的账户余额
+1. Deposit `$USTN` into Treasurenet's `$USTN` Finance and calculate interest
+2. Withdraw `$USTN` from `$USTN` Finance
+3. Pledge Unit and loan out `$USTN`
+4. Supplement the collateral of the loan
+5. Return the loaned `$USTN` to `$USTN` Finance, and return the user's Unit
+6. Transfer `$USTN` to your peers
+7. Check your account balance
+
+If you want to learn more about the specific content of the above financial operations, please click [here](/docs/`$USTN`/financial-operations).

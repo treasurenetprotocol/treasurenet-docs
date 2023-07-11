@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Genesis.json 文件
+# Genesis.json
 
-该 genesis.json 文件位于数据目录(default `"/root/.treasurenetd"`)。在标准的 tendermint 创世纪格式之上，我们定制了我们自己的创世文件，其中包含不同的模块并促进了 treasurenet 链的特殊功能。
+The genesis.json file is located in the data directory (default "/root/.treasurenetd"). Building upon the standard Tendermint genesis format, we have customized our own genesis file that includes different modules and facilitates the special functionalities of the Treasurenet chain.
 
-## 创世纪文件配置
+## Fields in genesis
 
-具体来说，创世文件包括以下字段：
+Specifically, the genesis file includes the following fields:
 
 ```json
 {
@@ -522,110 +522,110 @@ sidebar_position: 1
 }
 ```
 
-## 介绍
+## introduce
 
-- "genesis_time": 区块链开始的时间。
-- "genutil"：用于使用的各种创世实用程序功能，包括创世交易创建（gentx）和创世文件验证命令以及 Tendermint 相关初始化。
-- "ibc"：跨不同链的区块链间通信。
-- "chain_id"：区块链的唯一标识符。有关更多详细信息，请参阅此。
-- "initial_height": 区块链的初始高度。
-- "consensus_params: 创世文件中定义的共识参数。
+- "genesis_time": The time at which the blockchain starts.
+- "genutil": Various genesis utility functionalities used, including genesis transaction creation (gentx) and genesis file verification commands, as well as Tendermint-related initialization.
+- "ibc": Inter-Blockchain Communication across different chains.
+- "chain_id": The unique identifier of the blockchain. For more detailed information, please refer to this.
+- "initial_height": The initial height of the blockchain.
+- "consensus_params": Consensus parameters defined in the genesis file.
   - "block":
-  * "max_bytes"：块的最大大小（以字节为单位）。
-  * "max_gas"：每个区块的 gas limit，默认值为“-1”，即不强制执行有关 gas 的规则。
-  * "time_iota_ms"：连续块之间的最小时间增量，以毫秒为单位。
-  - "evidence"：使用证据反应器进行证据存储处理和区块提议检测。
-  * "max_age_num_blocks":该字段将被弃用。
-  * "max_age_duration": 证据的最大年龄。任何早于此的证据都将被拒绝。
-  * "max_num"：证据的最大年龄（块数）。
+    - "max_bytes": The maximum size of a block in bytes.
+    - "max_gas": The gas limit per block, with a default value of "-1" indicating no enforced rules regarding gas.
+    - "time_iota_ms": The minimum time increment between consecutive blocks in milliseconds.
+  - "evidence": Handling of evidence storage and block proposal detection using the evidence reactor.
+    - "max_age_num_blocks": This field will be deprecated.
+    - "max_age_duration": The maximum age of evidence. Any evidence older than this will be rejected.
+    - "max_num": The maximum age of evidence in terms of block count.
   - "validator":
-  * "pub_key_types": 支持的验证器公钥类型。
-- "app_hash"：创世块中定义的初始应用程序状态。
-- "auth"
-  - "params": 创世文件中定义的 auth 模块的参数。
-  * "max_memo_characters": 交易备忘录中的最大字符数。
-  * "tx_sig_limit"：交易的最大签名者数量。
-  * "tx_size_cost_per_byte"：交易每字节消耗的气体量。
-  * "sig_verify_cost_ed25519"edd2519:签名验证的 Gas 成本。
-  * "sig_verify_cost_secp256k1"secp256k1:签名验证的 Gas 成本。
-  - "accounts"：创世账户，它定义了代币的初始分配。
-  * "@type"： 帐户类型。
-  * "address": 创世账户的地址。
-  * "pub_key"：创世账户的公钥。
-  * "account_number"：状态下账户的账号。
-  * "sequence"：用于统计该账户发送的交易数量。每次将事务包含在块中时它都会递增，并用于防止重放攻击。
-  * "base_vesting_account":
-  * "original_vesting"：特殊类型的记账，代币需要归属一段时间才能转移。代币可以在归属期内被委托。
-  * "denom"：令牌的面额。
-  * "amount"：归属账户中的总金额。
-  * "delegated_free"：授予后可以转让的委托代币数量。
-  * "delegated_vesting"：仍在授予中的委托代币数量。
-  * "endtime": 归属结束时间。
-- "bank"bank 模块处理令牌。
-  - "params"：创世文件中定义的银行模块的参数。
-  * "send_enabled": 创世纪中的传输能力。
-  * "default_send_enabled"：“send_enabled”值的默认值控制发送传输能力。
-- "distribution"：处理分配块逻辑和向验证者和委托者收费的模块。
+    - "pub_key_types": The supported validator public key types.
+- "app_hash": The initial application state defined in the genesis block.
+- "auth":
+  - "params": Parameters of the auth module defined in the genesis file.
+    - "max_memo_characters": The maximum number of characters in a transaction memo.
+    - "tx_sig_limit": The maximum number of signers for a transaction.
+    - "tx_size_cost_per_byte": The gas cost per byte for a transaction.
+    - "sig_verify_cost_ed25519": The gas cost for signature verification using ed25519.
+    - "sig_verify_cost_secp256k1": The gas cost for signature verification using secp256k1.
+  - "accounts": Genesis accounts that define the initial allocation of tokens.
+    - "@type": The account type.
+    - "address": The address of the genesis account.
+    - "pub_key": The public key of the genesis account.
+    - "account_number": The account number under the state.
+    - "sequence": The number of transactions sent by the account. It increments each time a transaction is included in a block and is used to prevent replay attacks.
+    - "base_vesting_account":
+      - "original_vesting": Special type of account where tokens need to vest over a period before being transferable. Tokens can be delegated within the vesting period.
+      - "denom": The denomination of the token.
+      - "amount": The total amount in the vesting account.
+      - "delegated_free": The amount of delegated tokens that can be transferred after being granted.
+      - "delegated_vesting": The amount of tokens still in the process of being granted.
+      - "endtime": The end time of the vesting period.
+- "bank": The bank module handles tokens.
+  - "params": Parameters of the bank module defined in the genesis file.
+    - "send_enabled": The transfer capability in the genesis.
+    - "default_send_enabled": The default value of "send_enabled" controlling the sending transfer capability.
+- "distribution": Module responsible for distribution block logic and charging validators and delegators.
   - "delegator_starting_infos":
-  - "delegator_withdraw_infos": 委托人提币地址列表。
+  - "delegator_withdraw_infos": List of delegator withdrawal addresses.
   - "fee_pool":
-  * "community_pool"：在社区池中分配资金（如果有）。
-  - "outstanding_rewards"：未领取的奖励，如果有的话。
-  - "params": 创世文件中定义的分发模块的参数。
-  * "base_proposer_reward"：基于有效区块中收取的交易费用的基本奖金。
-  * "bonus_proposer_reward"：在有效区块中收取的交易费用的最大奖金。
-  * "community_tax": 社区税率。
-  * "withdraw_addr_enabled"：委托人是否可以设置不同地址提取奖励。
-  - "previous_proposer": 前一个区块的提议者，如果有的话。
-  - "validator_accumulated_commissions"：未收取的验证者佣金，如果有的话。
-  - "validator_current_rewards"：与验证者当前奖励相关的信息（如果有）。
-  - "validator_historical_rewards"：与验证者的历史奖励相关的信息（如果有）。
-  - "validator_slash_events"：与验证者历史削减事件相关的信息（如果有）。
-- "gov": 治理模块。
-  - "deposit_params"：治理提案所需保证金参数。
-  * "max_deposit_period"：治理提案的最长存放期限。
-  * "min_deposit"：治理提案所需的最低保证金。
-  - "deposits"：每个提案 ID 的存款列表，如果有的话。
-  - "proposals"：提案清单，如果有的话。
-  - "starting_proposal_id": 初始提案 id，从"1"
-  - "tally_params"：理货参数。
-  * "quorum"：需要投票才能使结果有效的绑定质押代币的最小百分比。
-  * "threshold"YES: 使结果有效所需的最小投票百分比。
-  * "veto_threshold"NO_WITH_VETO：结果有效的最大票数百分比。
-  - "votes"：每个提案 ID 的投票列表（如果有）。
-  - "voting_params"：投票参数。
-  * "voting_period": 治理提案的投票期。
-- "mint": 用于令牌铸造的铸造模块。
+    - "community_pool": Allocation of funds (if any) in the community pool.
+  - "outstanding_rewards": Unclaimed rewards, if any.
+  - "params": Parameters of the distribution module defined in the genesis file.
+    - "base_proposer_reward": Base bonus based on transaction fees collected in valid blocks.
+    - "bonus_proposer_reward": Maximum bonus based on transaction fees collected in valid blocks.
+    - "community_tax": Community tax rate.
+    - "withdraw_addr_enabled": Whether delegators can set different addresses for reward withdrawals.
+  - "previous_proposer": The proposer of the previous block, if any.
+  - "validator_accumulated_commissions": Unwithdrawn validator commissions, if any.
+  - "validator_current_rewards": Information related to the validator's current rewards (if any).
+  - "validator_historical_rewards": Information related to the validator's historical rewards (if any).
+  - "validator_slash_events": Information related to the validator's historical slash events (if any).
+- "gov": The governance module.
+  - "deposit_params": Deposit parameters for governance proposals.
+    - "max_deposit_period": The maximum deposit period for governance proposals.
+    - "min_deposit": The minimum deposit required for governance proposals.
+  - "deposits": List of deposits for each proposal ID, if any.
+  - "proposals": List of proposals, if any.
+  - "starting_proposal_id": The initial proposal ID, starting from "1".
+  - "tally_params": Tally parameters.
+    - "quorum": The minimum percentage of bonded tokens required for a vote to be valid.
+    - "threshold": The minimum percentage of votes required to make a result valid.
+    - "veto_threshold": The maximum percentage of votes for a result to be valid.
+  - "votes": List of votes for each proposal ID, if any.
+  - "voting_params": Voting parameters.
+    - "voting_period": The voting period for governance proposals.
+- "mint": The mint module for token minting.
   - "minter":
-  * "annual_provisions"：年度预期拨备（在创世纪中设置为零）。
-  * "inflation"：目标年通货膨胀率，每周复利。
-  - "params":创世文件中定义的 mint 模块的参数。
-  * "blocks_per_year"：预计每年生产的区块数量。
-  * "goal_bonded"：以百分比表示的目标绑定令牌。
-  * "inflation_max": 最大通货膨胀率。
-  * "inflation_min": 最低通货膨胀率。
-  * "inflation_rate_change": 通货膨胀率的最大年度变化。
-  * "mint_denom"：正在铸造的令牌类型。
-- "slashing": 罚没模块，用于惩罚验证者的不当行为。
-  - "missed_blocks"：与验证者错过的区块相关的信息，如果有的话。
-  - "params": 创世文件中定义的 slashing 模块的参数。
-  * "downtime_jail_duration"：低可用性验证器的监禁时间。
-  * "min_signed_per_window"：总错过块的阈值，以百分比表示。
-  * "signed_blocks_window": 计 ​​ 算验证者活跃度的窗口。
-  * "slash_fraction_double_sign"：拜占庭验证者减少股权的最大百分比。
-  * "slash_fraction_downtime": 可用性低的验证者减少权益的最大百分比。
-  - - "signing_infos"：与罚没模块的每个验证器相关的信息（如果有）。
-- "staking"：处理权益证明相关逻辑的权益模块。
-  - "delegations"：与验证器的委托状态相关的信息（如果有）。
-  - "exported": 这个创世文件是否是通过导出以前的状态生成的。
-  - "last_total_power"：创世记中的总投票权，如果有的话。
-  - "last_validator_powers"：每个验证者在最后已知状态下的投票权，如果有的话。
-  - "params": 创世文件中定义的质押模块的参数。
-  * "bond_denom": 用于质押的硬币面额。
-  * "historical_entries"：要保留的历史条目数。
-  * "max_entries"：解除绑定委托或重新委托的最大条目数。
-  * "max_validators": 验证器的最大数量。
-  * "unbonding_time"：解除绑定的持续时间。
-  - "redelegations"：验证者的重新委托列表，如果有的话。
-  - "unbonding_delegations"：验证者的解除绑定委托列表，如果有的话。
-  - "validators"：现有验证器列表，如果有的话。
+    - "annual_provisions": The annual expected provisions (set to zero in the genesis).
+    - "inflation": The target annual inflation rate compounded weekly.
+  - "params": Parameters of the mint module defined in the genesis file.
+    - "blocks_per_year": The estimated number of blocks produced per year.
+    - "goal_bonded": The target bonded tokens as a percentage.
+    - "inflation_max": The maximum inflation rate.
+    - "inflation_min": The minimum inflation rate.
+    - "inflation_rate_change": The maximum annual change in the inflation rate.
+    - "mint_denom": The token type being minted.
+- "slashing": The slashing module for penalizing validators' misbehavior.
+  - "missed_blocks": Information related to missed blocks by validators, if any.
+  - "params": Parameters of the slashing module defined in the genesis file.
+    - "downtime_jail_duration": The jail duration for low availability validators.
+    - "min_signed_per_window": The threshold of total missed blocks as a percentage.
+    - "signed_blocks_window": The window for calculating validator activity.
+    - "slash_fraction_double_sign": The maximum percentage by which Byzantine validators reduce their stake.
+    - "slash_fraction_downtime": The maximum percentage by which low availability validators reduce their stake.
+  - "signing_infos": Information related to each validator in the slashing module (if any).
+- "staking": The staking module responsible for the logic of proof-of-stake.
+  - "delegations": Information related to delegation status with validators (if any).
+  - "exported": Whether this genesis file is generated from exporting a previous state.
+  - "last_total_power": The total voting power in the genesis if available.
+  - "last_validator_powers": The voting power of each validator in the last known state if available.
+  - "params": Parameters of the staking module defined in the genesis file.
+    - "bond_denom": The denomination of coins used for staking.
+    - "historical_entries": The number of historical entries to retain.
+    - "max_entries": The maximum number of entries for unbonding delegations or redelegations.
+    - "max_validators": The maximum number of validators.
+    - "unbonding_time": The duration of unbonding.
+  - "redelegations": List of redelegations for validators if any.
+  - "unbonding_delegations": List of unbonding delegations for validators if any.
+  - "validators": List of existing validators if any.

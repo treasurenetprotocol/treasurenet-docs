@@ -1,7 +1,7 @@
-# 质押加速
+# Staking Boosting
 
-1. 质押加速每 5min 一轮，所有 Validator 均可参与；
-2. 进入页面后，输入要质押的 TAT 数量，点击【提交】，唤起 Metamask 进行交易；
-3. 交易成功后您的质押记录将出现在左侧的列表中；
-4. 系统会从该列表中进行随机筛选，选出一定数量的 Active Super Validator，来参与 POS；
-5. 当前轮结束后，您需要再次质押 TAT，才可继续成为 Super Validator。
+1. Stake Boosting, one round every 5 minutes, all validators can participate;
+2. After entering the page, enter the amount of TAT you want to stake, click [Submit], and invoke Metamask for the transaction;
+3. After a successful transaction, your staking record will appear in the list on the left side;
+4. The system will randomly select a certain number of Active Super Validators from this list to participate in POS;
+5. After the current round ends, you need to stake TAT again to continue being a Super Validator.
