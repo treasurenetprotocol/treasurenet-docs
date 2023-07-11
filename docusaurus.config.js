@@ -21,7 +21,17 @@ const config = {
         defaultLocale: 'en',
         locales: ['en', 'zh-Hans'],
     },
+    themes:[
+        [
+            require.resolve("@easyops-cn/docusaurus-search-local"),
+            ({
+                indexPages: true,
+                language: ['en', 'zh'],
+                hashed: true,
 
+            }),
+        ]
+    ],
     presets: [
         [
             '@docusaurus/preset-classic',
@@ -73,7 +83,7 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            algolia: {
+            /*algolia: {
                 appId: 'YOUR_APP_ID',
                 apiKey: 'YOUR_SEARCH_API_KEY',
                 indexName: 'YOUR_INDEX_NAME',
@@ -85,7 +95,7 @@ const config = {
                 },
                 searchParameters: {},
                 searchPagePath: 'search',
-            },
+            },*/
             colorMode: {
                 defaultMode: 'dark',
                 disableSwitch: false,
