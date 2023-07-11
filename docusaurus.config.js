@@ -53,9 +53,9 @@ const config = {
                     // Remove this to remove the "edit this page" links.
                     editUrl: ({locale, docPath}) => {
                         if (locale === 'en') {
-                            return `https://github.com/treasurenetprotocol/docs/blob/feature/1.0.2/docs/${docPath}`
+                            return `https://github.com/treasurenetprotocol/docs/blob/feature/1.0.3/docs/${docPath}`
                         } else {
-                            return `https://github.com/treasurenetprotocol/docs/blob/feature/1.0.2/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`
+                            return `https://github.com/treasurenetprotocol/docs/blob/feature/1.0.3/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`
                         }
                     },
                     showLastUpdateAuthor: true,
