@@ -122,6 +122,21 @@ const config = {
                     },*/
                     {to: '/blog', label: 'Blog', position: 'left'},
                     {
+                        type: 'dropdown',
+                        label: 'network',
+                        position: 'right',
+                        items: [
+                            {
+                                label: 'mainnet',
+                                href: 'https://www.treasurenet.io',
+                            },
+                            {
+                                label: 'testnet',
+                                href: 'https://www.testnet.trasurenet.io',
+                            },
+                        ],
+                    },
+                    {
                         href: 'https://github.com/treasurenetprotocol',
                         label: 'GitHub',
                         position: 'right',
