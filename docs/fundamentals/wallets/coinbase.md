@@ -30,7 +30,7 @@ The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled
 
    - Network Name : Treausurenet Mainnet Alpha
    - New RPC URL: https://wallet.treasurenet.io
-   - Chain ID :9001
+   - Chain ID :5002
    - Currency Symbol (optional): UNIT
    - Block Explorer URL (optional):https://evmexplorer.treasurenet.io/
 
@@ -38,7 +38,7 @@ The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled
 
 ![addnetwork2](/img/docs/addnetwork2.png)
 
-![addnetwork3](/img/docs/addnetwork3.png)
+![addnetwork3](/img/docs/addnetwork35002.png)
 
 ### Manually adding Treasurenet Testnet.
 
@@ -48,11 +48,11 @@ The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled
 
 - Network Name : Treausurenet Testnet
 - New RPC URL: https://wallet.testnet.treasurenet.io
-- Chain ID：9000
+- Chain ID：5005
 - Currency Symbol (optional): UNIT
 - Block Explorer URL (optional)：https://evmexplorer.testnet.treasurenet.io/
 
-![addtestnetwork](/img/docs/addtestnetwork.png)
+![addtestnetwork](/img/docs/addtestnetwork5005.png)
 
 ## How do I import tokens?
 
