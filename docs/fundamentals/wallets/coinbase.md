@@ -38,7 +38,7 @@ The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled
 
 ![addnetwork2](/img/docs/addnetwork2.png)
 
-![addnetwork3](/img/docs/addnetwork35002.png)
+![addnetwork3](/img/docs/addnetwork35002little.png)
 
 ### Manually adding Treasurenet Testnet.
 
@@ -52,7 +52,7 @@ The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled
 - Currency Symbol (optional): UNIT
 - Block Explorer URL (optional)：https://evmexplorer.testnet.treasurenet.io/
 
-![addtestnetwork](/img/docs/addtestnetwork5005.png)
+![addtestnetwork](/img/docs/addtestnetwork5005little.png)
 
 ## How do I import tokens?
 
