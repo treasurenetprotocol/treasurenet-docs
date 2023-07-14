@@ -123,15 +123,15 @@ const config = {
                     {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         type: 'dropdown',
-                        label: 'network',
+                        label: 'Network',
                         position: 'right',
                         items: [
                             {
-                                label: 'mainnet',
+                                label: 'Treasurenet Mainnet',
                                 href: 'https://www.treasurenet.io',
                             },
                             {
-                                label: 'testnet',
+                                label: 'Treasurenet Testnet',
                                 href: 'https://www.testnet.trasurenet.io',
                             },
                         ],
