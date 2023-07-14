@@ -132,7 +132,7 @@ const config = {
                             },
                             {
                                 label: 'Treasurenet Testnet',
-                                href: 'https://www.testnet.trasurenet.io',
+                                href: 'https://www.testnet.treasurenet.io',
                             },
                         ],
                     },
