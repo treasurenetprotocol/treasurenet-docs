@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://treasurenet.io">
-    <img alt="treasurenetLogo" src="https://raw.githubusercontent.com/wiki/treasurenetprotocol/treasurenet/images/logo.png" width="250" />
+    <img alt="treasurenetLogo" src="https://www.treasurenet.io/static/img/logo/logo.png" width="250" />
   </a>
 </p>
 
