@@ -28,7 +28,7 @@ b. 在 Personal Verifiation 界面填写包括姓名、出生年月日、家庭�
 ![Personal_verification](/img/docs/Produceraccessandaudit4.png)
 
 c. 填写矿井信息
-在 Well information 界面填写矿井信息，包括矿井的地址、执照与各种参数。点击[这里](https://docs.treasurenet.io/docs/assets/tat_mint/wellmanagement)查看具体跳转说明。
+在 Well information 界面填写矿井信息，包括矿井的地址、执照与各种参数。点击[这里](https://docs.treasurenet.io/zh-Hans/docs/assets/tat_mint/wellmanagement/)查看详细说明。
 
 
 ## 3. 主页
