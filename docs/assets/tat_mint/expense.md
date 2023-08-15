@@ -2,16 +2,16 @@
 
 ## 1. Deposit margin
 
-- Click Expense Management on the left to view information about each margin access.
+- Click Expense Management to view information about each margin deposit and withdrawal under different assets.
 - You can view the margin balance of your account here.
 
-![Expense_Management](/img/docs/Expense_Management.png)
+![Expense_Management](/img/docs/Expense1.png)
 
 - Click 'Deposit' to deposit the deposit, enter the amount of deposit you want to deposit in the pop-up window, click Submit to submit.
 
 - After successfully submitting 'Deposit successful' will be displayed.
 
-![Deposit](/img/docs/Deposit.png)
+![Deposit](/img/docs/Expense-d.png)
 
 ## 2. Withdrawal of deposit
 
@@ -19,4 +19,4 @@
 
 - 'Withdrawal successful' will be displayed after successful fetching.
 
-![Withdraw](/img/docs/Withdraw.png)
+![Withdraw](/img/docs/Expense-w.png)
