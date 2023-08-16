@@ -18,10 +18,6 @@ The status of a mine can be indicated as follows:
 
 a. Please provide the requested information on the page as specified. The beneficiary section can be accessed [here] (provide the appropriate link to the Change Benefit section).
 
-![addawell.png](/img/docs/AddWell1.png)
-
-![addawell2.png](/img/docs/AddWell2.png)
-
 b. Once you have entered all the required information, click on 'Submit' to submit your request for adding a mine. The request will be reviewed by the FoundationManager.
 
 c. If the FoundationManager approves the request, the mine will be successfully added. However, if the FoundationManager does not approve the request, you have the option to modify the information of the submitted mine and resubmit it for approval.
@@ -30,13 +26,9 @@ c. If the FoundationManager approves the request, the mine will be successfully 
 
 a. To distribute the benefit percentage among specific wells, you can select the desired wells and open a pop-up window by clicking on ‘Change Benefit’ in the action bar. This window allows you to adjust the allocation of the benefit percentage for the selected wells.
 
-![changebenefit1.png](/img/docs/ChangeBenefit1.png)
-
 b. To proceed with sharing the benefits, follow these steps:
 
 1. Click on ‘Share to benefit.’
-
-![changebenefit2.png](/img/docs/ChangeBenefit2.png)
 
    i. If you wish to share the benefits with individual users, select ‘No.’
    ii. If you prefer to share the benefits with a decentralized application (DAPP), select ‘Yes.’
@@ -51,21 +43,15 @@ c. Fill in the benefit ratio. After filling in, click 'Confirm' in the pop-up Me
 
 a. Select the well that has shared a percentage of benefits to the DAPP to be associated and click on 'Connect DAPP';
 
-![connect dapp1.png](/img/docs/ConnectDAPP1.png)
-
 b. Select the DAPP to be associated and click 'Submit'.
 
 c. Enter the verification code provided by DAPP.
-
-![connectdapp2.png](/img/docs/ConnectDAPP2.png)
 
 d. After inputting, click 'Confirm' and confirm in the pop-up Metamask, after successful submission, it will show 'Submit successful', at this time, you need DAPP to check whether the association is successful.
 
 ### View details of the well
 
 a. Click on 'Details' to open the mine details page, as shown below:
-
-![welldetails.png](/img/docs/WellDetails.png)
 
 ### Modification of mine information
 
