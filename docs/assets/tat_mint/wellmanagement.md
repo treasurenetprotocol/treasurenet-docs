@@ -18,9 +18,9 @@ The status of a mine can be indicated as follows:
 
 a. Please provide the requested information on the page as specified. The beneficiary section can be accessed [here] (provide the appropriate link to the Change Benefit section).
 
-![addawell.png](/img/docs/AddaWell1.png)
+![addawell.png](/img/docs/AddWell1.png)
 
-![addawell2.png](/img/docs/AddaWell2.png)
+![addawell2.png](/img/docs/AddWell2.png)
 
 b. Once you have entered all the required information, click on 'Submit' to submit your request for adding a mine. The request will be reviewed by the FoundationManager.
 
