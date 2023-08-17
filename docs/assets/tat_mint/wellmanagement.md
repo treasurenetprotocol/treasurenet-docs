@@ -4,7 +4,7 @@
 
 To view and manage all your mines, click 'Well Management' on the left navigation bar.This will allow you to view and manage your added mines.
 
-![well management](/img/docs/WellManagement1.png)
+![wellmanagement](/img/docs/WellManagement1.png)
 
 The status of a mine can be indicated as follows:
 
@@ -16,7 +16,11 @@ The status of a mine can be indicated as follows:
 
 ### Add Well：Click to add a new well
 
-a. Please provide the requested information on the page as specified. The beneficiary section can be accessed [here] (provide the appropriate link to the Change Benefit section).
+a. Please provide the requested information on the page as specified.
+
+![addwell1](/img/docs/addwell1.png)
+
+![addwell2](/img/docs/addwell2.png)
 
 b. Once you have entered all the required information, click on 'Submit' to submit your request for adding a mine. The request will be reviewed by the FoundationManager.
 
@@ -29,6 +33,8 @@ a. To distribute the benefit percentage among specific wells, you can select the
 b. To proceed with sharing the benefits, follow these steps:
 
 1. Click on ‘Share to benefit.’
+
+![changebenefit1.png](/img/docs/changebenefit1.png)
 
    i. If you wish to share the benefits with individual users, select ‘No.’
    ii. If you prefer to share the benefits with a decentralized application (DAPP), select ‘Yes.’
@@ -43,15 +49,21 @@ c. Fill in the benefit ratio. After filling in, click 'Confirm' in the pop-up Me
 
 a. Select the well that has shared a percentage of benefits to the DAPP to be associated and click on 'Connect DAPP';
 
+![connectdapp1.png](/img/docs/connectdapp1.png)
+
 b. Select the DAPP to be associated and click 'Submit'.
 
 c. Enter the verification code provided by DAPP.
+
+![connectdapp2.png](/img/docs/connectdapp2.png)
 
 d. After inputting, click 'Confirm' and confirm in the pop-up Metamask, after successful submission, it will show 'Submit successful', at this time, you need DAPP to check whether the association is successful.
 
 ### View details of the well
 
 a. Click on 'Details' to open the mine details page, as shown below:
+
+![welldetails.png](/img/docs/welldetails.png)
 
 ### Modification of mine information
 

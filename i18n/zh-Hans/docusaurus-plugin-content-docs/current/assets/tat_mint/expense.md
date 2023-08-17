@@ -6,7 +6,7 @@
 
 - My Expense Balance：您可以查看您账户的保证金余额。
 
-![Expense_Management](/img/docs/Expense1.png)
+![Expense1](/img/docs/Expense1.png)
 
 - 点击‘Deposit’可以存保证金，弹窗中输入想存的保证金额度，点击 Submit 提交；
 
