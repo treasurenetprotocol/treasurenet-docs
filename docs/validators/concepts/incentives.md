@@ -16,7 +16,7 @@ The consensus reward consists of the block issuance reward and the total transac
 
 _<center>Logic similar to BTC supply, where block reward reduces so the block reward sum is a finite sum of the infinite series.</center>_
 
-_<center>However for TN, supply is determined by future asset production.<br> Disfinationary means emission slows down year-on-year.</center>_
+_<center>However for TN, supply is determined by future asset production. Disfinationary means emission slows down year-on-year.</center>_
 
 
 <br>
