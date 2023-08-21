@@ -10,11 +10,11 @@ Treasurenet will select a Proposer from the list of validators based on certain 
 
 The consensus reward consists of the block issuance reward and the total transaction fees for each block. We allocate the consensus reward into different portions: community governance, block proposer reward, additional reward for validator, and PoS reward.
 
-**UNIT supply is finite and disinflationary.**
+**<center>UNIT supply is finite and disinflationary.</center>**
 
-_Logic similar to BTC supply, where block reward reduces so the block reward sum is a finite sum of the infinite series._
+_<center>Logic similar to BTC supply, where block reward reduces so the block reward sum is a finite sum of the infinite series.</center>_
 
-_However for TN, supply is determined by future asset production. Disfinationary means emission slows down year-on-year._
+_<center>However for TN, supply is determined by future asset production. Disfinationary means emission slows down year-on-year.</center>_
 
 Period $n$ block reward $r$ is defined:
 
@@ -29,7 +29,7 @@ $$
 $$
 
 
-<small>Block reward will be reduced by 1% (where f=99%) to 50% (where f=50%)</small>
+<small><center>Block reward will be reduced by 1% (where f=99%) to 50% (where f=50%)</center></small>
 
 To determine $f_n$ , TN compares TAT minted between 2 previous periods where, a delta ($d$) is defined for period $n$:
 
@@ -38,7 +38,7 @@ d_n = \frac{\frac{TAT_{from period n-1}}{TAT_{from period n-2}}}{1+g}
 $$
 
 
-<small>Delta (d) looks back at 2 previous periods，period $n-1$ and period $n-2$ to determine d.</small>
+<small><center>Delta (d) looks back at 2 previous periods，period $n-1$ and period $n-2$ to determine d.</center></small>
 
 - Where, asset production goal ($g$) is set to 10% by default. $g$ may be changed by **DAO**.
 
