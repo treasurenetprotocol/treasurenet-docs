@@ -11,16 +11,12 @@ Treasurenet 会从 Validator 列表中根据一定规则选出一位成为 Propo
 每个区块的出块奖励依赖于UNIT的供应逻辑。Treasurenet初始时每个区块出块会产生10个UNIT，该值将会随着UNIT的供应逻辑变化。
 
 
-<br>
-
 **<center>UNIT 的供应是有限且通货紧缩的。</center>**
 
 _<center>这个逻辑类似于 BTC 的供应，因区块奖励减少，使得区块奖励的总和是无限级数的有限和。</center>_
 
-_<center>然而对于TN来说，供应量是由未来资产生产决定的。<br> 非强制性意味着排放量同比放缓。</center>_
+_<center>然而对于TN来说，供应量是由未来资产生产决定的。非强制性意味着排放量同比放缓。</center>_
 
-
-<br>
 
 第$n$周期的区块奖励$r$定义为：
 
