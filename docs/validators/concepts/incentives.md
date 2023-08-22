@@ -2,13 +2,17 @@
 sidebar_position: 1
 ---
 
-# Block Rewards
+# Consensus Rewards
 
 To encourage active participation in the voting process, Treasurenet provides rewards for nodes involved in consensus, including delegators, active validators, and proposers.
 
 Treasurenet will select a Proposer from the list of validators based on certain rules, who will be responsible for creating blocks. After a block is successfully created, the block reward (Unit Token) is distributed to the accounts of all participants in the consensus.
 
 The consensus reward consists of the block issuance reward and the total transaction fees for each block. We allocate the consensus reward into different portions: community governance, block proposer reward, additional reward for validator, and base reward.
+
+## UNIT Supply logic
+
+The block reward for each block depends on the supply logic of UNIT. Treasurenet initially produces 10 UNITs per block, and this value will change with the supply logic of UNITs.
 
 **<center>UNIT supply is finite and disinflationary.</center>**
 
@@ -33,7 +37,7 @@ $$
 
 <br/>
 
-To determine $f_n$ , TN compares TAT minted between 2 previous periods where, a delta ($d$) is defined for period $n$:
+**To determine $f_n$ , TN compares TAT minted between 2 previous periods where, a delta ($d$) is defined for period $n$:**
 
 <br/>
 
@@ -115,7 +119,7 @@ $$
 
 - Super Validator Reward   $SVR$
 
-  $SVR=SVF  \times \frac{of \space Active \space Super \space Validators}{of \space all \space Active \space Validatorsr}  \times r$
+  $SVR=SVF  \times \frac{of \space Active \space Super \space Validators}{of \space all \space Active \space Validators}  \times r$
   
   _$SVF=60$% Super Validator Factor determines the Super Validator Reward_
 
