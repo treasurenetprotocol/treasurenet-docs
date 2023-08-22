@@ -8,7 +8,7 @@ To encourage active participation in the voting process, Treasurenet provides re
 
 Treasurenet will select a Proposer from the list of validators based on certain rules, who will be responsible for creating blocks. After a block is successfully created, the block reward (Unit Token) is distributed to the accounts of all participants in the consensus.
 
-The consensus reward consists of the block issuance reward and the total transaction fees for each block. We allocate the consensus reward into different portions: community governance, block proposer reward, additional reward for validator, and PoS reward.
+The consensus reward consists of the block issuance reward and the total transaction fees for each block. We allocate the consensus reward into different portions: community governance, block proposer reward, additional reward for validator, and base reward.
 
 **<center>UNIT supply is finite and disinflationary.</center>**
 
@@ -31,30 +31,35 @@ $$
 
 <small><center>Block reward will be reduced by 1% (where f=99%) to 50% (where f=50%)</center></small>
 
+<br/>
+
 To determine $f_n$ , TN compares TAT minted between 2 previous periods where, a delta ($d$) is defined for period $n$:
 
+<br/>
+
 $$
-d_n = \frac{\frac{TAT_{from period n-1}}{TAT_{from period n-2}}}{1+g}
+d_n = \frac{\frac{TAT_{from \space period \space n-1}}{TAT_{from \space period \space n-2}}}{1+g}
 $$
 
+<small><center>Delta (d) looks back at 2 previous periods，period n-1 and period n-2 to determine d.</center></small>
 
-<small><center>Delta (d) looks back at 2 previous periods，period $n-1$ and period $n-2$ to determine d.</center></small>
+<br/>
 
 - Where, asset production goal ($g$) is set to 10% by default. $g$ may be changed by **DAO**.
 
-    + When $d_n=0$, $f_n=50%$;
+    + When $d_n=0$, $f_n$=50%;
 
       _This is the maximum reduction scenario where there is no new TAT_
 
-    + When $0<d_n<1$, $f_n$ is scaled, so that $75%<f_n<90%$.
+    + When $0<d_n<1$, $f_n$ is scaled, so that 75%<$f_n$<90%.
 
       _Specifically,_ $f_n=0.75+[(0.9-0.75)]d_n$
 
-    + When  $d_n \geq 1 , f_n is scaled, so that 90% \leq f_n \leq 99%$
+    + When  $d_n \geq 1$, $f_n$ is scaled, so that 90% $\leq f_n \leq 99$%
 
       _Specifically,_ $f_n=MIN(0.99, 0.01*ROUNDDOWN(d_n-1)+0.9)$
 
-    + Note that when $d_n \geq 10, f_n=99%$
+    + Note that when $d_n \geq 10, f_n$=99%
 
       _This is the minimum reduction scenario where there are more than 10x new TAT_
 
@@ -90,7 +95,7 @@ $$
 _UNIT emission is almost like a game, where **High** asset production, with respect to a production goal, keeps block reward factor $f$ **high**, but a **failure** will cause a reward ‘**halving**’ event._
 
 
-## POS Reward
+## Block Reward
 
 Recall that in period n, the block reward ($r$) is: $r_n$
 
@@ -102,21 +107,21 @@ $$
 
 - Community Pool  $CMP$
 
-  $CMP=1%$
+  $CMP$=1%
 
 - Proposer Reward   $PR$
 
-  $PR \leq 5%$
+  $PR \leq 5$%
 
 - Super Validator Reward   $SVR$
 
-  $SVR=SVF  \times \frac{of Active Super Validators}{of all Active Validatorsr}  \times r$
+  $SVR=SVF  \times \frac{of \space Active \space Super \space Validators}{of \space all \space Active \space Validatorsr}  \times r$
   
-  _$SVF=60%$ Super Validator Factor determines the Super Validator Reward_
+  _$SVF=60$% Super Validator Factor determines the Super Validator Reward_
 
 - Base Reward   $BR$
 
-  $BR=100%-CMP-PR-SVR$
+  $BR$=100%$-CMP-PR-SVR$
 
-  $BR \leq 44%$
+  $BR \leq 44$%
 
