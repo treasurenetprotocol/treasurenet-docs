@@ -261,7 +261,7 @@ const sidebars = {
                     items: [
                         'validators/concepts/validator-delegator',
                         'validators/concepts/becoming-a-validator',
-                        'validators/concepts/incentives',
+                        'validators/concepts/rewards',
                     ],
                 },
                 {
