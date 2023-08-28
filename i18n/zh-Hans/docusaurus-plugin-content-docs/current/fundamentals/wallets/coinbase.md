@@ -54,8 +54,8 @@ Coinbase 浏览器扩展钱包是一个用于访问支持以太坊的应用程�
 
 1. 打开设置>隐藏资产, 点击加号标志，填写下方合约地址:
 
-- USTN : `0x7102e133acfbDE1BE72C25f6669117Dd75DE7184`
-- TAT : `0xDe5e255231Cdc6c40fF238FB55E35Ea9d4a111D8`
+[^_^]: USTN : `0x7102e133acfbDE1BE72C25f6669117Dd75DE7184`
+- TAT : `0x465C5ed965692F850f0a3Df1aA29955953a53714`
 
 ![addtoken1](/img/docs/addtoken1.png)
 
