@@ -58,8 +58,8 @@ The Coinbase Wallet browser extension is a wallet for accessing Ethernet-enabled
 
 1. Open Settings > Hidden Assets, click on the plus sign and fill in the contract address below.
 
-- USTN : 0x7102e133acfbDE1BE72C25f6669117Dd75DE7184
-- TAT : 0xDe5e255231Cdc6c40fF238FB55E35Ea9d4a111D8
+[^_^]: - USTN : 0x7102e133acfbDE1BE72C25f6669117Dd75DE7184
+- TAT : 0x465C5ed965692F850f0a3Df1aA29955953a53714
 
 ![addtoken1](/img/docs/addtoken1.png)
 
