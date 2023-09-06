@@ -123,7 +123,7 @@ treasurenetd keys add <validator> --keyring-backend file --algo info 2>> /data/v
 treasurenetd keys add <orchestrator> --keyring-backend file --algo info 2>> /data/orchestrator-phrase
 treasurenetd eth_keys add --keyring-backend test >> /data/validator-eth-keys
 treasurenetd init <Moniler_name> --chain-id tets_9000-1
-#修改配置文件设置对等节点
+#Modify configuration file settings for peer nodes
 ~/.treasurenetd/config/config.toml
 
 #######################################################

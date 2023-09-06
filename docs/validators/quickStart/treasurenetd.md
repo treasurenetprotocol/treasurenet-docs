@@ -23,12 +23,15 @@ You can also use the -h or --help command to get help information
 ### Configuration and Data Directory
 
 ```shell
-                      # ~/.treasurenetd
+                                  # ~/.treasurenetd
 |-- config
-|   |-- app.toml      # 应用模块的配置文件
-|   |-- client.toml
-|   `-- config.toml   # 共识相关的配置文件
-|-- data              # 节点所使用的数据库
+|   |-- app.toml                  # 应用模块的配置文件
+|   |-- client.toml   
+    |-- genesis.json              # The genesis file
+	|-- node_key.json             # Private key to use for node authentication in the p2p protocol. 
+	|-- priv_validator_key.json   # Private key to use as a validator in the consensus protocol.      
+|   `-- config.toml               # 共识相关的配置文件
+|-- data                          # 节点所使用的数据库
 
 ```
 

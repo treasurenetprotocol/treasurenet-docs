@@ -4,13 +4,15 @@ sidebar_position: 5
 
 # Join test-net
 
+This guide requires that you have already submitted and had merged a gentx from [these instructions](https://docs.treasurenet.io/docs/validators/create-your-gentx)
+
 ### Choose a test network
 
 You can specify the network you want to join by setting the genesis file and seed nodes.
 
 | Testnet Chain ID   | Description                  | Site | Version | Status |
 | ------------------ | ---------------------------- | ---- | ------- | ------ |
-| treasurenet_9000-1 | Treasurenet 1st test network | --   | v0.1.x  | Live   |
+| treasurenet_5005-1 | Treasurenet 1st test network | --   | v0.1.x  | Live   |
 
 :::info
 Development is in progress. Whitelisting new Testnet Validator nodes soon. Stay tuned for Testnet events.
@@ -18,14 +20,14 @@ Development is in progress. Whitelisting new Testnet Validator nodes soon. Stay 
 
 ### Installing treasurenetd
 
-Follow the[installation instructions](https://)to complete the installation of the Treasurenetd binary file.
+Follow the[installation instructions](https://docs.treasurenet.io/docs/validators/quickStart/installation)to complete the installation of the Treasurenetd binary file.
 
 ### Saving the chainID
 
 We recommend saving the testnet chain ID to your treasurenetd's client.toml. This will save you from having to manually pass the chain ID flag for each CLI command.
 
 ```shell
-treasurenetd config chain-id treasurenet_9000-1
+treasurenetd config chain-id treasurenet_5005-1
 ```
 
 ### Initialize Node
@@ -33,7 +35,7 @@ treasurenetd config chain-id treasurenet_9000-1
 We need to initialize the node to create all the necessary validators and node profiles:
 
 ```shell
-treasurenetd init <your_custom_moniker> --chain-id treasurenet_9000-1
+treasurenetd init <your_custom_moniker> --chain-id treasurenet_5005-1
 ```
 
 :::caution
@@ -46,11 +48,11 @@ By default, the init command creates your `~/.treasurenetd` (i.e. $HOME) directo
 
 #### Copy Genesis File
 
-Check the [genesis.json 文件](https://), file in the archive and copy it to the configuration directory:`~/.treasurenetd/config/genesis.json`. This is the genesis file that contains the chain ID and the balance of the genesis account.
+Check the [genesis.json 文件](https://docs.treasurenet.io/docs/protocolDevelopers/genesis/), file in the archive and copy it to the configuration directory:`~/.treasurenetd/config/genesis.json`. This is the genesis file that contains the chain ID and the balance of the genesis account.
 
 ```shell
 sudo apt install -y unzip wget
-wget -P ~/.treasurenetd/config https://xxx.treasurenet.io/treasurenet_9000-1/genesis.json
+wget -P ~/.treasurenetd/config https://github.com/treasurenetprotocol/docs/blob/feature/1.0.3/genesis.json
 ```
 
 Then verify the correctness of the genesis configuration file at:
@@ -61,7 +63,7 @@ treasurenetd validate-genesis
 
 #### Add Seed Nodes
 
-Your nodes need to know how to find [peers](https://)。 You need to add healthy [seed nodes](https://) to `$HOME/.treasurenetd/config/config.toml`。The [testnets](https://) repository contains links to some seed nodes.
+Your nodes need to know how to find [peers](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#peers)。 You need to add healthy [seed nodes](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#peers) to `$HOME/.treasurenetd/config/config.toml`。The [testnets](https://github.com/treasurenetprotocol/docs/blob/feature/1.0.3/peer.txt) repository contains links to some seed nodes.
 
 Edit the file and seed located in ` ~/.treasurenetd/config/config.toml` to the following:
 
@@ -80,19 +82,23 @@ seeds = "<node-id>@<ip>:<p2p port>"
 You can get the seeds from the repo and add them to your configuration using the following code:
 
 ```shell
-SEEDS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_9000-1/seeds.txt | awk '{print $1}' | paste -s -d, -`
+SEEDS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_5005-1/seeds.txt | awk '{print $1}' | paste -s -d, -`
 sed -i.bak -e "s/^seeds =.*/seeds = \"$SEEDS\"/" ~/.treasurenetd/config/config.toml
 ```
 
 #### Add Persistent Peers
 
-We can set the persistent_peers field in `$HOME/.treasurenetd/config/config.toml` to specify the peers with which your node will maintain [persistent_peers](https://). You can retrieve them from the list of available peers on [testnets](https://)repo.
+We can set the persistent_peers field in `$HOME/.treasurenetd/config/config.toml` to specify the peers with which your node will maintain [persistent_peers](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#Persistent-Peer). You can retrieve them from the list of available peers on [testnets](https://)repo.
 
 A list of available persistent peers is also provided in the #find-peers channel of
 [Treasurenet Discord](https://). You can get 10 random entries from the peers.txt file in the PEERS variable by running the following command:
 
+:::info
+Treasurenet Discord comming soon.
+:::
+
 ```shell
-PEERS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_9000-1/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
+PEERS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_5005-1/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
 
 ```
 
