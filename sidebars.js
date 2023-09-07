@@ -285,7 +285,7 @@ const sidebars = {
                 'validators/join-testnet',
                 'validators/join-mainnet',
                 'validators/create-your-gentx',
-                /*'validators/faq',*/
+                'validators/faq',
             ]
         },
         {
