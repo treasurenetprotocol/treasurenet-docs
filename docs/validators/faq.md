@@ -105,6 +105,97 @@ Validators also play a major role in governance. If a delegator does not vote, t
 
 Revenue received by a validator's pool is split between the validator and its delegators. The validator can apply a commission on the part of the revenue that goes to its delegators. This commission is set as a percentage. Each validator is free to set its initial commission, maximum daily commission change rate and maximum commission. Treasurenet enforces the parameter that each validator sets. These parameters can only be defined when initially declaring candidacy, and may only be constrained further after being declared.
 
-#### How are block provisions distributed?
+### Common Problems
+
+####  My node crashes because of too many open file
+
+The default number of files Linux can open (per-process) is 1024. treasurenetd is known to open more than 1024 files. This causes the process to crash. A quick fix is to run ulimit -n 65535 (increase the number of open files allowed) and then restart the process with treasurenetd start. If you are using systemd or another process manager to launch evmosd this may require some configuration at that level. A sample systemd file to fix this issue is below
+
+```shell
+ #  Quick problem-solving  This processing method requires resetting ulimit every time treaternetd is started 
+ ulimit -a                     #  Default value for querying the current number of open files in the system 
+ ulimit -n 65535               #  Reset the number of open files (per process) 
+ treasurenetd start            
+```
+ Recommended processing method 
+```shell
+# /etc/systemd/system/treasurenetd.service
+[Unit]
+Description=Treasurenet Node
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/go/bin/treasurenetd start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target     
+```
+
+####  Introduction to Common Kernel Network Parameters and Common Problem Handling in Linux Systems 
+
+:::caution
+Product Supplement - Easier to understand version
+:::
+-  Starting from actual needs and with the support of relevant data as much as possible, it is not recommended that you adjust kernel parameters arbitrarily 
+-  To understand the specific functions of parameters, it is important to note that kernel parameters may vary in different types or versions of environments 
+
+ The following error messages frequently appear in the system log:
+
+```shell
+Feb  6 16:05:07 i-*** kernel: nf_conntrack: table full, dropping packet.
+Feb  6 16:05:07 i-*** kernel: nf_conntrack: table full, dropping packet.     
+```
+
+Reason for the problem:
+
+IP_ Conntrace is a module for tracking connection entries in NAT within Linux systems, IP_ The conntrace module will use a hash table to record TCP protocol established connection records. When the hash table is full, newly connected packets will be discarded and nf will appear_ Conntrace: table full, dropping packet error.
+
+The Linux system will create a space for maintaining each TCP link, which is the same size as nf_ Conntrace_ Buckets, nf_ Conntrace_ The max parameter is related, and the default value of the latter is 4 times that of the former, so it is generally recommended to increase nf_ Conntrace_ Max parameter value
+
+Solution:
+
+```shell
+# Modify nf_ Conntrace_ Max parameter value
+ Execute the following command to open the/etc/sysctl. conf file 
+   vi /etc/sysctl.conf
+#  Modify nf_ Conntrace_ The value of the max parameter. 
+   net.netfilter.nf_conntrack_max = 655350
+#  Modify timeout parameter nf_ Conntrace_ TCP_ Timeout_ ESTABLISHED value. 
+   net.netfilter.nf_conntrack_tcp_timeout_established = 1200
+#  Execute the following command to make the configuration effective. 
+   sysctl -p
+```
+
+ The following error occurred in the system log：
+
+ ```shell
+********* dial tcp 127.0.0.1:*** :connect:cannot assign requested address 
+********* dial tcp 127.0.0.1:*** :connect:cannot assign requested address
+********* dial tcp 127.0.0.1:*** :connect:cannot assign requested address
+```
+Reason for the problem:
+
+ The reason is that the client frequently connects to the server, and each connection ends in a short amount of time, resulting in many TIMES_ WAIT, so much so that all available port numbers are used up, so the new connection cannot bind to the port, resulting in an exception saying that the request address cannot be allocated 
+
+- TIME regarding server TCP requests_ WAIT, netstat - a | grep TIME available on Linux_ WAIT command to check the number of connections.
+
+- A list with multiple entries is commonly used during program execution to facilitate viewing of time_ Can the number of waits increase? You can directly use the command netstat - ant | grep - i time_ Wait | wc - l View
+
+Solution:
+
+ ```shell
+net.ipv4.ip_forward=1  # Indicates that support for TCP timestamp is enabled. If this option is set to 0, then net.ipv4.tcp_ Tw_ Reuse setting does not work, the system defaults to 0
+net.ipv4.tcp_tw_reuse = 1 #  Indicates that reuse is enabled. Allow TIME-WAIT sockets to be reused for new TCP connections, default to 0, indicating shutdown 
+net.ipv4.tcp_tw_recycle = 1 #  Indicates that the quick collection of TIME-WAIT sockets in TCP connections is enabled, with a default value of 0, indicating that it is turned off 
+#  Execute the following command to make the configuration effective. 
+sysctl -p
+```
+
 
 [Please refer to the introduction about reward allocation in the "distribution" module.](../protocolDevelopers/modules/distribution.md)
