@@ -17,7 +17,7 @@ Check the version you're running
 You can also use the -h or --help command to get help information
 
 ```shell
-    treasurenet -h
+    treasurenetd -h
 ```
 
 ### Configuration and Data Directory
