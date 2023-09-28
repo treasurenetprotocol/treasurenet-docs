@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Automated deployment
 
-Execute init.sh in the root directory to run the local node via an automation script
+Execute init-gravity.sh in the root directory to run the local node via an automation script
 
 ```shell
     init-gravity.sh
@@ -120,7 +120,7 @@ Now that your account has some tokens, you need to add a validator to your chain
     --home /root/.treasurenetd 
     --keyring-backend test 
     --moniker                     # The validator(optional) moniker
-    --chain-id=treasurenet_9000-1 
+    --chain-id=treasurenet_5005-1 
     [key_name]                    # $VALIDATOR_KEY
     [amount]                      # 258000000000000000000aunit 
     [eth-address]                 # $ETHEREUM_KEY 

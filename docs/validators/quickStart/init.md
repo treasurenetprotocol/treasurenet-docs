@@ -12,7 +12,7 @@ sidebar_position: 4
   - ALLOCATION="10000000000000000000000000000000000aunit,10000000000stake,10000000000footoken,10000000000footoken2,10000000000ibc/ nometadatatoken" : Define the tokens to be used
   - KEY1="validator" : Create a secret key to save your account
   - KEY2="orchestrator" : Create the secret key of the orchestrator to protect the relay account
-  - CHAINID="treasurenet_9000-1" : Treasurenet Chain ID
+  - CHAINID="treasurenet_5005-1" : Treasurenet Chain ID
 
   ```shell
   #!/bin/bash
@@ -22,7 +22,7 @@ sidebar_position: 4
   ALLOCATION="100000000000000000000000000aunit,10000000000stake,10000000000footoken,10000000000footoken2,10000000000ibc/nometadatatoken"
   KEY1="validator"
   KEY2="orchestrator"
-  CHAINID="treasurenet_9000-1"
+  CHAINID="treasurenet_5005-1"
   MONIKER="localtestnet"
   KEYRING="test"
   KEYALGO="eth_secp256k1"

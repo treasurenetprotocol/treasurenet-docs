@@ -11,7 +11,7 @@ For convenience, you can customize the local test net script by changing the val
 ```shell
 # customize the name of your key, the chain-id, moniker of the node, keyring backend, and log level
 KEY="mykey"
-CHAINID="treasurenet_9000-1"
+CHAINID="treasurenet_5005-1"
 MONIKER="localtestnet"
 KEYRING="test"
 LOGLEVEL="info"
@@ -30,7 +30,7 @@ The default configuration will generate a single authenticator local net with ch
 You can start the local chain using the following method:
 
 ```shell
-init.sh
+init-gravity.sh
 ```
 
 ## Manual Localnet
@@ -44,7 +44,7 @@ Before actually running the node, we need to initialize the chain, most importan
 ```shell
 $MONIKER=testing
 $KEY=mykey
-$CHAINID="treasurenet_9000-1"
+$CHAINID="treasurenet_5005-1"
 
 # The argument $MONIKER is the custom username of your node, it should be human-readable.
 treasurenetd init $MONIKER --chain-id=$CHAINID

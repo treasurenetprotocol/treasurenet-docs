@@ -10,7 +10,7 @@ The configuration file for Treasurenet can be found at the path `$HOME/.treasure
 treasurenetd config <key> [value]
 eg:
 treasurenetd config keyring-backend test
-treasurenetd config chain-id treasurenet_9000-1
+treasurenetd config chain-id treasurenet_5005-1
 ....
 ```
 

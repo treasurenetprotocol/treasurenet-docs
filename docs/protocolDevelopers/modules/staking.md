@@ -143,7 +143,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 treasurenetd tx staking unbond treasurenetvaloper1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2gzs46zq 10unit
 --home (defaule:"/root/.treasurenet/")
 --from treasurenet1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2grwxmrg
---chain-id treasurenet_9000-1
+--chain-id treasurenet_5005-1
 --fees 1unit
 --gas auto
 --keyring-backend test
@@ -167,7 +167,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 treasurenetd tx staking redelegate treasurenetvaloper1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2gzs46zq treasurenetvaloper2as78dmzhesjndy3v6wsdxjfqnmwnyy2gzs32qq 10unit
 --home (defaule:"/root/.treasurenet/")
 --from treasurenet1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2grwxmrg
---chain-id treasurenet_9000-1
+--chain-id treasurenet_5005-1
 --fees 1unit
 --gas auto
 --keyring-backend test
