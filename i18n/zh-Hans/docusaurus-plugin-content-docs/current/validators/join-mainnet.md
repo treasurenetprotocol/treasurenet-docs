@@ -34,7 +34,7 @@ cd $HOME
 git clone https://github.com/treasurenetprotocol/treasurenet.git
 cd treasurenet
 make install
-treasurenetd init [moniker] --chain-id treasurenet_9000-1
+treasurenetd init [moniker] --chain-id treasurenet_5005-1
 
 #Set minimum gas price & peers
 sed -i'' 's/minimum-gas-prices = ""/minimum-gas-prices = "0.0025aunit"/' $HOME/.treasurenetd/config/app.toml

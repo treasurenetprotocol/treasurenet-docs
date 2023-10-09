@@ -389,7 +389,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 treasurenetd tx gov vote 2 yes
 --home (defaule:"/root/.treasurenet/")
 --from treasurenet1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2grwxmrg
---chain-id treasurenet_9000-1
+--chain-id treasurenet_5005-1
 --fees 1unit
 --gas auto
 --keyring-backend test

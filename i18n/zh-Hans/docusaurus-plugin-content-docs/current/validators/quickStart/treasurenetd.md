@@ -17,7 +17,7 @@ treasurenetd 是一个 all-in-one 的命令行接口工具，它支持钱包管�
 也可以使用-h 或者 --help 命令来获得帮助信息
 
 ```shell
-    treasurenet -h
+    treasurenetd -h
 ```
 
 ### 配置和数据目录
@@ -41,7 +41,7 @@ treasurenetd config
 
 {
 	"chain-id": "",
-	"keyring-backend": "os",
+	"keyring-backend": "test",
 	"output": "text",
 	"node": "tcp://localhost:26657",
 	"broadcast-mode": "sync"
@@ -50,14 +50,14 @@ treasurenetd config
 
 我们可以根据我们的选择对默认设置进行更改，因此它允许用户一次性预先设置配置，以便之后使用相同的配置做好准备
 
-例如，可以使用以下命令将链标识符 treasurenet_9000-1 从空白名称更改为：
+例如，可以使用以下命令将链标识符 treasurenet_5005-1 从空白名称更改为：
 
 ```shell
-treasurenetd config “chain-id” test_9000-1 treasurenetd config
+treasurenetd config “chain-id” treasurenet_5005-1 treasurenetd config
 
 {
-	"chain-id": "test_9000-1",
-	"keyring-backend": "os",
+	"chain-id": "treasurenet_5005-1",
+	"keyring-backend": "test",
 	"output": "text",
 	"node": "tcp://localhost:26657",
 	"broadcast-mode": "sync"
@@ -77,9 +77,9 @@ treasurenetd config “chain-id” test_9000-1 treasurenetd config
 ###############################################################################
 
 # The network chain ID
-chain-id = "test_9000-1"
-# The keyring's backend, where the keys are stored (os|file|kwallet|pass|test|memory)
-keyring-backend = "os"
+chain-id = "treasurenet_5005-1"
+# The keyring's backend, where the keys are stored (test|file|kwallet|pass|test|memory)
+keyring-backend = "test"
 # CLI output format (text|json)
 output = "text"
 # <host>:<port> to Tendermint RPC interface for this chain
@@ -88,12 +88,12 @@ node = "tcp://localhost:26657"
 broadcast-mode = "sync"
 ```
 
-在 中进行必要的更改后 client.toml，然后保存。例如，如果我们直接将 chain-id 更改为 test_9000-1，它会立即更改，如下所示。
+在 中进行必要的更改后 client.toml，然后保存。例如，如果我们直接将 chain-id 更改为 treasurenet_5005-1，它会立即更改，如下所示。
 
 ```shell
 {
-	"chain-id": "test_9000-1",
-	"keyring-backend": "os",
+	"chain-id": "treasurenet_5005-1",
+	"keyring-backend": "test",
 	"output": "text",
 	"node": "tcp://localhost:26657",
 	"broadcast-mode": "sync"

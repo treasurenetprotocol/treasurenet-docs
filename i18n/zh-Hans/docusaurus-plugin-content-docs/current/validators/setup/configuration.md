@@ -16,7 +16,7 @@ Treasurenet 的配置文件在`$HOME/.treasurenetd/config/config.toml`，这其�
 treasurenetd config <key> [value]
 eg:
 treasurenetd config keyring-backend test
-treasurenetd config chain-id treasurenet_9000-1
+treasurenetd config chain-id treasurenet_5005-1
 ....
 ```
 

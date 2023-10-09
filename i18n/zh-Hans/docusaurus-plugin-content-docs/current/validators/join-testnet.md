@@ -10,7 +10,7 @@ sidebar_position: 5
 
 | Testnet Chain ID   | Description                  | Site | Version | Status |
 | ------------------ | ---------------------------- | ---- | ------- | ------ |
-| treasurenet_9000-1 | Treasurenet 1st test network | --   | v0.1.x  | Live   |
+| treasurenet_5005-1 | Treasurenet 1st test network | --   | v0.1.x  | Live   |
 
 :::info
 开发正在进行中。 很快将新的测试网验证器节点列入白名单。 请继续关注测试网活动。
@@ -26,7 +26,7 @@ sidebar_position: 5
 我们建议将 testnet 链 ID 保存到您的 treasurenetd 的 client.toml 中。 这将使您不必为每个 CLI 命令手动传递链 ID 标志。
 
 ```shell
-treasurenetd config chain-id treasurenet_9000-1
+treasurenetd config chain-id treasurenet_5005-1
 ```
 
 ### 初始化节点
@@ -34,7 +34,7 @@ treasurenetd config chain-id treasurenet_9000-1
 我们需要初始化节点以创建所有必要的验证器和节点配置文件：
 
 ```shell
-treasurenetd init <your_custom_moniker> --chain-id treasurenet_9000-1
+treasurenetd init <your_custom_moniker> --chain-id treasurenet_5005-1
 ```
 
 :::caution
@@ -51,7 +51,7 @@ treasurenetd init <your_custom_moniker> --chain-id treasurenet_9000-1
 
 ```shell
 sudo apt install -y unzip wget
-wget -P ~/.treasurenetd/config https://xxx.treasurenet.io/treasurenet_9000-1/genesis.json
+wget -P ~/.treasurenetd/config https://github.com/treasurenetprotocol/docs/blob/feature/1.0.3/genesis.json
 ```
 
 然后验证 genesis 配置文件的正确性：
@@ -74,14 +74,14 @@ treasurenetd validate-genesis
 
 # ...
 
-# Comma separated list of seed nodes to connect to
+# Comma separated list of seed nodes to connect tos
 seeds = "<node-id>@<ip>:<p2p port>"
 ```
 
 您可以使用以下代码从 repo 中获取种子并将其添加到您的配置中：
 
 ```shell
-SEEDS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_9000-1/seeds.txt | awk '{print $1}' | paste -s -d, -`
+SEEDS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_5005-1/seeds.txt | awk '{print $1}' | paste -s -d, -`
 sed -i.bak -e "s/^seeds =.*/seeds = \"$SEEDS\"/" ~/.treasurenetd/config/config.toml
 ```
 
@@ -92,7 +92,7 @@ sed -i.bak -e "s/^seeds =.*/seeds = \"$SEEDS\"/" ~/.treasurenetd/config/config.t
 [Treasurenet Discord](https://) 的 #find-peers 频道中还提供了可用的持久性对等点列表。 您可以通过运行以下命令从 PEERS 变量中的 peers.txt 文件中随机获取 10 个条目：
 
 ```shell
-PEERS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_9000-1/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
+PEERS=`curl -sL https://raw.githubusercontent.com/xxx/testnets/main/treasurenet_5005-1/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
 
 ```
 

@@ -11,7 +11,7 @@ sidebar_position: 4
   - ALLOCATION="100000000000000000000000000aunit,10000000000stake,10000000000footoken,10000000000footoken2,10000000000ibc/nometadatatoken" : 定义需要用到的代币
   - KEY1="validator" : 创建秘钥来保存自己的账户
   - KEY2="orchestrator" : 创建 orchestrator 的秘钥用来保护中继账户
-  - CHAINID="treasurenet_9000-1" : Treasurenet 链 ID
+  - CHAINID="treasurenet_5005-1" : Treasurenet 链 ID
   - MONIKER="localtestnet" : 自定义节点名称
   - KEYRING="test" : 秘钥环的存储测试环境为 test
   - KEYALGO="eth_secp256k1" : 加密方式
@@ -25,7 +25,7 @@ sidebar_position: 4
   ALLOCATION="100000000000000000000000000aunit,10000000000stake,10000000000footoken,10000000000footoken2,10000000000ibc/nometadatatoken"
   KEY1="validator"
   KEY2="orchestrator"
-  CHAINID="treasurenet_9000-1"
+  CHAINID="treasurenet_5005-1"
   MONIKER="localtestnet"
   KEYRING="test"
   KEYALGO="eth_secp256k1"

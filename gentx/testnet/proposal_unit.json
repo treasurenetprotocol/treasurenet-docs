@@ -1,0 +1,28 @@
+{
+    "title": "测试生成ERC20TOKEN的ibc代币元数据",
+    "description": "ETH测试环境 \n ERC20中token MAX \n IBC代币名称ibc/hashvalue \n sha-256-hash(transfer/channel-1/aunit) = 6037c0adcbc3320e9bf62d58c2870f0ab60de8c9fe9afa979b0c5c388ae756e1",
+    "metadata": {
+     "base": "aunit",
+     "denom_units": [
+     {
+        "aliases": [
+            "aunit"
+        ],
+		"denom": "aunit",
+		"exponent": 0
+	 },
+     {
+        "aliases": [
+            "unit"
+        ],
+		"denom": "unit",
+		"exponent": 18
+	 }
+    ],
+     "description": "The UNIT token",
+     "display": "unit",
+     "name": "Bitcoin MAX",
+     "symbol": "MAX"
+    },
+    "ibc_denom": ""
+   }

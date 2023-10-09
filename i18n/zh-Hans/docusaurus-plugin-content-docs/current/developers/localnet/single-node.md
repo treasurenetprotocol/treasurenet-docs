@@ -11,7 +11,7 @@ sidebar_position: 1
 ```shell
 # customize the name of your key, the chain-id, moniker of the node, keyring backend, and log level
 KEY="mykey"
-CHAINID="treasurenet_9000-1"
+CHAINID="treasurenet_5005-1"
 MONIKER="localtestnet"
 KEYRING="test"
 LOGLEVEL="info"
@@ -25,12 +25,12 @@ treasurenetd gentx $KEY 1000000000000000000000aunit --keyring-backend $KEYRING -
 
 ```
 
-默认配置将生成一个带有链 id treasurenetd-1 的单个验证器本地网和一个预定义的帐户（mykey），在创世时分配了一些资金。
+默认配置将生成一个带有链 id treasurenet_5005-1 的单个验证器本地网和一个预定义的帐户（mykey），在创世时分配了一些资金。
 
 您可以使用以下方法启动本地链：
 
 ```shell
-init.sh
+init-gravity.sh
 ```
 
 ## 手动本地网络
@@ -44,7 +44,7 @@ init.sh
 ```shell
 $MONIKER=testing
 $KEY=mykey
-$CHAINID="treasurenet_9000-1"
+$CHAINID="treasurenet_5005-1"
 
 # The argument $MONIKER is the custom username of your node, it should be human-readable.
 treasurenetd init $MONIKER --chain-id=$CHAINID

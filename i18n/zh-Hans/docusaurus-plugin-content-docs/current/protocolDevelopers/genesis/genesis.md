@@ -13,7 +13,7 @@ sidebar_position: 1
 ```json
 {
   "genesis_time": "2023-02-02T10:48:47.611931848Z",
-  "chain_id": "treasurenet_9000-1",
+  "chain_id": "treasurenet_5005-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {

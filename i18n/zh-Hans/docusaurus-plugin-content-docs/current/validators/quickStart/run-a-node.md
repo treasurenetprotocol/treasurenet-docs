@@ -6,10 +6,10 @@ sidebar_position: 3
 
 ## 自动化部署
 
-在根目录执行 init.sh 来通过自动化脚本运行本地节点
+在根目录执行 init-gravity.sh 来通过自动化脚本运行本地节点
 
 ```shell
-    init.sh
+    init-gravity.sh
 ```
 
 :::caution
@@ -26,7 +26,7 @@ sidebar_position: 3
 
 ### 管理私钥
 
-运行一个节点每次使用相同的 Key：替换 treasurenetd keys add $KEY 在 init.sh 中。
+运行一个节点每次使用相同的 Key：替换 treasurenetd keys add $KEY 在 init-gravity.sh 中。
 
 ```shell
     echo "your mnemonic here" | treasurenetd keys add $KEY --recover

@@ -251,7 +251,7 @@ treasurenetd tx staking unbond treasurenetvaloper1wf78qmzhfsjndy3v6wsdxjfqnmwnyy
 >>>>>>> feature/1.0.1
 --home (defaule:"/root/.treasurenet/")
 --from treasurenet1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2grwxmrg
---chain-id treasurenet_9000-1
+--chain-id treasurenet_5005-1
 --fees 1unit
 --gas auto
 --keyring-backend test
@@ -284,7 +284,7 @@ treasurenetd tx staking redelegate treasurenetvaloper1wf78qmzhfsjndy3v6wsdxjfqnm
 >>>>>>> feature/1.0.1
 --home (defaule:"/root/.treasurenet/")
 --from treasurenet1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2grwxmrg
---chain-id treasurenet_9000-1
+--chain-id treasurenet_5005-1
 --fees 1unit
 --gas auto
 --keyring-backend test
