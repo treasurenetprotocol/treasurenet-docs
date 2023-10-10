@@ -7,7 +7,7 @@
 		"title": "Treasurenet",
 		"url": "https://evmexplorer.treasurenet.io/",
 		"group": "Mainnets",
-		"icon": "https://raw.githubusercontent.com/treasurenetprotocol/docs/feature/1.0.3/static/img/logo_tn_github.png",
+		"icon": "https://raw.githubusercontent.com/treasurenetprotocol/docs/feature/1.0.3/logo_tn_github.png",
 		"invertIconInDarkMode": true,
 		"isActive": true
 	},
@@ -15,6 +15,6 @@
 		"title": "Treasurenet",
 		"url": "https://evmexploerer.testnet.treasurenet.io/",
 		"group": "Testnets",
-		"icon": "https://raw.githubusercontent.com/treasurenetprotocol/docs/feature/1.0.3/static/img/logo_tn_github.png"
+		"icon": "https://raw.githubusercontent.com/treasurenetprotocol/docs/feature/1.0.3/logo_tn_github.png"
 	}
 ]
