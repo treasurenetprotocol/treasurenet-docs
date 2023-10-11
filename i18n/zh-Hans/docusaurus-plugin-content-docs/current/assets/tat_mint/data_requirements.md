@@ -19,5 +19,5 @@ Oracle Feeder Tool 通过查询公开可用的生产数据和市场价格数据�
 
 示例白名单来源：
 
-- https://www.eia.gov/dnav/ng/ng_pri_fut_s1_d.htm
+- https://markets.businessinsider.com/commodities/natural-gas-price
 - https://oilprice.com/commodity-price-charts?page=chart&sym=CLY00
