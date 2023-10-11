@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Ethereum",
+    "url": "https://eth.blockscout.com/",
+    "group": "Mainnets",
+    "icon": "https://raw.githubusercontent.com/blockscout/frontend-configs/main/configs/network-icons/ethereum.svg"
+  },
+  {
+    "title": "Treasurenet",
+    "url": "https://evmexplorer.treasurenet.io/",
+    "group": "Mainnets",
+    "icon": "https://raw.githubusercontent.com/treasurenetprotocol/docs/feature/1.0.3/static/img/logo_tn_github_noword.png",
+    "invertIconInDarkMode": true
+  },
+  {
+    "title": "Treasurenet",
+    "url": "https://evmexploerer.testnet.treasurenet.io/",
+    "group": "Testnets",
+    "icon": "https://raw.githubusercontent.com/treasurenetprotocol/docs/feature/1.0.3/static/img/logo_tn_github_noword.png",
+    "isActive": true
+  }
+]
