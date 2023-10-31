@@ -104,8 +104,8 @@ Monikers 只能包含 ASCII 字符。不支持使用 Unicode 字符，这会导�
 
 节点初始化后，下载创世文件并移动到~/config/genesis.json
 :::note
-`wget https://github.com/treasurenetprotocol/mainnet/master/genesis/genesis.treasurenet.json.gz` <br />
-`gzip -d genesis.json.gz` <br />
+`wget https://raw.githubusercontent.com/treasurenetprotocol/treasurenet-docs/feature/1.0.3/genesis/mainnet/genesis_treasurenet_mainnet_export.json` <br />
+`mv genesis_treasurenet_mainnet_export.json genesis.json` <br />
 `mv genesis.json ~/.treasurenetd/config/genesis.json`
 :::
 
@@ -115,7 +115,7 @@ Monikers 只能包含 ASCII 字符。不支持使用 Unicode 字符，这会导�
 treasurenetd keys add <validator> --keyring-backend file --algo info 2>> /data/validator-phrases
 treasurenetd keys add <orchestrator> --keyring-backend file --algo info 2>> /data/orchestrator-phrase
 treasurenetd eth_keys add --keyring-backend test >> /data/validator-eth-keys
-treasurenetd init <Moniler_name> --chain-id tets_9000-1
+treasurenetd init <Moniler_name> --chain-id treasurenet_5005-1
 #修改配置文件设置对等节点
 ~/.treasurenetd/config/config.toml
 

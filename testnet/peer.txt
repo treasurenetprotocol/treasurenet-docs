@@ -1,0 +1,1 @@
+1993d4d8bfe3c99187a2bd8be737e5ba4a6381c4@node0.testnet.treasurenet.io:26656,99b14853bae1aa3f0f111f1a5d5d78a109cb94c1@node1.testnet.treasurenet.io:26656,cdf12ee68327006cd952c1850ef9ddc8dc0a87a9@node2.testnet.treasurenet.io:26656

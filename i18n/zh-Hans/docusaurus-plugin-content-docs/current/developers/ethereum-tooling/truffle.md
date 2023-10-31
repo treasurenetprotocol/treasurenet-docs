@@ -43,7 +43,7 @@ truffle compile
     development: {
       host: "node1.testnet.treasurenet.io",
       port: 8545,
-      network_id: "9000",
+      network_id: "5005",
     }
 ```
 

@@ -77,7 +77,7 @@ treasurenetd tx bank send \
 test1 \
 treasurenet1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
 10000000000000000000aunit \
---chain-id=treasurenet_9000-4 \
+--chain-id=treasurenet_5005-1 \
 --gas=auto \
 --fees=1000000aunit \
 --broadcast-mode=block
@@ -94,7 +94,7 @@ treasurenet157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq \
 5000000000000000000aunit \
 --gas=200000 \
 --fees=1000000aunit \
---chain-id=treasurenet_9000-4 \
+--chain-id=treasurenet_5005-1 \
 --generate-only > unsignedTx.json
 ```
 
@@ -149,7 +149,7 @@ unsignedTx.json \
 --multisig=treasurenet1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
 --from=test1 \
 --output-document=test1sig.json \
---chain-id=treasurenet_9000-4
+--chain-id=treasurenet_5005-1
 ```
 
 ```shell
@@ -158,7 +158,7 @@ unsignedTx.json \
 --multisig=treasurenet1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
 --from=test2 \
 --output-document=test2sig.json \
---chain-id=treasurenet_9000-4
+--chain-id=treasurenet_5005-1
 ```
 
 ### 第四步：创建多签名
@@ -171,7 +171,7 @@ unsignedTx.json \
 multi \
 test1sig.json test2sig.json \
 --output-document=signedTx.json \
---chain-id=treasurenet_9000-4
+--chain-id=treasurenet_5005-1
 ```
 
 交易现已签署:
@@ -263,6 +263,6 @@ test1sig.json test2sig.json \
 
 ```shell
 treasurenetd tx broadcast signedTx.json \
---chain-id=treasurenet_9000-4 \
+--chain-id=treasurenet_5005-1 \
 --broadcast-mode=block
 ```

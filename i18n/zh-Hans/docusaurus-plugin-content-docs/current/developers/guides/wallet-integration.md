@@ -44,8 +44,8 @@ await window.keplr.enable(chainId); //For Keplr
 import { createMessageSend } from @treasurenet/transactions
 
 const chain = {
-    chainId: 9000,
-    cosmosChainId: 'treasurenet_9000-4',
+    chainId: 5005,
+    cosmosChainId: 'treasurenet_5005-1',
 }
 
 const sender = {
