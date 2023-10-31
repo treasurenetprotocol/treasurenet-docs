@@ -425,15 +425,19 @@ namespace = "tendermint"
 ```
 
 
-## Empty blocks VS no empty blocks
+##  空块VS无空块 
 
-### create_empty_blocks = true
+```shell
+create_empty_blocks = true
+```
 
 如果在您的配置中将create_empty_blocks设置为true，那么将每秒创建一次块（使用默认的一致参数）。您可以通过更改timeout_commit来调节块之间的延迟。
 
+```shell
 E.g. timeout_commit = "10s" should result in ~ 10 second blocks.
 
 create_empty_blocks = false
+```
 
 在此设置中，当收到事务时会创建块。
 
