@@ -204,6 +204,20 @@ const sidebars = {
                             items: [
                                 'assets/tat_mint/registration',
                                 'assets/tat_mint/wellmanagement',
+                                {
+                                    type: 'category',
+                                    label: 'Automatic Upload Tools',
+                                    link: {
+                                        type: 'generated-index',
+                                        title: 'Automatic Upload Tools',
+                                    },
+                                    items: [
+                                        'assets/tat_mint/production_data_intro',
+                                        'assets/tat_mint/production_data_process',
+                                        'assets/tat_mint/production_data_uploader',
+                                        'assets/tat_mint/production_data_manual'
+                                    ]
+                                },
                                 'assets/tat_mint/expense',
                                 'assets/tat_mint/mint',
                                 'assets/tat_mint/messages',
