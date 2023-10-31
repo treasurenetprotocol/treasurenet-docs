@@ -11,6 +11,8 @@ More demos are being added continuously
 #### Set Production Data
 
 ```javascript
+const web3 = new Web3(new Web3.providers.HttpProvider('https://node0.testnet.treasurenet.io'));
+
 const sender_prvi_key = 'YOUR PRIVATE KEY';
 // TESTNET
 const contractAddress = '0xFe6810EDE16180686ee083A1B246A4182501E597' //GasData:0xe501CD75BA83798ECB408900034FF9BAC4926d5E
