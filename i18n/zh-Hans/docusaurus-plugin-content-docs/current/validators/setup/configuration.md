@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Configuration
+# 配置详情
 
 <<<<<<< HEAD
 Treasurenet 的配置文件在`$HOME/.treasurenetd/config/config.toml`，这其中的一些参数可以通过 treasurenetd config
@@ -19,7 +19,7 @@ treasurenetd config keyring-backend test
 treasurenetd config chain-id treasurenet_5005-1
 ....
 ```
-
+## 配置文件config.toml介绍
 ```shell
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
@@ -424,75 +424,46 @@ max_open_connections = 3
 namespace = "tendermint"
 ```
 
-<<<<<<< HEAD
 
 ## Empty blocks VS no empty blocks
 
 ### create_empty_blocks = true
 
-# If create_empty_blocks is set to true in your config, blocks will be created ~ every second (with default consensus parameters). You can regulate the delay between blocks by changing the timeout_commit.
-
-## Empty blocks VS no empty blocks
-
-### create_empty_blocks = true
-
-If create_empty_blocks is set to true in your config, blocks will be created ~ every second (with default consensus parameters). You can regulate the delay between blocks by changing the timeout_commit.
-
-> > > > > > > feature/1.0.1
+如果在您的配置中将create_empty_blocks设置为true，那么将每秒创建一次块（使用默认的一致参数）。您可以通过更改timeout_commit来调节块之间的延迟。
 
 E.g. timeout_commit = "10s" should result in ~ 10 second blocks.
 
 create_empty_blocks = false
 
-In this setting, blocks are created when transactions received.
+在此设置中，当收到事务时会创建块。
 
-<<<<<<< HEAD
-Note after the block H, Treasurenet creates something we call a "proof block" (only if the application hash changed) H+1. The reason for this is to support proofs. If you have a transaction in block H that changes the state to X, the new application hash will only be included in block H+1.
-=======
-Note after the block H, Treasurenet creates something we call a "proof block" (only if the application hash changed) H+1. The reason for this is to support proofs. If you have a transaction in block H that changes the state to X, the new application hash will only be included in block H+1.
+请注意，在块H之后，Treasurenet创建了我们称之为“证明块”的东西（仅当应用程序哈希发生变化时）H+1。这样做的原因是为了支持证据。如果您在块H中有一个事务将状态更改为X，则新的应用程序哈希将仅包含在块H+1中。 
 
-> > > > > > > feature/1.0.1
+如果在提交事务之后，您想要获得新状态（X）的lite客户端证明，则需要提交新块才能做到这一点，因为新块具有状态X的新应用程序哈希。
 
-If after your transaction is committed, you want to get a lite-client proof for the new state (X), you need the new block to be committed in order to do that because the new block has the new application hash for the state X.
 
-That's why we make a new (empty) block if the application hash changes. Otherwise, you won't be able to make a proof for the new state.
+这就是为什么如果应用程序哈希发生变化，我们会生成一个新的（空的）块。否则，你将无法为新状态提供证据。
 
-<<<<<<< HEAD
-Plus, if you set create_empty_blocks_interval to something other than the default (0), Treasurenet will be creating empty blocks even in the absence of transactions every create_empty_blocks_interval.
 
-For instance, with create_empty_blocks = false and create_empty_blocks_interval = "30s", Treasurenet will only create blocks if there are transactions, or after waiting 30 seconds without receiving any transactions.
+此外，如果将create_empty_blocks_interval设置为默认值（0）以外的值，Treasurenet将创建空块，即使在每个create_empty_blocks_interval都没有事务的情况下也是如此。
 
-## Peers
 
-# In `$HOME/.treasurenetd/config/config.toml` you can set your peers.
+例如，在create_empty_blocks=false和create_empty_blocks_interval=“30s”的情况下，Treasurenet只会在有交易的情况下创建块，或者在等待30秒后没有收到任何交易。
 
-Plus, if you set create_empty_blocks_interval to something other than the default (0), Treasurenet will be creating empty blocks even in the absence of transactions every create_empty_blocks_interval.
+## peer节点介绍
 
-For instance, with create_empty_blocks = false and create_empty_blocks_interval = "30s", Treasurenet will only create blocks if there are transactions, or after waiting 30 seconds without receiving any transactions.
+在 `$HOME/.treasurenetd/config/config.toml` 这个文件中您将看到自己的peer节点.
 
-## Peers
-
-In `$HOME/.treasurenetd/config/config.toml` you can set your peers.
-
-> > > > > > > feature/1.0.1
-
-添加持久对等节点，可以参考[加入主网](../join-mainnet.md),该字段类似于逗号分隔对等点字符(仅作为参考)
+添加持久对等节点，可以参考[加入测试网](../jointestnet.md),该字段类似于逗号分隔对等点字符(仅作为参考)
 
 ```shell
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = "a07fb95efc5b7ba7492b6c69feec977ccbe6db8e@node0.testnet.treasurenet.io:26656,349186678a0a7976f4ffcd56ce3be1da7622ce09@node1.testnet.treasurenet.io:26656,238fd2f4a698ccd48a5084ebf686df1777f8087b@node2.testnet.treasurenet.io:26656"
 ```
 
-<<<<<<< HEAD
+## 查看共享你的peer节点
 
-## Sharing your Peer
-
-=======
-
-## Sharing your Peer
-
-> > > > > > > feature/1.0.1
-> > > > > > > You can see and share your peer with the tendermint show-node-id command
+查看我们的持久对等节点，通过命令 --tendermint show-node-id command
 
 ```shell
 treasurenetd tendermint show-node-id
@@ -501,11 +472,5 @@ treasurenetd tendermint show-address --home /data/mytestnet/.treasurenetd/
 treasurenetvalcons1s5kh480rtyaj8a4cw4uj2kr5u857c575wh7ytv
 ```
 
-<<<<<<< HEAD
-
-- Peer Format: node-id@ip:port
-- # Example: `f5aff6fc4837935c0d8188e2c0044ffd4ece06d3@node0.testnet.treasurenet.io:26656`
-
 * Peer Format: node-id@ip:port
 * Example: `f5aff6fc4837935c0d8188e2c0044ffd4ece06d3@node0.testnet.treasurenet.io:26656`
-  > > > > > > > feature/1.0.1
