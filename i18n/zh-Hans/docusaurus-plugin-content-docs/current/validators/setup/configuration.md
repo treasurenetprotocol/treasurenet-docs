@@ -4,13 +4,7 @@ sidebar_position: 2
 
 # 配置详情
 
-<<<<<<< HEAD
 Treasurenet 的配置文件在`$HOME/.treasurenetd/config/config.toml`，这其中的一些参数可以通过 treasurenetd config
-
-=======
-Treasurenet 的配置文件在`$HOME/.treasurenetd/config/config.toml`，这其中的一些参数可以通过 treasurenetd config
-
-> > > > > > > feature/1.0.1
 
 ```shell
 treasurenetd config <key> [value]
