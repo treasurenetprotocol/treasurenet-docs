@@ -77,12 +77,6 @@ Commit 结构体中的 bitArray 根据 CommitSig 中的 BlockIDFlag 的值，以
 
 活跃验证者可以通过多种方式进行主动作恶，如恶意偏离共识协议约定并发送多种消息，双签作恶的监狱禁闭时间为永久，由于 validator 的信息不会在链上删除，因此关于该恶意验证者的永久监狱禁闭记录会一直留存在链上，所以该 validator 的地址会永久作废。所以运营方只能通过重新创建新的验证者(使用新的共识秘钥对和地址)才可以重新参与投票权重竞争。在此之前需要等待一个完整的解绑周期才能取回自己在作恶验证者处抵押的链上资产。主动惩罚比例由参数 slash_fraction_double_sign 指定，默认为 5%。
 
-3 中主动作恶的情况
-
-1. 执行 BeginBlocker()时，发现验证者的可用性差，会罚掉一小部分的链上资产，将 validator 的 jailed 字段设置为 true。
-2. 执行 BeginBlocker()时，发现验证者的有效双签举证信息，罚掉客观比例的链上资产，将 validator 的 Jailed 字段设置为 true。
-3. 验证者运营方发起的撤回委托或者重新委托操作导致自抵押链上资产数量不足。
-
 ## 网络参数
 
 以下是用于配置验证者惩罚行为的所有网络参数。所有这些参数的详细信息及其对验证者惩罚行为的影响将在本文档后面讨论。
@@ -148,7 +142,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### 查询
 
-treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
+> treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
 
 ### Queries
 
