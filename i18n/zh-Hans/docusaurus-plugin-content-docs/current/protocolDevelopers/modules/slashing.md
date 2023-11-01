@@ -148,11 +148,9 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### 查询
 
-# treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
+treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
 
 ### Queries
-
-> treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
 
 ```json
 {
