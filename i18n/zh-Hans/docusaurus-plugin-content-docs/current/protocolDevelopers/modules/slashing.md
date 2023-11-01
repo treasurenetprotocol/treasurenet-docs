@@ -54,7 +54,7 @@ type CommitSig struct {
 CommitSig 中通过 BlockIDFlag 字段对情况进行区分。
 Commit 结构体中的 bitArray 根据 CommitSig 中的 BlockIDFlag 的值，以 bit 的形式标记了有哪些活跃验证者在参与对上一个区块投票的过程中被打包到了区块中:只要 Signature 中包含一个活跃验证者的投票，bitArray 中对应的位就被设置。
 
-# 当前的 Treasurenet 网络中阈值设定为 5%，也就是说再固定的时间窗口内只要错过的区块不超过 95%就不会被 slashing 模块惩罚。
+当前的 Treasurenet 网络中阈值设定为 5%，也就是说再固定的时间窗口内只要错过的区块不超过 95%就不会被 slashing 模块惩罚。
 
 CommitSig 中通过 BlockIDFlag 字段对情况进行区分。
 Commit 结构体中的 bitArray 根据 CommitSig 中的 BlockIDFlag 的值，以 bit 的形式标记了有哪些活跃验证者在参与对上一个区块投票的过程中被打包到了区块中:只要 Signature 中包含一个活跃验证者的投票，bitArray 中对应的位就被设置。
@@ -137,17 +137,6 @@ treasurenetd tx slashing unjail
 --home (defaule:"/root/.treasurenet/")
 --chain-id
 --fees 1unit
-```
-
-如果 validator 中 jailed 的状态为 true，说明该 validator 处于监禁状态，监禁期过后可以进行释放
-
-```sh
-treasurenetd tx slashing unjail
---from treasurenet1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2grwxmrg
---home (defaule:"/root/.treasurenet/")
---chain-id
---fees 1unit
->>>>>>> feature/1.0.1
 --gas auto
 --keyring-backend test
 
