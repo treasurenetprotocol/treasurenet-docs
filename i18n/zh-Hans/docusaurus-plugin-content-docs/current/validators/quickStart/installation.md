@@ -52,6 +52,12 @@ Treasurenet 是一款非常快速的 POS 区块链，并且整体兼容以太坊
     treasurenetd version
 ```
 
+正常启动后，终端会输出如下信息：
+```shell
+    1.0.2-231023-ibc
+```
+
+
 ### Docker
 
 ```shell
