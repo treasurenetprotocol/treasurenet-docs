@@ -1,0 +1,21 @@
+name: Pull Request Merged
+
+on:
+  # Trigger the workflow on push
+  push:
+    branches:
+      - main
+
+jobs:
+  slackNotification:
+    runs-on: ubuntu-latest
+    steps:
+      # Notify Slack when a pull request is merged
+      - name: Notify Slack
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }} 
+          SLACK_ICON: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+          SLACK_MESSAGE: ${{ github.repository }} 
+          SLACK_COLOR: '#00FF00'
