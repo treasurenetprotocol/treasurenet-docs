@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 测试网代币领取
 
-Treasurenet 测试网 faucet 会向任何愿意参与到项目中来的人分发少量的 Unit，使用 metamask/coinbase 钱包按照此页面上的说明即可从水龙头请求资金。
+Treasurenet 测试网 faucet 会向任何愿意参与到项目中来的人分发少量的 UNIT，使用 metamask/coinbase 钱包按照此页面上的说明即可从水龙头请求资金。
 
 ## 每日奖励
 
@@ -27,6 +27,6 @@ Treasurenet 测试网 faucet 会向任何愿意参与到项目中来的人分发
 
 ## 分享以获取更多奖励
 
-- 一旦您领取了每日奖励，您可以点击"分享以获取更多奖励"按钮来获得更多奖励。将登录奖励信息转发至 Twitter，然后输入已经转发的 Twitter 地址，再点击"给我 5 个 UNIT 和 100 个 TAT"按钮，即可再次获得 5 个 UNIT 和 100 个 TAT。
+- 一旦您领取了每日奖励，您可以点击"分享以获取更多奖励"按钮来获得更多奖励。将登录奖励信息转发至 Twitter，然后输入已经转发的 Twitter 地址，再点击"给我 UNIT 和 TAT"按钮，即可再次获得 5 个 UNIT 和 100 个 TAT。
 
 ![水龙头 分享奖励](/img/docs/faucet6.png)
