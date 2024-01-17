@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Faucet
 
-The Treasurenet test network faucet provide participants with a small amount of Unit tokens to engage in the project. To request funds from the faucet, you can use popular wallets like MetaMask or Coinbase by following the instructions provided on the dedicated page.
+The Treasurenet test network faucet provide participants with a small amount of UNIT tokens to engage in the project. To request funds from the faucet, you can use popular wallets like MetaMask or Coinbase by following the instructions provided on the dedicated page.
 
 ## Daily rewards
 

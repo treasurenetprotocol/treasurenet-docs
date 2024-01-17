@@ -55,11 +55,11 @@ $$
 
       _This is the maximum reduction scenario where there is no new TAT_
 
-    + When $0<d_n<1$, $f_n$ is scaled, so that 75%<$f_n$<90%.
+    + When $0<d_n<1$, $f_n$ is scaled, so that 75% $\leq f_n \leq 90$%.
 
       _Specifically,_ $f_n=0.75+[(0.9-0.75)]d_n$
 
-    + When  $d_n \geq 1$, $f_n$ is scaled, so that 90% $\leq f_n \leq 99$%
+    + When  $d_n \geq 1$, $f_n$ is scaled, so that 90%<$f_n$<99%
 
       _Specifically,_ $f_n=MIN(0.99, 0.01*ROUNDDOWN(d_n-1)+0.9)$
 
@@ -127,5 +127,5 @@ $$
 
   $BR$=100%$-CMP-PR-SVR$
 
-  $BR \leq 44$%
+  $BR \leq 34$%
 
