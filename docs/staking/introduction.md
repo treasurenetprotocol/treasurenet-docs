@@ -18,7 +18,7 @@ You will not lose custody of staked UNIT tokens. Even if it is not freely tradab
 
 Treasurenet is a public blockchain utilizing a BFT consensus protocol based on the PoS mechanism, built on Tendermint Core and Cosmos-SDK.
 
-In Treasurenet, any entity can become a validator by staking assets on the chain., but not all validators are eligible to participate in consensus voting. To ensure consensus efficiency, Treasurenet places restrictions on the set of validators that can participate in consensus voting. For specific rules, please refer to the Active Validator selection criteria.
+In Treasurenet, any entity can become a validator by staking assets on the chain, but not all validators are eligible to participate in consensus voting. To ensure consensus efficiency, Treasurenet places restrictions on the set of validators that can participate in consensus voting. For specific rules, please refer to the Active Validator selection criteria.
 
 Operating a validator node requires technical expertise, and not everyone can manage a validator node independently. To encourage participation in consensus voting, Treasurenet allows any entity holding on-chain assets to delegate their assets to one or more validators, who then vote on their behalf.
 
