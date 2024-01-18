@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ![Polling_pool](/img/docs/3.1Polling_pool.png)
 
-- Click on the 'vote' button to vote for a proposal.
+- Click on the 'Vote' to vote for a proposal.
 
 ![vote](/img/docs/3.1.1vote.png)
 
-- Click on 'vote details' to view the voting details of a proposal.
+- Click on 'Vote Details' to view the voting details of a proposal.
 
 ![vote_details](/img/docs/3.1.2vote_details.png)
 
