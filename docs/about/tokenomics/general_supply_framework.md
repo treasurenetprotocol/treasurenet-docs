@@ -48,7 +48,7 @@ After determining the total block reward, each block reward is awarded to Active
 | Action | Stakes `$UNIT`        | -Stakes `$UNIT` -Bids `$TAT` (burns `$TAT`) |
 | Reward | Base Rewards          | Base Rewards; Super Validator Rewards       |
 
-`$UNIT` holders can stake `$UNIT` into any of the nodes to share in proportional Base Rewards. $`$TAT` holders can bid $`$TAT` as well to share in proportional Super Validator Rewards, which is the Bonus Stake described in Core Concepts.
+`$UNIT` holders can stake `$UNIT` into any of the nodes to share in proportional Base Rewards. `$TAT` holders can bid `$TAT` as well to share in proportional Super Validator Rewards, which is the Bonus Stake described in Core Concepts.
 
 In the long run, we estimate Super Validator Rewards make up for about ~30% of the block rewards.
-The magnitude of Super Validator Rewards varies based on how competitive the $`$TAT` bids are between nodes, and based on how many Super Validators are there. Details to be further described in future release.
+The magnitude of Super Validator Rewards varies based on how competitive the `$TAT` bids are between nodes, and based on how many Super Validators are there. Details to be further described in future release.
