@@ -28,16 +28,16 @@ c. If the FoundationManager approves the request, the mine will be successfully 
 
 ### Change of Benefit Ratio
 
-a. To distribute the benefit percentage among specific wells, you can select the desired wells and open a pop-up window by clicking on ‘Change Benefit’ in the action bar. This window allows you to adjust the allocation of the benefit percentage for the selected wells.
+a. To distribute the benefit percentage among specific wells, you can select the desired wells and open a pop-up window by clicking on 'Change Benefit' in the action bar. This window allows you to adjust the allocation of the benefit percentage for the selected wells.
 
 b. To proceed with sharing the benefits, follow these steps:
 
-1. Click on ‘Share to benefit.’
+1. Click on 'Share to benefit'.
 
 ![changebenefit1.png](/img/docs/changebenefit1.png)
 
-   i. If you wish to share the benefits with individual users, select ‘No.’
-   ii. If you prefer to share the benefits with a decentralized application (DAPP), select ‘Yes.’
+   i. If you wish to share the benefits with individual users, select 'No'.
+   ii. If you prefer to share the benefits with a decentralized application (DAPP), select 'Yes'.
 
 ![changebenefit2-account.png](/img/docs/ChangeBenefit2-account.png)
 
@@ -47,7 +47,7 @@ c. Fill in the benefit ratio. After filling in, click 'Confirm' in the pop-up Me
 
 ### Associated DAPP
 
-a. Select the well that has shared a percentage of benefits to the DAPP to be associated and click on 'Connect DAPP';
+a. Select the well that has shared a percentage of benefits to the DAPP to be associated and click on 'Connect DAPP'.
 
 ![connectdapp1.png](/img/docs/connectdapp1.png)
 
@@ -67,7 +67,7 @@ a. Click on 'Details' to open the mine details page, as shown below:
 
 ### Modification of mine information
 
-- The page fill fields are the same as Add Mine
+- The page fill fields are the same as Add Mine.
 
 ### Submit an annual oil quality audit application
 
