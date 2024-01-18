@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ![Polling_pool](/img/docs/3.1Polling_pool.png)
 
-- 点击'vote'按钮，可以对提案进行投票。
+- 点击'Vote'按钮，可以对提案进行投票。
 
 ![vote](/img/docs/3.1.1vote.png)
 
-- 点击'vote details'，可以查看提案的得票详情。
+- 点击'Vote Details'，可以查看提案的得票详情。
 
 ![vote_details](/img/docs/3.1.2vote_details.png)
 
