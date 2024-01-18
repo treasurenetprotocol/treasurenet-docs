@@ -252,7 +252,8 @@ const sidebars = {
                     type: 'category',
                     label: 'Operation Guide',
                     items: [
-                        'staking/operation-guide/staking',
+                        'staking/operation-guide/staking-use-website',
+                        'staking/operation-guide/staking-use-code',
                         'staking/operation-guide/stakeboosting',
                     ],
 
