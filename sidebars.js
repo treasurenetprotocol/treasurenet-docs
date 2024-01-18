@@ -351,9 +351,38 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: 'Client Libraries',
+                    label: 'Javascript Libraries',
                     items: [
-                        'developers/client-libraries/address-converter'
+                        {
+                            type:'link',
+                            label:'@treasurenet/address-converter',
+                            href:'https://www.npmjs.com/package/@treasurenet/address-converter'
+                        },
+                        {
+                            type:'link',
+                            label:'@treasurenet/proto',
+                            href:'https://www.npmjs.com/package/@treasurenet/proto'
+                        },
+                        {
+                            type:'link',
+                            label:'@treasurenet/provider',
+                            href:'https://www.npmjs.com/package/@treasurenet/provider'
+                        },
+                        {
+                            type:'link',
+                            label:'@treasurenet/eip712',
+                            href:'https://www.npmjs.com/package/@treasurenet/eip712'
+                        },
+                        {
+                            type:'link',
+                            label:'@treasurenet/transactions',
+                            href:'https://www.npmjs.com/package/@treasurenet/transactions'
+                        },
+                        {
+                            type:'link',
+                            label:'@treasurenet/hash',
+                            href:'https://www.npmjs.com/package/@treasurenet/hash'
+                        },
                     ]
                 },
                 {
