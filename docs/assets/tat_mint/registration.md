@@ -2,7 +2,7 @@
 
 ## 1. Login and Registration
 
-Once you access the 'Production Portal', click on "Connect MetaMask" to establish a connection with your MetaMask account. Proceed to log in, and you will be successfully registered for the first time.
+Once you access the 'Production Portal', click on 'Connect MetaMask' to establish a connection with your MetaMask account. Proceed to log in, and you will be successfully registered for the first time.
 
 ![login_page](/img/docs/login_page.png)
 
