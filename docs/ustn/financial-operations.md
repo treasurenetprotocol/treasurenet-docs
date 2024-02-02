@@ -8,13 +8,13 @@ sidebar_position: 1
 
 ### Exchange
 
-#### Exchange (Unit → USTN)
+#### Exchange (UNIT → USTN)
 
-Enter the amount of Unit you wish to convert to USTN and click 'Submit'. The input number must be greater than 0 and less than or equal to the account balance and conversion limit, otherwise, it cannot be successfully submitted.
+Enter the amount of UNIT you wish to convert to USTN and click 'Submit'. The input number must be greater than 0 and less than or equal to the account balance and conversion limit, otherwise, it cannot be successfully submitted.
 
 - Rule Explanation:
 
-  1. Users provide Unit to exchange for USTN, and the number of USTN that can be exchanged is calculated based on the number of Units, the price of Unit, and the price of USTN;
+  1. Users provide UNIT to exchange for USTN, and the number of USTN that can be exchanged is calculated based on the number of UNITs, the price of UNIT, and the price of USTN;
 
   2. Determine whether the number of USTN that can be exchanged is greater than the market demand for USTN:
 
@@ -22,7 +22,7 @@ Enter the amount of Unit you wish to convert to USTN and click 'Submit'. The inp
 
   - If it's less than or equal to the market demand for USTN, USTN is minted and sent to the user's account.
 
-  3. The number of USTN that can be exchanged (rounded down) = (Number of Units \* Price of Unit) / Price of USTN;
+  3. The number of USTN that can be exchanged (rounded down) = (Number of UNITs \* Price of UNIT) / Price of USTN;
 
   4. Market demand for USTN = max [total USTN minted by the system, 50,000,000];
 
@@ -34,31 +34,31 @@ Enter the amount of Unit you wish to convert to USTN and click 'Submit'. The inp
 
 ![MetaMask](/img/docs/MetaMask.png)
 
-- After clicking 'Confirm', the system will display 'exchanged successfully!'.
+- After clicking 'Confirm', the system will display 'Exchanged successfully!'.
 
 ![exchanged_successfully](/img/docs/2.1.3exchanged_successfully.png)
 
-- Click 'VIEW HISTORY' to see all previous exchange records. You can filter by Type in the upper right corner, for example, select Unit to USTN, and all Unit to USTN information will be displayed in the list.
+- Click 'VIEW HISTORY' to see all previous exchange records. You can filter by Type in the upper right corner, for example, select Unit to USTN, and all UNIT to USTN information will be displayed in the list.
 
 ![VIEW_HISTORY](/img/docs/2.1.2VIEW_HISTORY.png)
 
-#### Repurchase (USTN → Unit)
+#### Repurchase (USTN → UNIT)
 
-Enter the number of Units you want to repurchase and click 'Submit'. The input number must be greater than 0 and less than or equal to the account balance, otherwise, it cannot be successfully submitted.
+Enter the number of UNITs you want to repurchase and click 'Submit'. The input number must be greater than 0 and less than or equal to the account balance, otherwise, it cannot be successfully submitted.
 
 - Rule Explanation:
 
-  1. Users provide USTN to repurchase Units, and the number of Units that can be repurchased is calculated based on the amount of USTN, the price of USTN, and the price of Unit;
+  1. Users provide USTN to repurchase UNITs, and the number of UNITs that can be repurchased is calculated based on the amount of USTN, the price of USTN, and the price of UNIT;
 
-  2. Determine whether the number of Units repurchased by the user is greater than the system repurchase limit:
+  2. Determine whether the number of UNITs repurchased by the user is greater than the system repurchase limit:
 
-  - If it's less than or equal to the system repurchase limit, the USTN provided by the user is destroyed, and the repurchased Unit is returned to the user;
+  - If it's less than or equal to the system repurchase limit, the USTN provided by the user is destroyed, and the repurchased UNIT is returned to the user;
 
-  - If it exceeds the system repurchase limit, the Unit repurchase fails, and the USTN provided by the user is returned.
+  - If it exceeds the system repurchase limit, the UNIT repurchase fails, and the USTN provided by the user is returned.
 
-  3. System repurchase limit for Units = (Total USTN of the system - Market demand for USTN) \* USTN price / Unit price;
+  3. System repurchase limit for UNITs = (Total USTN of the system - Market demand for USTN) \* USTN price / UNIT price;
 
-  4. The conditions for opening and closing the Unit repurchase function are:
+  4. The conditions for opening and closing the UNIT repurchase function are:
 
   - When the total USTN of the system > Market demand for USTN, open Unit repurchase;
 
@@ -70,7 +70,7 @@ Enter the number of Units you want to repurchase and click 'Submit'. The input n
 
 ![MetaMask](/img/docs/MetaMask.png)
 
-- After clicking 'Confirm', the system will display 'exchanged successfully!'.
+- After clicking 'Confirm', the system will display 'Exchanged successfully!'.
 
 ![exchanged_successfully](/img/docs/2.1.3exchanged_successfully.png)
 
