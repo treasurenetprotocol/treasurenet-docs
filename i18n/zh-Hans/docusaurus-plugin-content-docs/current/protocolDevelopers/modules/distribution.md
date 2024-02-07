@@ -3,7 +3,7 @@ sidebar_position: 8
 ---
 
 
-# distribution分配模块
+# Distribution分配模块
 
 ## 介绍
 
