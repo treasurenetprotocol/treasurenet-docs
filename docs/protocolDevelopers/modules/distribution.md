@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ## Introduction
 
-distribution is responsible for allocating rewards to validators and delegators.
+Distribution is responsible for allocating rewards to validators and delegators.
 
 The on-chain assets minted by the [mint module](./mint.md) are distributed as block rewards along with transaction fees. These rewards are proportionally distributed among active validators based on their respective voting weights. Validators who receive rewards then distribute them to delegators according to each delegator's share. In Ethereum, block rewards are directly transferred to the target account through a transaction (Coinbase transaction). However, in Treasurenet, a different approach called passive reward distribution is implemented. In this approach, block rewards are not automatically transferred to the target account. Instead, validator operators or delegators need to initiate withdrawal transactions when they want to claim their rewards.
 It is important to note that when the weight of a validator on the chain changes (due to operations such as re-delegation or delegation withdrawal), the block rewards will be automatically redistributed.
@@ -86,7 +86,7 @@ $ treasurenetd tx distribution withdraw-all-rewards \
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx distribution withdraw-rewards [validator_address] - 从给定的验证者地址提取奖励
+> treasurenetd tx distribution withdraw-rewards [validator_address] - withdraw rewards from a given validator address
 > The principal can withdraw rewards from specific validators.
 
 > Validators can extract commissions by adding the commission flag, in addition to rewards --commission
