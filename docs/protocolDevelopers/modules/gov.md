@@ -70,7 +70,7 @@ There are three components:
 
 1. Title - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. Description - the body of the proposal that further describes what is being proposed and details surrounding the proposal
-3. Deposit - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
+3. Deposit - the amount that will be contributed to the deposit from the account submitting the proposal
    Real example
 
 ```json
@@ -99,7 +99,8 @@ For parameter-change proposals, there are arguably seven (7) components, though 
 4. Subspace - the Cosmos Hub module with the parameter that is being changed
 5. Key - the parameter that will be changed
 6. Value - the value of the parameter that will be changed by the governance mechanism
-7. Deposit - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
+7. Deposit - the amount that will be contributed to the deposit from the account submitting the proposal
+
    Real example
 
 ```json
@@ -119,14 +120,14 @@ For parameter-change proposals, there are arguably seven (7) components, though 
 
 3. Community Reserve Fund Expenditure Proposal: A portion of the block rewards will be used as the community reserve fund to support community development. The community reserve fund expenditure proposal involves transferring a portion of the community reserve fund to a specific address for rewarding contributing accounts.
 
-There are five (5) components:
+There are five components:
 
 1. Title - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. Description - the body of the proposal that further describes what is being proposed and details surrounding the proposal
 3. Recipient - the Cosmos Hub (bech32-based) address that will receive funding from the Community Pool
-4. Amount - the amount of funding that the recipient will receive in micro-ATOMs (uatom)
-5. Deposit - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
-   If the description says that a certain address will receive a certain number of ATOMs, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise). Check that the description aligns with teh 'recipient' address.
+4. Amount - the amount of funding that the recipient will receive
+5. Deposit - the amount that will be contributed to the deposit from the account submitting the proposal
+   If the description says that a certain address will receive a certain number of UNITs, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise). Check that the description aligns with teh 'recipient' address.
    Real example
 
 ```json
