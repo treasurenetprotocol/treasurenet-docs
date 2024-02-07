@@ -6,14 +6,14 @@ sidebar_position: 3
 
 ## Introduction
 
-auth module defines accounts and transactions, where transactions can include messages defined by multiple modules, with basic transfer messages defined by the bank module.
+Auth module defines accounts and transactions, where transactions can include messages defined by multiple modules, with basic transfer messages defined by the bank module.
 
 The bank module maintains the state of two primary objects:
 
 - Account balances by address;
 - Total supply of tokens of the chain
 
-bank module tracks and provides query support for the total supply of all assets used in the application. It also supports token transfer functionalities. Specifically, the total supply is updated whenever a token is:
+Bank module tracks and provides query support for the total supply of all assets used in the application. It also supports token transfer functionalities. Specifically, the total supply is updated whenever a token is:
 
 - Minted, for example, Tokens created by the mint module. (See [mint module](./mint.md))
 - Burned, for example, Tokens penalized by the slashing module. (See [slashing module](./slashing.md))
@@ -41,7 +41,7 @@ Based on the functionalities provided by Keeper, it is easy to implement the pro
 
 ### Transactions
 
-> treasurenetd tx bank send [from_address] [to_address] [amount] --chain-id testid --fees [^fees] --gas auto [^gas] --keyring-backend test --发送资金
+> treasurenetd tx bank send [from_address] [to_address] [amount] --chain-id testid --fees [^fees] --gas auto [^gas] --keyring-backend test --send funds
 > [^fees]: Fees to pay along with transaction.
 > [^gas]: gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default 200000).
 
@@ -55,7 +55,7 @@ Based on the functionalities provided by Keeper, it is easy to implement the pro
 
 ### Queries
 
-> treasurenetd query bank balances [address] --output json | jq --查询指定账户下的 token
+> treasurenetd query bank balances [address] --output json | jq --query the tokens under the specified account
 
 ```json
 {
@@ -88,7 +88,7 @@ Based on the functionalities provided by Keeper, it is easy to implement the pro
 }
 ```
 
-> treasurenetd query bank total --home /data/mytestnet/.treasurenetd/ --output json | jq --检查 token 的总供应量
+> treasurenetd query bank total --home /data/mytestnet/.treasurenetd/ --output json | jq --check the total supply of tokens
 
 ```json
 {
