@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## Introduction
 
-slashing is a punishment module that is divided into active slashing and passive slashing. Validators are responsible for signing or proposing a block in each round of consensus. Punishments should be imposed on validators for improper behavior to reinforce this.
+Slashing is a punishment module that is divided into active slashing and passive slashing. Validators are responsible for signing or proposing a block in each round of consensus. Punishments should be imposed on validators for improper behavior to reinforce this.
 
 Specifically, slashing aims to suppress observable behaviors on the network, such as faulty validations. Punishments may include loss of a certain amount of stake, temporary loss of the ability to perform network functions, or obtaining rewards.
 
@@ -74,8 +74,8 @@ slash_fraction_downtime: The percentage of funds reduced when a validator is ina
 
 ### Transactions
 
-> treasurenetd tx slashing unjail - 释放验证器
-> 可以先通过 treasurenetd query staking validator [validator-address] --home --output json | jq 查看 validator 的状态
+> treasurenetd tx slashing unjail - release the validator
+> You can see the status of the validator by using treasurenetd query staking validator [validator-address] --home --output json | jq 
 
 ```sh
 $ treasurenetd query staking validator \
@@ -116,7 +116,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### Queries
 
-> treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
+> treasurenetd query slashing params --home --output json | jq - query the penalty parameters
 
 ```json
 {
