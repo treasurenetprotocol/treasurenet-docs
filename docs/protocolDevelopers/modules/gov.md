@@ -6,13 +6,13 @@ sidebar_position: 7
 
 ## Introduction
 
-gov module is responsible for on-chain governance
+Gov module is responsible for on-chain governance
 
 The upgrade of blockchain applications requires community consensus on the upgrade content across the entire network. However, community consensus is often difficult to achieve. In order to address the challenges of reaching community consensus, the gov module implements the functionality of on-chain governance.
 
 Anyone can modify a specific parameter or upgrade the code by initiating an on-chain proposal. On-chain asset holders can express their support or opposition to the proposal through voting. Only votes represented by on-chain assets that have participated in the consensus voting through staking are considered valid. When there is sufficient support for a proposal through voting, the proposal becomes effective.
 
-## parameters
+## Parameters
 
 Below are all the network parameters for the gov module:
 
@@ -169,7 +169,7 @@ The function NewParamChangeProposalHandler() in the corresponding params module 
 
 ### Transactions
 
-> treasurenetd tx gov submit-proposal - 提交提案和初始存款
+> treasurenetd tx gov submit-proposal - submit a proposal and initial deposit
 
 - treasurened tx gov submit-proposal (proposal type>):
   - If the proposal type is empty, it means it is a text proposal.
@@ -178,7 +178,7 @@ The function NewParamChangeProposalHandler() in the corresponding params module 
   - If the proposal type is software-upgrade, it means we are submitting a software upgrade proposal.
   - If the proposal type is cancel-software-upgrade, it means we are submitting a proposal to cancel a software upgrade.
 
-#### #### Submitting Text Proposal
+#### Submitting Text Proposal
 
 ```sh
 $ treasurenetd tx gov submit-proposal \
@@ -230,8 +230,8 @@ $ treasurenetd tx gov submit-proposal community-pool-spend /root/proposal_commun
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx gov deposit [proposal-id] [deposit] - 为活跃提案存入代币
-> 用户可以提交存款交易来资助和支持积极的提案
+> treasurenetd tx gov deposit [proposal-id] [deposit] - deposit tokens for active proposals
+> Users can submit deposit transactions to fund and support positive proposals
 
 ```sh
 treasurenetd tx tx gov deposit 2 1unit
@@ -247,8 +247,8 @@ treasurenetd tx tx gov deposit 2 1unit
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx gov vote [proposal-id] [option] - 投票给一个积极的提案
-> 用户可以投票给一个活跃的提案。字段的有效值"option"可以是"yes"、"no"、"no_with_veto"和"abstain"
+> treasurenetd tx gov vote [proposal-id] [option] - vote for a positive proposal
+> Users can vote for an active proposal. Valid values for the field"option" can be "yes","no","no_with_veto",and "abstain"
 
 ```sh
 treasurenetd tx gov vote 2 yes
@@ -267,7 +267,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### Queries
 
-> treasurenetd query gov proposals --home -o json | jq - 查询所有提案
+> treasurenetd query gov proposals --home -o json | jq - query all proposals
 
 ```json
 {
@@ -369,7 +369,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query gov proposal [proposal-id] --home --output json | jq - 通过提案的 ID 查询单个提案的详情
+> treasurenetd query gov proposal [proposal-id] --home --output json | jq - query the details of an individual proposal by the ID of the proposal
 
 ```json
 {
@@ -399,11 +399,11 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query gov tally [proposal-id] --home -o json | jq - 获取提案投票的总数
+> treasurenetd query gov tally [proposal-id] --home -o json | jq - query the details of an individual proposal by the ID of the proposal
 
 ```json
 {
-  "yes": "268000000000000000000", //票数和权重成正比，权重为多少票数就是多少
+  "yes": "268000000000000000000", //The number of votes is proportional to the weight. The number of votes is the same as the weight.
   "abstain": "0",
   "no": "0",
   "no_with_veto": "0"
