@@ -20,7 +20,7 @@ Development is in progress. Whitelisting new Testnet Validator nodes soon. Stay 
 
 ### Installing treasurenetd
 
-Follow the[installation instructions](https://docs.treasurenet.io/docs/validators/quickStart/installation)to complete the installation of the Treasurenetd binary file.
+Follow the [installation instructions](https://docs.treasurenet.io/docs/validators/quickStart/installation) to complete the installation of the Treasurenetd binary file.
 
 ### Saving the chainID
 
